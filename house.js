@@ -1,12 +1,12 @@
-async function housePage() {
-    let main = document.querySelector("main");
+let main = document.querySelector("main");
 
+async function housePage() {
     main.innerHTML = `
         <header>
             <h1>HOGWARDS HOUSES</h1>
         </header>
 
-        <button>Registered members</button>
+        <button id=membersBtn>Registered members</button>
 
         <section id=theFourHouses>
             <div id=loading>Loading, kindly wait...</div>
@@ -14,6 +14,8 @@ async function housePage() {
     `;
 
     let houses = main.querySelector("#theFourHouses");
+    let membersBtn = main.querySelector("#membersBtn");
+    membersBtn.addEventListener("click", showHouseMembers);
 
     try {
         // GET HOUSE-NAME AND INFO
@@ -36,3 +38,21 @@ async function housePage() {
 }
 
 housePage();
+
+async function showHouseMembers() {
+    main.innerHTML = `
+        <section id=houseMembers>
+            <div id=loading>Loading, kindly wait...</div>
+        </section>
+
+        <button id=back>Back to Houses</button>
+    `;
+
+    let backBtn = main.querySelector("#back");
+    backBtn.addEventListener("click", housePage);
+}
+
+// prevent page refresh
+window.addEventListener("beforeunload", function(event) {
+    event.preventDefault();
+});
