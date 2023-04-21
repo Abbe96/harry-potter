@@ -17,7 +17,7 @@ async function housePage() {
 
     try {
         // GET HOUSE-NAME AND INFO
-        let response = await fetch("api/houses.php");
+        let response = await fetch("..api/houses.php");
         let data = await response.json();
 
         if(!response.ok) {
