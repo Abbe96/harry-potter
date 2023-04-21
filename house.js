@@ -17,19 +17,21 @@ async function housePage() {
 
     try {
         // GET HOUSE-NAME AND INFO
-        let response = await fetch("..api/houses.php");
+        let response = await fetch("api/houses.php");
         let data = await response.json();
+        console.log(data);
+        houses.innerHTML = "";
 
-        if(!response.ok) {
-            console.log(`Something went wrong, we got this from the sever <span>${data.message}/span>`)
-        } else {
-            houses.innerHTML = `
-            <h2 id=houseName${data.houseName}</h2>
-            <p id=houseInfo>${data.info}</p>
+        data.forEach(house => {
+            let houseElement = document.createElement("div");
+            houseElement.innerHTML = `
+            <h2>${house.name}</h2>
+            <p>${house.description}</p>
             `;
-        }
-    } catch (err) {
-        console.log(`Error: ${err.message}`);
+            houses.appendChild(houseElement);
+        });
+    } catch (error) {
+        console.error("Failed to fetch", error);
     }
 }
 
