@@ -53,7 +53,7 @@ function loginPage() {
                 message.innerHTML = `THE SERVER GONE MAD! we got this from the server <span>${data.message}</span>.`;
             } else {
                 // RECEIVE THE USER
-                window.localStorage.setItem(("home-user", JSON.stringify(data)));
+                window.localStorage.setItem("home-user", JSON.stringify(data));
                 user = data;
                 //!! ÄNDRA TILL HOME PAGE
                 housePage();
