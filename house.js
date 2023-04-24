@@ -35,6 +35,7 @@ async function housePage() {
     } catch (error) {
         console.error("Failed to fetch", error);
     }
+}
 
 async function showHouseMembers() {
     main.innerHTML = `
@@ -58,7 +59,7 @@ async function showHouseMembers() {
         let response = await fetch("api/houses.php");
         let data = await response.json();
 
-        //!! REDIGERA HÄR
+        // EDIT HERE
         let members = data.map((user) => {
             return `
             <div class=house>
@@ -71,8 +72,8 @@ async function showHouseMembers() {
             <h2>${data.house}</h2>
             ${members}
         `;
-    } catch {
-        console.warn(err);
+    } catch (error) {
+        console.warn(error);
     }
 }
 
