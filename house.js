@@ -3,7 +3,7 @@ let main = document.querySelector("main");
 async function housePage() {
     main.innerHTML = `
         <header>
-            <h1>HOGWARDS HOUSES</h1>
+            <h1>HOGWARTS HOUSES</h1>
         </header>
 
         <button id=membersBtn>Registered members</button>
@@ -36,20 +36,47 @@ async function housePage() {
         console.error("Failed to fetch", error);
     }
 }
-
+//!! TA BORT SEN
 housePage();
 
 async function showHouseMembers() {
     main.innerHTML = `
+        <header>
+            <h1>HOGWARTS HOUSES</h1>
+        </header>
+
+        <button id=back>Back to Houses</button>
+
         <section id=houseMembers>
             <div id=loading>Loading, kindly wait...</div>
         </section>
-
-        <button id=back>Back to Houses</button>
     `;
 
     let backBtn = main.querySelector("#back");
     backBtn.addEventListener("click", housePage);
+
+    let houseMembers = main.querySelector("#houseMembers");
+
+    try {
+        let response = await fetch("api/houses.php");
+        let data = await response.json();
+
+        //!! REDIGERA HÄR
+        let members = data.map((user) => {
+            return `
+            <div class=house>
+                <div>${user.house}</div>
+            </div>
+            `;
+        }).join("");
+
+        houseMembers.innerHTML = `
+            <h2>${data.house}</h2>
+            ${members}
+        `;
+    } catch {
+        console.warn(err);
+    }
 }
 
 // prevent page refresh
