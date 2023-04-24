@@ -1,6 +1,9 @@
-let main = document.querySelector("main");
-
 async function housePage() {
+
+    nav.innerHTML = `
+    <button id=logout>Logout</button>
+    `;
+
     main.innerHTML = `
         <header>
             <h1>HOGWARTS HOUSES</h1>
@@ -16,6 +19,9 @@ async function housePage() {
     let houses = main.querySelector("#theFourHouses");
     let membersBtn = main.querySelector("#membersBtn");
     membersBtn.addEventListener("click", showHouseMembers);
+
+    let logoutBtn = nav.querySelector("#logout");
+    logoutBtn.addEventListener("click", logout)
 
     try {
         // GET HOUSE-NAME AND INFO
@@ -34,6 +40,12 @@ async function housePage() {
         });
     } catch (error) {
         console.error("Failed to fetch", error);
+    }
+
+    function logout() {
+        window.localStorage.clear();
+        user = null;
+        loginPage();
     }
 }
 
@@ -81,3 +93,4 @@ async function showHouseMembers() {
 window.addEventListener("beforeunload", function(event) {
     event.preventDefault();
 });
+
