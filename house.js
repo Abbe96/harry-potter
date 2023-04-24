@@ -35,9 +35,6 @@ async function housePage() {
     } catch (error) {
         console.error("Failed to fetch", error);
     }
-}
-//!! TA BORT SEN
-housePage();
 
 async function showHouseMembers() {
     main.innerHTML = `
