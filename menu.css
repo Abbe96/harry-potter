@@ -1,12 +1,64 @@
+@font-face {
+    font-family: "Harry P";
+    src: url(Font/HARRYP__.TTF);
+}
+
+* {
+    font-family: "Harry p";
+}
+
 body {
     margin: 0;
-    padding: 0;
     width: 100vw;
     height: 100vh;
 }
 
 #menu {
+    box-sizing: border-box;
+    padding: 20px;
     height: 100vh;
     width: 100vw;
-    background-color: rgb(255, 255, 208);
+    background-color: rgb(162, 182, 152); 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.headerMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lightningMenu {
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(Images-menu/png-clipart-flash-logo-harry-potter-wand-computer-icons-harry-potter-angle-triangle.png);
+}
+
+.titleMenu {
+    font-size: 13vw;
+    text-align: center;
+    margin: 0;
+}
+
+.listMenu  {
+    font-size: 8vw;
+    text-decoration: none;
+    color: black;
+}
+
+.listMenu:hover {
+    color: rgba(0, 0, 0, 0.273);
+}
+
+.changeHousesHeader {
+    color: rgb(62, 117, 62);
+    font-size: 4vw;
+}
+
+.allHouses {
+    display: flex;
+    gap: 20px;
 }
