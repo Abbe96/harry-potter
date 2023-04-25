@@ -55,8 +55,8 @@ function loginPage() {
                 // RECEIVE THE USER
                 window.localStorage.setItem("home-user", JSON.stringify(data));
                 user = data;
-                //!! ÄNDRA TILL HOME PAGE
-                housePage();
+       
+                homePage();
             }
         } catch (error) {
             message.textContent = `Error: ${error.message}`;
@@ -84,8 +84,8 @@ async function attemptLogin() {
         } else {
             window.localStorage.setItem("home-user", JSON.stringify(data));
             user = data;
-            //!! ÄNDRA PAGE
-            housePage();
+
+            homePage();
         }
     } catch (error) {
         loginPage();
