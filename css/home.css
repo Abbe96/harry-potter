@@ -2,10 +2,6 @@ body {
     background-color: #fff;
     color: #777;
     font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-    background-image: url(../Bild/background\ hp.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
     
 }
 p {
@@ -19,14 +15,14 @@ h1 {
     font-size: 45px;
     margin-bottom: 20px;
 }
-h2 {
+/* h2 {
     font-weight: 300;
     color: #444;
     font-size: 55px;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 20px;
-}
+} */
 h3 {
     font-size: 30px;
     color: #444;
@@ -135,8 +131,6 @@ header nav ul li a {
     margin-right: 20px;
 }
 
-
-
 .more-link {
     border: 1px solid #02b8dd;
     color: #02b8dd;
@@ -151,6 +145,11 @@ header nav ul li a {
 #cta {
     padding: 60px 0;
     text-align: center;
+
+    background-image: url(../Bild/background\ hp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 #cta h3 {
     display: block;
