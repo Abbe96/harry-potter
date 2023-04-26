@@ -122,41 +122,6 @@ function hogwartsType(type) {
         })
         .catch((e) => console.log(e));
 }
-
-
-
-select.addEventListener('change', () => {
-    console.log(select.value);
-    if(select.value == 'All') {
-        grid.innerHTML = ''
-        showAll()
-    }
-    else if(select.value == 'Gryffindor') {
-        grid.innerHTML = ''
-        showHouse('gryffindor')
-    }
-    else if(select.value == 'Hufflepuff') {
-        grid.innerHTML = ''
-        showHouse('hufflepuff')
-    }
-    else if(select.value == 'Ravenclaw') {
-        grid.innerHTML = ''
-        showHouse('ravenclaw')
-    }
-    else if(select.value == 'Slytherin') {
-        grid.innerHTML = ''
-        showHouse('slytherin')
-    }
-    else if(select.value == 'Students') {
-        grid.innerHTML = ''
-        hogwartsType('students')
-    }
-    else if(select.value == 'Staff') {
-        grid.innerHTML = ''
-        hogwartsType('staff')
-    }
-})
-
 showAll()
 
 /* Netlify: https://potter.netlify.app/ */
