@@ -1,4 +1,3 @@
-const select = document.querySelector('.form select')
 const grid = document.querySelector('.grid')
 
 function showAll() { 
