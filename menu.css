@@ -18,7 +18,7 @@ body {
     padding: 20px;
     height: 100vh;
     width: 100vw;
-    background-color: rgb(162, 182, 152); 
+    background-color: rgb(178, 183, 175); 
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -54,11 +54,37 @@ body {
 }
 
 .changeHousesHeader {
-    color: rgb(62, 117, 62);
-    font-size: 4vw;
+    margin-bottom: 10px;
+    font-size: 3vw;
 }
 
 .allHouses {
     display: flex;
-    gap: 20px;
+    gap: 5px;
+}
+
+.changeAllHouses {
+   width: 80px;
+   height: 80px;
+   background-size: cover;
+   background-position: center;
+   border-radius: 20px;
+}
+
+.changeHousesGryffindor {
+    background-image: url(Images-menu/gryffindor.png);
+}
+
+.changeHousesSlytherin {
+    background-image: url(Images-menu/slytherin.png);
+}
+.changeHousesRavenclaw {
+    background-image: url(Images-menu/ravenclaw.png);
+}
+.changeHousesHufflepuff {
+    background-image: url(Images-menu/hufflepuff.png);
+}
+
+.changeHousesGryffindor:active {
+    background-image: none;
 }
