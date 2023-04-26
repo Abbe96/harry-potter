@@ -18,28 +18,35 @@ h1 {
 }
 
 .grid {
+    width: 100vw;
+    height: 100vh;
     background-image: url(background2.png);
+    background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
     box-sizing: border-box;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 20px;
     gap: 10px;
-    width: 100vw;
 }
 
 .card {
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgba(182, 153, 153, 0);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .card img {
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     
-    height: 20vw;
+    height: 25vw;
     border-radius: 10px;
 }
 
