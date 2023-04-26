@@ -3,44 +3,34 @@
     src: url();
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: serif;
-}
-
 body {
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
+    background-image: url();
 }
 
 h1 {
-    font-weight: normal;
     padding-top: 20px;
-    padding-bottom: 10px;
+    margin: 0;
     text-align: center;
-    background: #0e0463;
-    color: #ffffff;
 }
 
 .grid {
+
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 20px;
-    grid-gap: 10px;
-    padding: 20px;
+    gap: 10px;
 }
 
 .card {
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-direction: column;
     background: #0664a2;
     padding: 20px;
     border-radius: 10px;
