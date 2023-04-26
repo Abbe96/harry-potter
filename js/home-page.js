@@ -1,26 +1,20 @@
 function homePage() {
 
+    nav.innerHTML = `
+    <button id=logout>Logout</button>
+    `;
+
     main.innerHTML = `
         <body>
         <header>
-
             <h1>HARRY POTTER</h1>
-            <nav>
-                <div class=nav>
-                <button id=houseBtn>HOUSE</button>
-                <button id=characterBtn>CHARACTERS</button>
-                <button id=filmBtn>FILMS</button>
-                <button id=infoBtn>INFO</button>
-                </div>
-            </nav>
-
         </header>
         
         <div class="grid-container">
-            <div class="item1"><a href="">Home</a> </div>
-            <div class="item2"><a href="">CHARACTERS</a> </div>
-            <div class="item3"><a href="">FILM</a> </div>  
-            <div class="item4">INFO</div>
+            <div class="item1"><button id=houseBtn>HOUSE</button></div>
+            <div class="item2"> <button id=characterBtn>CHARACTERS</button></div>
+            <div class="item3"><button id=filmBtn>FILMS</button></div>  
+            <div class="item4"><button id=infoBtn>INFO</button></div>
         </div>
         
         <div id="cta">

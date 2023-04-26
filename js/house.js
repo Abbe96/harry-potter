@@ -90,8 +90,8 @@ async function showHouseMembers() {
     }
 }
 
-// prevent page refresh
-window.addEventListener("beforeunload", function(event) {
-    event.preventDefault();
-});
+// // prevent page refresh
+// window.addEventListener("beforeunload", function(event) {
+//     event.preventDefault();
+// });
 
