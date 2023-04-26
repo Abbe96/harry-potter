@@ -7,6 +7,7 @@ async function housePage() {
     main.innerHTML = `
         <header>
             <h1>HOGWARTS HOUSES</h1>
+        </nav>
         </header>
 
         <button id=membersBtn>Registered members</button>

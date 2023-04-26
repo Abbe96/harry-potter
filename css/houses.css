@@ -2,10 +2,10 @@ main {
     display: flex;
     flex-direction: column;
 }
-
+/* 
 header {
     text-align: center;
-}
+} */
 
 #membersBtn {
     width: 20vw;

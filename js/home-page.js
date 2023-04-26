@@ -3,17 +3,17 @@ function homePage() {
     main.innerHTML = `
         <body>
         <header>
-            <div class="wrapper">
-                <h1>HARRY POTTER<span class="color">.</span></h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">CHARACTERS</a></li>
-                        <li><a href="#">FILM</a></li>
-                        <li><a href="#">INFO</a></li>
-                    </ul>
-                </nav>
-            </div>
+
+            <h1>HARRY POTTER</h1>
+            <nav>
+                <div class=nav>
+                <button id=houseBtn>HOUSE</button>
+                <button id=characterBtn>CHARACTERS</button>
+                <button id=filmBtn>FILMS</button>
+                <button id=infoBtn>INFO</button>
+                </div>
+            </nav>
+
         </header>
         
         <div class="grid-container">
@@ -52,4 +52,7 @@ function homePage() {
             </div>
         </footer>
     `;
+
+    let houseBtn = main.querySelector("#houseBtn");
+    houseBtn.addEventListener("click", housePage);
 }
