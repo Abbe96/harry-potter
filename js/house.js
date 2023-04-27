@@ -1,8 +1,6 @@
 async function housePage() {
 
-    nav.innerHTML = `
-    <button id=logout>Logout</button>
-    `;
+    nav.innerHTML = "";
 
     main.innerHTML = `
         <header>
@@ -21,9 +19,6 @@ async function housePage() {
     let membersBtn = main.querySelector("#membersBtn");
     membersBtn.addEventListener("click", showHouseMembers);
 
-    let logoutBtn = nav.querySelector("#logout");
-    logoutBtn.addEventListener("click", logout)
-
     try {
         // GET HOUSE-NAME AND INFO
         let response = await fetch("api/houses.php");
@@ -41,12 +36,6 @@ async function housePage() {
         });
     } catch (error) {
         console.error("Failed to fetch", error);
-    }
-
-    function logout() {
-        window.localStorage.clear();
-        user = null;
-        loginPage();
     }
 }
 
