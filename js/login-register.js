@@ -137,4 +137,4 @@ function registerPage() {
     });
 }
 
-loginPage();
+

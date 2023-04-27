@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Harry P";
+    src: url(Font/HARRYP__.TTF);
+}
+
+* {
+    font-family: "Harry p";
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#menu {
+    box-sizing: border-box;
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(178, 183, 175); 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.headerMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lightningMenu {
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(Images-menu/png-clipart-flash-logo-harry-potter-wand-computer-icons-harry-potter-angle-triangle.png);
+}
+
+.titleMenu {
+    font-size: 13vw;
+    text-align: center;
+    margin: 0;
+}
+
+.listMenu  {
+    font-size: 8vw;
+    text-decoration: none;
+    color: black;
+}
+
+.listMenu:hover {
+    color: rgba(0, 0, 0, 0.273);
+}
+
+.changeHousesHeader {
+    margin-bottom: 10px;
+    font-size: 3vw;
+}
+
+.allHouses {
+    display: flex;
+    gap: 5px;
+}
+
+.changeAllHouses {
+   width: 80px;
+   height: 80px;
+   background-size: cover;
+   background-position: center;
+   border-radius: 20px;
+}
+
+.changeHousesGryffindor {
+    background-image: url(Images-menu/gryffindor.png);
+}
+
+.changeHousesSlytherin {
+    background-image: url(Images-menu/slytherin.png);
+}
+.changeHousesRavenclaw {
+    background-image: url(Images-menu/ravenclaw.png);
+}
+.changeHousesHufflepuff {
+    background-image: url(Images-menu/hufflepuff.png);
+}
+
+.changeHousesGryffindor:active {
+    background-image: none;
+}
