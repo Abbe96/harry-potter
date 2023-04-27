@@ -29,24 +29,23 @@ h1 {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
-    gap: 10px;
 }
 
-.card {
+/*.card {
     border-radius: 10px;
     box-sizing: border-box;
     padding: 10px;
-    background-color: rgba(182, 153, 153, 0);
+    background-color: rgba(182, 153, 153, 0.466);
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.card img {
-    background-size: contain;
+}
+*/
+
+img {
+    background-size: cover;
     background-position: center;
-    
     height: 25vw;
     border-radius: 10px;
 }

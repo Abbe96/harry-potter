@@ -13,24 +13,21 @@ function showAll() {
                 
                 var house = document.createElement('p')
                 house.textContent = el.house
-                if(el.house == 'Gryffindor') {
+
+                if (el.house == 'Gryffindor') {
                     house.style.color = 'red'
-                }
-                else if(el.house == 'Slytherin') {
+                } else if(el.house == 'Slytherin') {
                     house.style.color = 'green'
-                }
-                else if(el.house == 'Hufflepuff') {
+                } else if(el.house == 'Hufflepuff') {
                     house.style.color = 'orange'
-                }
-                else if(el.house == 'Ravenclaw') {
+                } else if(el.house == 'Ravenclaw') {
                     house.style.color = 'lightgreen'
                 }
                 
                 var img = document.createElement('img')
                 img.setAttribute('src', el.image)
 
-                grid.appendChild(card)
-                card.appendChild(img)
+                grid.appendChild(img)
                 card.appendChild(name)
                 card.appendChild(house)
             })
@@ -54,16 +51,14 @@ function showHouse(house) {
                 
                 var house = document.createElement('p')
                 house.textContent = el.house
-                if(el.house == 'Gryffindor') {
+
+                if (el.house == 'Gryffindor') {
                     house.style.color = 'red'
-                }
-                else if(el.house == 'Slytherin') {
+                } else if(el.house == 'Slytherin') {
                     house.style.color = 'green'
-                }
-                else if(el.house == 'Hufflepuff') {
+                } else if(el.house == 'Hufflepuff') {
                     house.style.color = 'orange'
-                }
-                else if(el.house == 'Ravenclaw') {
+                } else if(el.house == 'Ravenclaw') {
                     house.style.color = 'lightgreen'
                 }
                 
