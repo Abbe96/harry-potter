@@ -1,8 +1,16 @@
 function homePage() {
 
     nav.innerHTML = `
-    <button id=logout>Logout</button>
+        <button id=lightningMenu></button>
+        <button id=logout>Logout</button>
     `;
+
+    let logoutBtn = nav.querySelector("#logout");
+    logoutBtn.addEventListener("click", logout);
+
+    let menuBtn = nav.querySelector("#lightningMenu");
+    menuBtn.addEventListener("click", menuPage);
+    
 
     main.innerHTML = `
         <header>
@@ -49,16 +57,6 @@ function homePage() {
     let houseBtn = main.querySelector("#houseBtn");
     houseBtn.addEventListener("click", housePage);
 
-    let menuBtn = main.querySelector("#lightningMenu");
-    menuBtn.style.background = "url('../menu-pictures/menu.png')"
-    menuBtn.addEventListener("click", menuPage);
 
-    let logoutBtn = nav.querySelector("#logout");
-    logoutBtn.addEventListener("click", logoutUser);
-
-}
-function logoutUser() {
-    window.localStorage.clear();
-    user = null;
-    loginPage();
+    
 }
