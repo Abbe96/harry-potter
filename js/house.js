@@ -1,6 +1,15 @@
 async function housePage() {
 
-    nav.innerHTML = "";
+    nav.innerHTML = `
+        <button id=lightningMenu></button>
+        <button id=logout>Logout</button>
+    `;
+
+    let logoutBtn = nav.querySelector("#logout");
+    logoutBtn.addEventListener("click", logout);
+
+    let menuBtn = nav.querySelector("#lightningMenu");
+    menuBtn.addEventListener("click", menuPage);
 
     main.innerHTML = `
         <header>
