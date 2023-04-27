@@ -24,6 +24,30 @@ function menuPage() {
         <script src="menu.js"></script>
     </div>
     `;
+
+document.querySelector(".charactersMenu").addEventListener("click", characterPage);
+document.querySelector(".housesMenu").addEventListener("click", housePag);
+document.querySelector(".filmsMenu").addEventListener("click", filmPage);
+document.querySelector(".infoMenu").addEventListener("click", infoPage);
+document.querySelector(".changeHousesGryffindor").addEventListener("click", changeHousesGryffindor);
+document.querySelector(".changeHousesSlytherin").addEventListener("click", changeHousesSlytherin);
+document.querySelector(".changeHousesRavenclaw").addEventListener("click", changeHousesRavenclaw);
+document.querySelector(".changeHousesHufflepuff").addEventListener("click", changeHousesHufflepuff);
+console.log("Hello");
+
+function changeHousesGryffindor () {
+    document.querySelector("#menu").style.backgroundColor = "#a61d1d";
+}
+
+function changeHousesSlytherin () {
+    document.querySelector("#menu").style.backgroundColor = "#37671c";
+}
+function changeHousesRavenclaw () {
+    document.querySelector("#menu").style.backgroundColor = "#1c4b67";
+}
+function changeHousesHufflepuff () {
+    document.querySelector("#menu").style.backgroundColor = "#d6ce24";
+}
 }
 
 menuPage();
