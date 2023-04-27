@@ -137,4 +137,11 @@ function registerPage() {
     });
 }
 
+let logoutBtn = nav.querySelector("#logout");
+logoutBtn.addEventListener("click", logout)
 
+function logout() {
+    window.localStorage.clear();
+    user = null;
+    loginPage();
+}

@@ -1,6 +1,7 @@
 function homePage() {
 
     nav.innerHTML = `
+    <div class="lightningMenu"></div>
     <button id=logout>Logout</button>
     `;
 
@@ -49,4 +50,7 @@ function homePage() {
 
     let houseBtn = main.querySelector("#houseBtn");
     houseBtn.addEventListener("click", housePage);
+
+    let menuBtn = main.querySelector(".lightningMenu");
+    menuBtn.addEventListener("click", menuPage);
 }

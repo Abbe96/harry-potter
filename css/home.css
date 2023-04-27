@@ -33,7 +33,7 @@ h3 {
 
 nav {
     display: flex;
-    justify-content: end;
+    justify-content:space-between;
     padding: 5px;
 }
 
