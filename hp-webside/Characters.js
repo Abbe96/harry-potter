@@ -122,5 +122,3 @@ function hogwartsType(type) {
         .catch((e) => console.log(e));
 }
 showAll()
-
-/* Netlify: https://potter.netlify.app/ */

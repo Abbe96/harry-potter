@@ -8,10 +8,15 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
+    background-image: url(background2.png);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 h1 {
     font-family: "Harry P";
+    font-size: 10vw;
     padding-top: 20px;
     margin: 0;
     text-align: center;
@@ -20,15 +25,11 @@ h1 {
 .grid {
     width: 100vw;
     height: 100vh;
-    background-image: url(background2.png);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
     box-sizing: border-box;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 20px;
+    
     gap: 10px;
 }
 
