@@ -4,7 +4,10 @@ function showAll() {
     fetch('https://hp-api.onrender.com/api/characters')
         .then((res) => res.json())
         .then((data) => {
-            data.forEach(el => {
+
+            for (let i = 0; i < 20; i++) {
+                const el = data[i];
+
                 var card = document.createElement('div')
                 card.classList.add('card')
                 
@@ -27,13 +30,16 @@ function showAll() {
                 var img = document.createElement('img')
                 img.setAttribute('src', el.image)
 
+                //grid.appendChild(card)
                 grid.appendChild(img)
                 card.appendChild(name)
+                //card.appendChild(name)
                 card.appendChild(house)
-            })
+                //card.appendChild(house)
+            }
         })
         .catch((e) => console.log(e));
-}
+    }
 
 function showHouse(house) {
     fetch('https://hp-api.herokuapp.com/api/characters/house/' + house)
@@ -65,8 +71,8 @@ function showHouse(house) {
                 var img = document.createElement('img')
                 img.setAttribute('src', el.image)
 
-                grid.appendChild(card)
-                card.appendChild(img)
+                //grid.appendChild(card)
+                grid.appendChild(img)
                 card.appendChild(name)
                 card.appendChild(actor)
                 card.appendChild(house)
@@ -107,8 +113,8 @@ function hogwartsType(type) {
                 var img = document.createElement('img')
                 img.setAttribute('src', el.image)
 
-                grid.appendChild(card)
-                card.appendChild(img)
+                //grid.appendChild(card)
+                grid.appendChild(img)
                 card.appendChild(name)
                 card.appendChild(actor)
                 card.appendChild(house)

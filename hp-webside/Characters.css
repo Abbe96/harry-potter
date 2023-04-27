@@ -5,19 +5,18 @@
 
 body {
     margin: 0;
-    padding: 0;
     width: 100vw;
     height: 100vh;
     background-image: url(background2.png);
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 h1 {
     font-family: "Harry P";
     font-size: 10vw;
-    padding-top: 20px;
+    padding: 20px;
     margin: 0;
     text-align: center;
 }
@@ -25,10 +24,9 @@ h1 {
 .grid {
     width: 100vw;
     height: 100vh;
-    box-sizing: border-box;
-    padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    /* gap: 10px; */
 }
 
 /*.card {
@@ -44,13 +42,15 @@ h1 {
 */
 
 img {
-    background-size: cover;
     background-position: center;
-    height: 25vw;
+    background-size: cover;
+    width: 70px;
+
+
     border-radius: 10px;
 }
 
-.card p {
+.grid p {
     display: none;
     text-align: center;
     margin: 10px;
