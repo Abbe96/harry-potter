@@ -1,16 +1,17 @@
 <?php
+echo "Hello";
 ini_set("display_erros", 1);
 
 $json = file_get_contents("characters.json");
 
-if ($json == false) {
+if ($json === false) {
     echo "Error, failed to read json-file";
     exit;
 }
 
 $characters = json_decode($json, true);
 
-if ($characters == null) {
+if ($characters === null) {
     echo "Error, failed to decode json";
     exit;
 }
