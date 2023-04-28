@@ -38,7 +38,6 @@ async function menuPage() {
     document.querySelector(".changeHousesSlytherin").addEventListener("click", changeHousesSlytherin);
     document.querySelector(".changeHousesRavenclaw").addEventListener("click", changeHousesRavenclaw);
     document.querySelector(".changeHousesHufflepuff").addEventListener("click", changeHousesHufflepuff);
-    console.log("Hello");
 
     function changeHousesGryffindor () {
         document.querySelector("#menu").style.backgroundColor = "#a61d1d";
