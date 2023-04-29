@@ -18,8 +18,8 @@ function homePage() {
         </header>
         
         <div class="grid-container">
-            <div class="item1"><button id=filmBtn>FILMS</button></div>      
-            <div class="item2"> <button id=characterBtn>CHARACTERS</button></div>
+            <div class="item1"><button id=movieBtn>MOVIES</button></div>      
+            <div class="item2"><button id=characterBtn>CHARACTERS</button></div>
             <div class="item3"><button id=houseBtn>HOUSE</button></div>
             <div class="item4"><button id=infoBtn>INFO</button></div>
         </div>
@@ -56,4 +56,7 @@ function homePage() {
 
     let houseBtn = main.querySelector("#houseBtn");
     houseBtn.addEventListener("click", housePage);  
+
+    let movieBtn = main.querySelector("#movieBtn");
+    movieBtn.addEventListener("click", moviePage);
 }

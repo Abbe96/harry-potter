@@ -31,8 +31,24 @@ async function moviePage() {
 
         data.forEach(movie => {
             let movieElement = document.createElement("div");
-            movieCover.style.backgroundImage = `${movie.cover}`;
+            let plotText = document.createElement("div");
+            movieElement.style.backgroundImage = `url(${movie.cover})`;
+            movieElement.classList.add("cover");
+            plotText.classList.add("plot");
+
+            movieElement.innerHTML = `
+                <h4>${movie.title}</h4>
+                <hp>${movie.year}</p>
+            `;
+
+            plotText.innerHTML = `
+                <p class=overlayText>${movie.plot}</p>
+            `;
+            movies.appendChild(movieElement);
+            movies.appendChild(plotText);
 
         });
+    } catch (error) {
+        console.error("Failed to fetch", error);
     }
 }
