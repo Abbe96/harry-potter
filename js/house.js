@@ -14,7 +14,6 @@ async function housePage() {
     main.innerHTML = `
         <header>
             <h1>HOGWARTS HOUSES</h1>
-        </nav>
         </header>
 
         <button id=membersBtn>Registered members</button>
@@ -32,7 +31,6 @@ async function housePage() {
         // GET HOUSE-NAME AND INFO
         let response = await fetch("api/houses.php");
         let data = await response.json();
-        console.log(data);
         houses.innerHTML = "";
 
         data.forEach(house => {
