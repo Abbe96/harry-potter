@@ -1,0 +1,102 @@
+{
+    "HarryPotter": {
+        "name": "Harry Potter",
+        "house": "Gryffindor",
+        "imageSource": "Images-characters/Harry_Potter_-_GoF_Promo.jpg"
+    },
+    "HermioneGranger": {
+        "name": "Hermione Granger",
+        "house": "Gryffindor",
+        "imageSource": "Images-characters/Hermione.webp"
+    },
+    "RonWeasley": {
+        "name": "Ron Weasley",
+        "house": "Gryffindor",
+        "imageSource": "Images-characters/Ron_Weasley_Infobox.webp"
+    },
+    "DracoMalfoy": {
+        "name": "Draco Malfoy",
+        "house": "Slytherin",
+        "imageSource": "Images-characters/Harry-Potter-The-Deathly-Hallows-Part-II.webp"
+    },
+    "AlbusDumbledore": {
+        "name": "Albus Dumbledore",
+        "house": "Gryffindor",
+        "imageSource": "Images-characters/51dccd2dcb8e60f52489446de42a9531a3d065c3r1-914-1168v2_00.jpg"
+    },
+    "RubeusHagrid": {
+        "name": "Rubeus Hagrid",
+        "house": "Gryffindor",
+        "imageSource": "Images-characters/FfDWZ7rX0AExKwl.jpg"
+    },
+    "SiriusBlack": {
+        "name": "Sirius Black",
+        "house": "Gryffindor",
+        "imageSource": "Images-characters/f95b26d6-87c7-4c86-8bdb-430550b91f73.jpg"
+    },
+    "Voldemort": {
+        "name": "Voldemort",
+        "house": "Slytherin",
+        "imageSource": "Images-characters/2.png"
+    },
+    "SeverusSnape": {
+        "name": "Severus Snape",
+        "house": "Slytherin",
+        "imageSource": "Images-characters/severus-snape-order-of-the-phoenix-portrait.jpg"
+    },
+    "RemusLupin": {
+        "name": "Remus Lupin",
+        "house": "Gryffindor",
+        "imageSource": "Images-characters/Remus_lupin.webp"
+    },
+    "MinervaMcGonagall": {
+        "name": "Minerva McGonagall",
+        "house": "Gryffindor",
+        "imageSource": "Images-characters/1534780170299.jpg"
+    },
+    "NevilleLongbottom": {
+        "name": "Neville Longbottom",
+        "house": "Gryffindor",
+        "imageSource": "Images-characters/NevilleHBP.webp"
+    },
+    "CedricDiggory": {
+        "name": "Cedric Diggory",
+        "house": "Hufflepuff",
+        "imageSource": "Images-characters/CedricDiggoryProfile.webp"
+    },
+    "GilderoyLockhart": {
+        "name": "Gilderoy Lockhart",
+        "house": "Ravenclaw",
+        "imageSource": "Images-characters/COS-promo1.webp"
+    },
+    "LuciusMalfoy": {
+        "name": "Lucius Malfoy",
+        "house": "Slytherin",
+        "imageSource": "Images-characters/Lucius_Malfoy.webp"
+    },
+    "AlastorMoody": {
+        "name": "Alastor Moody",
+        "house": "",
+        "imageSource": "Images-characters/mad-eye-moody-order-of-the-phoenix-portrait-2.jpg"
+    },
+    "ArgusFilch": {
+        "name": "Argus Filch",
+        "house": "",
+        "imageSource": "Images-characters/Mainfulcd.webp"
+    },
+    "Dobby": {
+        "name": "Dobby",
+        "house": "",
+        "imageSource": "Images-characters/47ae5f2eb491c2095a5c29300eb9eb23.jpg"
+    },
+    "BellatrixLestrange": {
+        "name": "Bellatrix Lestrange",
+        "house": "Slytherin",
+        "imageSource": "Images-characters/c308b1_305cfba9319249d0b3a8d022b06676e8.jpg"
+    },
+    "Hedwig": {
+        "name": "Hedwig",
+        "house": "",
+        "imageSource": "Images-characters/1_hedwig.jpg"
+    }
+}
