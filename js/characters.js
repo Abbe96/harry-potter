@@ -1,6 +1,12 @@
 document.querySelector("body").style.backgroundImage = "url(Images-characters/background.png)";
 
 async function loadCharacters() {
+
+    main.innerHTML = `
+    <h1 class="headerCharacters">Characters</h1>  
+    <div id="characters"></div>
+    `;
+
     try {
         const response = await fetch("characters.json");
         const data = await response.json();
@@ -31,4 +37,3 @@ async function loadCharacters() {
     }
 }
   
-loadCharacters();
