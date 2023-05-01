@@ -1,125 +1,34 @@
-const grid = document.querySelector('.grid')
+document.querySelector("body").style.backgroundImage = "url(Images-characters/background.png)";
 
-function showAll() { 
-    fetch('https://hp-api.onrender.com/api/characters')
-        .then((res) => res.json())
-        .then((data) => {
-
-            for (let i = 0; i < 20; i++) {
-                const el = data[i];
-
-                var card = document.createElement('div')
-                card.classList.add('card')
-                
-                var name = document.createElement('p')
-                name.textContent = el.name
-                
-                var house = document.createElement('p')
-                house.textContent = el.house
-
-                if (el.house == 'Gryffindor') {
-                    house.style.color = 'red'
-                } else if(el.house == 'Slytherin') {
-                    house.style.color = 'green'
-                } else if(el.house == 'Hufflepuff') {
-                    house.style.color = 'orange'
-                } else if(el.house == 'Ravenclaw') {
-                    house.style.color = 'lightgreen'
-                }
-                
-                var img = document.createElement('img')
-                img.setAttribute('src', el.image)
-
-                //grid.appendChild(card)
-                grid.appendChild(img)
-                card.appendChild(name)
-                //card.appendChild(name)
-                card.appendChild(house)
-                //card.appendChild(house)
-            }
-        })
-        .catch((e) => console.log(e));
+async function loadCharacters() {
+    try {
+        const response = await fetch("characters.json");
+        const data = await response.json();
+  
+        const charactersDiv = document.getElementById("characters");
+  
+        Object.keys(data).forEach(character => {
+            //create newcharacterDiv element
+            const characterDiv = document.createElement("div");
+            characterDiv.classList.add("name", character);
+            characterDiv.style.backgroundImage = `url(${data[character].imageSource})`;
+    
+            //add eventlisteners to characterDiv element
+            characterDiv.addEventListener('mouseover', function() {
+                characterDiv.innerHTML = `${data[character].name}<br>${data[character].house}`;
+                //characterDiv.style.filter = "blur(3px)";
+            });
+    
+            characterDiv.addEventListener('mouseleave', function() {
+                characterDiv.innerHTML = "";
+                //characterDiv.style.filter = "none";
+            });
+            //append characterDiv element to charactersDiv container
+            charactersDiv.appendChild(characterDiv);
+        });
+    } catch (error) {
+      console.error(error);
     }
-
-function showHouse(house) {
-    fetch('https://hp-api.herokuapp.com/api/characters/house/' + house)
-        .then((res) => res.json())
-        .then((data) => {
-            data.forEach(el => {
-                var card = document.createElement('div')
-                card.classList.add('card')
-                
-                var name = document.createElement('p')
-                name.textContent = el.name
-
-                var actor = document.createElement('p')
-                actor.textContent = 'Actor: ' + el.actor
-                
-                var house = document.createElement('p')
-                house.textContent = el.house
-
-                if (el.house == 'Gryffindor') {
-                    house.style.color = 'red'
-                } else if(el.house == 'Slytherin') {
-                    house.style.color = 'green'
-                } else if(el.house == 'Hufflepuff') {
-                    house.style.color = 'orange'
-                } else if(el.house == 'Ravenclaw') {
-                    house.style.color = 'lightgreen'
-                }
-                
-                var img = document.createElement('img')
-                img.setAttribute('src', el.image)
-
-                //grid.appendChild(card)
-                grid.appendChild(img)
-                card.appendChild(name)
-                card.appendChild(actor)
-                card.appendChild(house)
-            })
-        })
-        .catch((e) => console.log(e));
 }
-
-function hogwartsType(type) {
-    fetch('https://hp-api.herokuapp.com/api/characters/' + type)
-        .then((res) => res.json())
-        .then((data) => {
-            data.forEach(el => {
-                var card = document.createElement('div')
-                card.classList.add('card')
-                
-                var name = document.createElement('p')
-                name.textContent = el.name
-
-                var actor = document.createElement('p')
-                actor.textContent = 'Actor: ' + el.actor
-                
-                var house = document.createElement('p')
-                house.textContent = el.house
-                if(el.house == 'Gryffindor') {
-                    house.style.color = 'red'
-                }
-                else if(el.house == 'Slytherin') {
-                    house.style.color = 'green'
-                }
-                else if(el.house == 'Hufflepuff') {
-                    house.style.color = 'orange'
-                }
-                else if(el.house == 'Ravenclaw') {
-                    house.style.color = 'lightgreen'
-                }
-                
-                var img = document.createElement('img')
-                img.setAttribute('src', el.image)
-
-                //grid.appendChild(card)
-                grid.appendChild(img)
-                card.appendChild(name)
-                card.appendChild(actor)
-                card.appendChild(house)
-            })
-        })
-        .catch((e) => console.log(e));
-}
-showAll()
+  
+loadCharacters();
