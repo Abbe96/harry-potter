@@ -1,36 +1,37 @@
 <?php
-ini_set("display_errors", 1);
 
-$json = file_get_contents("movies.json");
-if ($json === false) {
-    // Display an error message if file_get_contents fails
-    echo "Failed to read JSON file";
-    exit;
-}
+    ini_set("display_errors", 1);
 
-$movies = json_decode($json, true);
-if ($movies === null) {
-    // Display an error message if json_decode fails
-    echo "Failed to decode JSON";
-    exit;
-}
-
-foreach ($movies as $movie) {
-    if (!isset($movie["title"]) or !isset($movie["year"]) or !isset($movie["cover"]) or !isset($movie["plot"])) {
-        // Display an error message if required keys are missing
-        echo "Missing keys in JSON";
+    $json = file_get_contents("movies.json");
+    if ($json === false) {
+        // Display an error message if file_get_contents fails
+        echo "Failed to read JSON file";
         exit;
     }
 
-    $response[] = [
-        "title" => $movie["title"],
-        "year" => $movie["year"],
-        "cover" => $movie["cover"],
-        "plot" => $movie["plot"],
-    ];
-}
+    $movies = json_decode($json, true);
+    if ($movies === null) {
+        // Display an error message if json_decode fails
+        echo "Failed to decode JSON";
+        exit;
+    }
 
-header("Content-Type: application/json");
-echo json_encode($response);
+    foreach ($movies as $movie) {
+        if (!isset($movie["title"]) or !isset($movie["year"]) or !isset($movie["cover"]) or !isset($movie["plot"])) {
+            // Display an error message if required keys are missing
+            echo "Missing keys in JSON";
+            exit;
+        }
+
+        $response[] = [
+            "title" => $movie["title"],
+            "year" => $movie["year"],
+            "cover" => $movie["cover"],
+            "plot" => $movie["plot"],
+        ];
+    }
+
+    header("Content-Type: application/json");
+    echo json_encode($response);
 
 ?>

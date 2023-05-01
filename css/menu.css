@@ -7,18 +7,19 @@
     padding: 20px;
     height: 100vh;
     width: 100vw;
-    background-color: rgb(178, 183, 175); 
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 #lightningMenu {
-    height: 40px;
-    width: 40px;
+    height: 76px;
+    width: 45px;
     background-size: cover;
     background-position: center;
     background-image: url(../menu-pictures/menu.png);
+    border: none;
+    background-color: transparent;
 }
 
 .listMenu  {
@@ -41,28 +42,44 @@
     gap: 5px;
 }
 
-.changeAllHouses {
-   width: 80px;
-   height: 80px;
-   background-size: cover;
-   background-position: center;
-   border-radius: 20px;
-}
-
-.changeHousesGryffindor {
+#gryffindor {
     background-image: url(../menu-pictures/gryffindor.png);
+    width: 80px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
 }
 
-.changeHousesSlytherin {
+#slytherin {
     background-image: url(../menu-pictures/slytherin.png);
+    width: 80px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
 }
-.changeHousesRavenclaw {
+#ravenclaw {
     background-image: url(../menu-pictures/ravenclaw.png);
+    width: 80px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
 }
-.changeHousesHufflepuff {
+#hufflepuff {
     background-image: url(../menu-pictures/hufflepuff.png);
-}
-
-.changeHousesGryffindor:active {
-    background-image: none;
+    width: 80px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
 }
