@@ -1,6 +1,8 @@
-document.querySelector("body").style.backgroundImage = "url(Images-characters/background.png)";
+
 
 async function loadCharacters() {
+
+    document.querySelector("body").style.backgroundImage = "url(Images-characters/background.png)";
 
     main.innerHTML = `
     <h1 class="headerCharacters">Characters</h1>  

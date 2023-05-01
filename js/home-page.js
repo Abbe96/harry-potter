@@ -31,27 +31,6 @@ function homePage() {
                 <a href="#" class="button-2">Get Started</a>
             </div>
         </div>
-        
-        <footer>
-            <div class="wrapper">
-                <div id="footer-info">
-                    <p>Webbaserad design och utveckling 2023</p>
-                    <p><a href="#">Terms of Service</a> I <a href="#">Privacy</a></p>
-                </div>
-                <div id="footer-links">
-                    <ul>
-                        <li><h5>Company</h5></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">CHARACTERS</a></li>
-                        <li><a href="#">FILM</a></li>
-                        <li><a href="#">INFO</a></li>
-                    </ul>
-                    
-                </div>
-                
-                <div class="clear"></div>
-            </div>
-        </footer>
     `;
 
     let houseBtn = main.querySelector("#houseBtn");
@@ -59,4 +38,7 @@ function homePage() {
 
     let movieBtn = main.querySelector("#movieBtn");
     movieBtn.addEventListener("click", moviePage);
+
+    let characterBtn = main.querySelector("#characterBtn");
+    characterBtn.addEventListener("click", loadCharacters);
 }

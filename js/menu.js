@@ -37,6 +37,9 @@ async function menuPage() {
     let movieBtn = main.querySelector("#movieBtn");
     movieBtn.addEventListener("click", moviePage);
 
+    let characterBtn = main.querySelector("#characterBtn");
+    characterBtn.addEventListener("click", loadCharacters);
+
      // GET HOUSES DATA
      try {
         let response = await fetch("api/houses.php");
