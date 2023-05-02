@@ -18,6 +18,23 @@ body {
 }
 
 .headerCharacters {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuBar {
+    width: 8vw;
+    height: 8vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.titleCharacters {
     margin: 10px;
     font-family: "Harry p";
     text-align: center;
@@ -45,8 +62,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3vw;
+    font-size: 4vw;
     text-align: center;
     color: rgb(255, 241, 133);
-    white-space: pre-wrap;
 }
+
+a {
+    color: rgb(255, 241, 133);
+    text-decoration: none;  
+    background-color: black;  
+}
+
