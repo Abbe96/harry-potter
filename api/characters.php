@@ -1,5 +1,5 @@
 <?php
-    echo "Hello";
+
     ini_set("display_erros", 1);
 
     $json = file_get_contents("characters.json");
