@@ -2,8 +2,6 @@
 
 async function loadCharacters() {
 
-    // main.querySelector(".characterContainer").style.backgroundImage = "url(Images-characters/background.png)";
-
     main.innerHTML = `
     <div class=characterContainer>
         <h1 class="headerCharacters">Characters</h1>  
