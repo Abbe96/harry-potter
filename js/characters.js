@@ -4,9 +4,16 @@ async function loadCharacters() {
 
     main.innerHTML = `
     <div class=characterContainer>
-        <h1 class="headerCharacters">Characters</h1>  
+        <div class="headerCharacters">
+            <nav class="menuBar"></nav>
+            <h1 class="titleCharacters">Characters</h1>  
+            <div class="hidden">hej</div>
+        </div>
+
         <div id="characters"></div>
     </div>
+
+    
     `;
 
     const charactersDiv = document.getElementById("characters");
