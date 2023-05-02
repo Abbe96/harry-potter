@@ -2,15 +2,17 @@
 
 async function loadCharacters() {
 
-    document.querySelector("body").style.backgroundImage = "url(Images-characters/background.png)";
+    // main.querySelector(".characterContainer").style.backgroundImage = "url(Images-characters/background.png)";
 
     main.innerHTML = `
-    <h1 class="headerCharacters">Characters</h1>  
-    <div id="characters"></div>
+    <div class=characterContainer>
+        <h1 class="headerCharacters">Characters</h1>  
+        <div id="characters"></div>
+    </div>
     `;
 
     try {
-        const response = await fetch("characters.json");
+        const response = await fetch("api/characters.json");
         const data = await response.json();
   
         const charactersDiv = document.getElementById("characters");

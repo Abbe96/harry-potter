@@ -3,7 +3,7 @@
     src: url(Font/HARRYP__.TTF);
 }
 
-body {
+.characterContainer {
     margin: 0;
     padding-top: 10px;
     width: 100%;
@@ -15,6 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url(../Images-characters/background.png);
 }
 
 .headerCharacters {

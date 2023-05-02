@@ -4,6 +4,10 @@ body {
     height: 100vh;
 }
 
+main {
+    
+}
+
 nav {
     display: flex;
     justify-content:space-between;
