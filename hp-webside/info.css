@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Harry P";
-  src: url(Font/HARRYP__.TTF);
+  src: url(./HARRYP__.TTF);
 }
 
 *{
@@ -26,6 +26,8 @@ nav .menu{
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  font-family: "Harry P";
+
 }
 .menu .logo a{
   text-decoration: none;
@@ -74,7 +76,7 @@ nav .menu{
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
 }
-.center{
+.center{ 
   position: absolute;
   top: 52%;
   left: 50%;
@@ -94,9 +96,12 @@ nav .menu{
   color: #fff;
   font-size: 52px;
   font-weight: 600;
+  font-family: "Harry P";
+
 }
 .center .btns{
   margin-top: 20px;
+  
 }
 .center .btns button{
   height: 55px;
@@ -111,6 +116,8 @@ nav .menu{
   cursor: pointer;
   outline: none;
   transition: all 0.3s ease;
+  font-family: "Harry P";
+
 }
 .center .btns button:first-child{
   color: #fff;
