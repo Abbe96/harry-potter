@@ -13,7 +13,7 @@ async function moviePage() {
 
     main.innerHTML = `
     <header>
-        <h1>HARRY POTTER MOVIES</h1>
+        <h1>MOVIES</h1>
     </header>
 
     <section id=movies>
@@ -31,22 +31,29 @@ async function moviePage() {
 
         data.forEach(movie => {
             let movieElement = document.createElement("div");
-            let plotText = document.createElement("div");
+            //let plotText = document.createElement("div");
             movieElement.style.backgroundImage = `url(${movie.cover})`;
             movieElement.classList.add("cover");
-            plotText.classList.add("plot");
+            //plotText.classList.add("plot");
 
             movieElement.innerHTML = `
                 <h4>${movie.title}</h4>
                 <hp>${movie.year}</p>
             `;
 
-            plotText.innerHTML = `
-                <p class=overlayText>${movie.plot}</p>
-            `;
-            movies.appendChild(movieElement);
-            movies.appendChild(plotText);
+            //plotText.innerHTML = `
+            //    <p class=overlayText>${movie.plot}</p>
+            //`;
 
+            movies.appendChild(movieElement);
+            //movies.appendChild(plotText);
+
+            movieElement.addEventListener('mouseover', function() {
+                movieElement.innerHTML = `${data[movie].title}<br>${data[movie].year}`;
+            });
+            movieElement.addEventListener('mouseleave', function() {
+                movieElement.innerHTML = "";
+            });
         });
     } catch (error) {
         console.error("Failed to fetch", error);
