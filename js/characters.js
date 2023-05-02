@@ -9,9 +9,9 @@ async function loadCharacters() {
     </div>
     `;
 
-    const charactersDiv = main.getElementById("characters");
+    const charactersDiv = document.getElementById("characters");
     //create info tag and add it to the characterDiv
-    const info = main.createElement("a")
+    const info = document.createElement("a")
 
     try {
         const response = await fetch("api/characters.json");
