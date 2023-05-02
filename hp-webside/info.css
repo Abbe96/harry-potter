@@ -1,8 +1,12 @@
+@font-face {
+  font-family: "Harry P";
+  src: url(Font/HARRYP__.TTF);
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
 }
 ::selection{
   color: #000;
