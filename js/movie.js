@@ -46,9 +46,21 @@ async function moviePage() {
             `;
             movies.appendChild(movieElement);
             movies.appendChild(plotText);
-
+            movieElement.style.zIndex = "1"; // AC
+            movieElement.addEventListener("click", like_button); // AC
         });
     } catch (error) {
         console.error("Failed to fetch", error);
+    }
+}
+
+async function like_button(event) { // AC
+
+    try {
+        const response = await fetch("../api/likes_db.php", { method: "POST", header: { "content-type": "application/json" }, body: JSON.stringify({ movie: event.target.querySelector("h4").textContent, like_count: 1 }) });
+        const resource = await response.json();
+        alert(resource.message)
+    } catch (err) {
+        console.log(err)
     }
 }
