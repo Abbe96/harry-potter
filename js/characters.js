@@ -12,19 +12,15 @@ async function loadCharacters() {
 
         <div id="characters"></div>
     </div>
-
-    
     `;
-
-    const charactersDiv = document.getElementById("characters");
-    //create info tag and add it to the characterDiv
-    const info = document.createElement("a")
 
     try {
         const response = await fetch("api/characters.json");
         const data = await response.json();
   
         const charactersDiv = document.getElementById("characters");
+        //create info tag and add it to the characterDiv
+        const info = document.createElement("a")
   
         Object.keys(data).forEach(character => {
             //create newcharacterDiv element
@@ -34,8 +30,10 @@ async function loadCharacters() {
     
             //add eventlisteners to characterDiv element
             characterDiv.addEventListener('mouseover', function() {
-                characterDiv.innerHTML = `${data[character].name}<br>${data[character].house}`;
                 //characterDiv.style.filter = "blur(3px)";
+                info.href = data[character].info;               
+                info.innerHTML = `${data[character].name}<br>${data[character].house}`;             
+                characterDiv.appendChild(info); 
             });
     
             characterDiv.addEventListener('mouseleave', function() {
