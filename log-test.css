@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Harry P";
+    src: url(./harry_p/HARRYP__.TTF);
+}
 #bg {
   background-image: url('./Bild/background\ hp.jpg');
   position: fixed;
@@ -21,7 +25,11 @@ body {
   margin: 0;
   padding: 0;
 }
-
+h2{
+    font-family: "Harry P";
+    font-size: 15vh;
+    color: aliceblue;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -30,17 +38,13 @@ form {
   gap: 10px;
   justify-content: center;
   align-items: center;
+  font-family: "Harry P";
+
 }
-form .form-field::before {
-  font-size: 20px;
-  position: absolute;
-  left: 15px;
-  top: 17px;
-  color: #888888;
-  content: " ";
-  display: block;
-  background-size: cover;
-  background-repeat: no-repeat;
+button{
+    font-family: "Harry P";
+    font-size: 20px;
+    padding: 5px;
 }
 form .form-field:nth-child(1)::before {
   background-image: url(img/user-icon.png);
@@ -53,19 +57,7 @@ form .form-field:nth-child(2)::before {
   width: 16px;
   height: 16px;
 }
-form .form-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 1rem;
-  position: relative;
-}
+
 form input {
   font-family: inherit;
   width: 100%;
@@ -90,9 +82,11 @@ form input {
   text-align: center;
   background-color: #47AB11;
   color: #fff;
+  font-family: "Harry P";
+
   border-radius: 4px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  font-size: 17px;
+  font-size: 20px;
 }
 p{
     display: flex;
@@ -100,4 +94,6 @@ p{
     justify-content: center;
   align-items: center;
   gap: 1vh;
+  font-family: "Harry P";
+
 }
