@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Harry P";
+    src: url(./HARRYP__.TTF);
+  }
 body {
     background-color: #fff;
     color: #777;
@@ -6,11 +10,20 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    
+    font-family: "Harry P";
+
 }
 p {
     line-height: 20px;
     margin-bottom: 20px;
+}
+.up{
+    color: white;
+    font-size: 20px;
+}
+.tittel{
+    font-family: "Harry P";
+
 }
 h1 {
     font-family: 'Crete Round', serif;
@@ -40,11 +53,15 @@ h3 {
 }
 .info-text{
     color: #f5f5f5;
+    font-size: 20px;
 }
 
 a {
     text-decoration: none;
-    color: #444;
+    color: #f6f6f6;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 10px;
 }
 a:hover {
     color: #02b8dd;
@@ -120,7 +137,8 @@ header h1 .color {
     color: #02b8dd;
 }
 header nav {
-    float: right;
+    display: flex;
+    justify-content: end;
 }
 header nav ul li {
     float: left;
@@ -192,7 +210,9 @@ footer {
     width: 150px;
     float: left;
     margin-left: 20px;
+    color: white;
 }
 #footer-links ul li {
     margin: 10px 0;
+    
 }
