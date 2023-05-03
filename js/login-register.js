@@ -16,6 +16,7 @@ if (!window.localStorage.getItem("home-user")) {
 function loginPage() {
     nav.innerHTML = "";
     main.innerHTML = `
+    <div id="bg"></div>
         <h2>Login</h2>
         <p id=message><p>
 
@@ -23,8 +24,8 @@ function loginPage() {
             <input type=text id=username placeholder=Username>
             <input type=password id=password placeholder=Password>
             <button type=submit>Login</button>
+            <button id=register>New to this? Become a wizard member!</button>
         </form>
-        <button id=register>New to this? Become a wizard member!</button>
     `;
 
     let registerBtn = main.querySelector("#register");

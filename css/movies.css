@@ -1,25 +1,43 @@
+body {
+    font-family: "Harry p";
+}
+
+h1 {
+    font-family: "Harry p";
+}
+
 #movies {
+    height: 100%;
+    width: 100%;
+    background-image: url(Bild/background-movies.png);
+    box-sizing: border-box;
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 1rem;
-    position: relative;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .cover {
+    display: none;
+    color: white;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
+    width: 20vw;
+    height: 25vw;
+    margin: 10px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    text-align: center;
 }
 
 .plot {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: none;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(238, 202, 82, 0.8);
     color: #fff;
     padding: 20px;
     box-sizing: border-box;
@@ -27,7 +45,13 @@
     transition: opacity 0.3s ease-in-out;
 }
 
-.cover:hover + .plot {
-    opacity: 1;
+.hp {
+    display: none;
 }
 
+footer {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+}

@@ -2,6 +2,11 @@
     "miso": {
         "username": "miso",
         "password": "1234",
-        "house" : "none"
+        "house": "none"
+    },
+    "abbe": {
+        "username": "abbe",
+        "password": "abbe",
+        "house": "none"
     }
 }
