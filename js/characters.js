@@ -30,6 +30,7 @@ async function loadCharacters() {
     
             //add eventlisteners to characterDiv element
             characterDiv.addEventListener('mouseover', function() {
+<<<<<<< Updated upstream
                 //characterDiv.style.filter = "blur(3px)";
                 info.href = data[character].info;               
                 info.innerHTML = `${data[character].name}<br>${data[character].house}`;             
@@ -69,6 +70,8 @@ async function loadCharacters() {
     
             //add eventlisteners to characterDiv element
             characterDiv.addEventListener('mouseover', function() {
+=======
+>>>>>>> Stashed changes
                 //characterDiv.style.filter = "blur(3px)";
                 info.href = data[character].info;               
                 info.innerHTML = `${data[character].name}<br>${data[character].house}`;             
@@ -86,7 +89,3 @@ async function loadCharacters() {
       console.error(error);
     }
 }
-  
-loadCharacters();
-*/
-  
