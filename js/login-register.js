@@ -19,7 +19,7 @@ function loginPage() {
     main.innerHTML = `
     
     <div class=logRegContainer>
-        <div class="bg"></div>
+        <div id="bg"></div>
         <h2 class=h2Size>Login</h2>
         <p id=message><p>
 
