@@ -2,6 +2,7 @@ function homePage() {
 
     nav.innerHTML = `
         <button id=lightningMenu></button>
+        <h1>HARRY POTTER</h1>
         <button id=logout>Logout</button>
     `;
 
@@ -9,19 +10,15 @@ function homePage() {
     logoutBtn.addEventListener("click", logout);
 
     let menuBtn = nav.querySelector("#lightningMenu");
-    menuBtn.addEventListener("click", menuPage);
-    
+    menuBtn.addEventListener("click", toggleMenuPage);
 
     main.innerHTML = `
-        <header>
-            <h1>HARRY POTTER</h1>
-        </header>
-        
+
         <div class="grid-container">
-            <div class="item1"><button id=movieBtn>MOVIES</button></div>      
-            <div class="item2"><button id=characterBtn>CHARACTERS</button></div>
-            <div class="item3"><button id=houseBtn>HOUSE</button></div>
-            <div class="item4"><button id=infoBtn>INFO</button></div>
+            <div class="item1"><button class=btnStyle id=movieBtn>MOVIES</button></div>      
+            <div class="item2"><button class=btnStyle id=characterBtn>CHARACTERS</button></div>
+            <div class="item3"><button class=btnStyle id=houseBtn>HOUSE</button></div>
+            <div class="item4"><button class=btnStyle id=infoBtn>INFO</button></div>
         </div>
         
         <div id="cta">
@@ -40,5 +37,5 @@ function homePage() {
     movieBtn.addEventListener("click", moviePage);
 
     let characterBtn = main.querySelector("#characterBtn");
-    characterBtn.addEventListener("click", loadCharacters);
+    characterBtn.addEventListener("click", characterPage);
 }

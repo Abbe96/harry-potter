@@ -22,16 +22,6 @@
     background-color: transparent;
 }
 
-.listMenu  {
-    font-size: 8vw;
-    text-decoration: none;
-    color: black;
-}
-
-.listMenu:hover {
-    color: rgba(0, 0, 0, 0.273);
-}
-
 .changeHousesHeader {
     margin-bottom: 10px;
     font-size: 3vw;
