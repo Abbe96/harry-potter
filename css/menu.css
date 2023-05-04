@@ -2,6 +2,7 @@
     font-family: "Harry P";
     src: url(../harry_p/HARRYP__.TTF);
 }
+
 #menu {
     box-sizing: border-box;
     padding: 20px;
@@ -12,6 +13,14 @@
     gap: 20px;
 }
 
+.allBtn {
+    font-family: "Harry P";
+    font-size: 5vw;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 #lightningMenu {
     height: 76px;
     width: 45px;
@@ -20,12 +29,6 @@
     background-image: url(../menu-pictures/menu.png);
     border: none;
     background-color: transparent;
-}
-
-.listMenu  {
-    font-size: 8vw;
-    text-decoration: none;
-    color: black;
 }
 
 .listMenu:hover {

@@ -8,5 +8,10 @@
         "username": "abbe",
         "password": "abbe",
         "house": "none"
+    },
+    "elvis": {
+        "username": "elvis",
+        "password": "apa",
+        "house": "none"
     }
 }

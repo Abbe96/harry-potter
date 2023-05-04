@@ -14,10 +14,10 @@ async function menuPage() {
 
     main.innerHTML = `
         <div id="menu">
-            <div class="listMenu"><button id=houseBtn>HOUSE</button></div>
-            <div class="listMenu"><button id=characterBtn>CHARACTERS</button></div>
-            <div class="listMenu"><button id=movieBtn>MOVIES</button></div>  
-            <div class="listMenu"><button id=infoBtn>INFO</button></div>
+            <div class="listMenu"><button id=houseBtn class=allBtn>House</button></div>
+            <div class="listMenu"><button id=characterBtn class=allBtn>Characters</button></div>
+            <div class="listMenu"><button id=movieBtn class=allBtn>Movies</button></div>  
+            <div class="listMenu"><button id=infoBtn class=allBtn>Info</button></div>
 
             <div class="changeHouses">
                 <p class="changeHousesHeader">Change Houses</p>
@@ -52,7 +52,8 @@ async function menuPage() {
         let hufflepuffBtn = main.querySelector("#hufflepuff");
 
         gryffindorBtn.addEventListener("click", () => {
-            document.querySelector("#menu").style.backgroundColor = data.find(house => house.name === "Gryffindor")["color"];
+            //document.querySelector("#menu").style.backgroundColor = data.find(house => house.name === "Gryffindor")["color"];
+            document.querySelector('#menu').style.backgroundImage = 'url(' + data.Gryffindor.background + ')';
         });
 
         slytherinBtn.addEventListener("click", () => {

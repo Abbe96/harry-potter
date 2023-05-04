@@ -2,7 +2,7 @@
     "Gryffindor": {
         "name": "Gryffindor",
         "description": "Gryffindor valued bravery, daring, nerve, and chivalry. Its emblematic animal was the lion, it's representative gemstone was rubies, and its colours were scarlet and gold. Minerva McGonagall was the most recent Head of Gryffindor. Sir Nicholas de Mimsy-Porpington, also known as 'Nearly Headless Nick', was the House Ghost. The founder of the House was Godric Gryffindor. Gryffindor corresponded to the element of fire. The common room was located in one of the highest towers at Hogwarts, the entrance was situated on the seventh floor in the east wing of the castle and was guarded by a portrait of The Fat Lady. She permitted entrance if given the correct password, which was changed numerous times throughout the school year. Famous Gryffindors included Albus Dumbledore, Harry Potter, and Minerva McGonagall. The significant object of Gryffindor was the Sword of Gryffindor. Their motto was 'Forti Animo Estote'.",
-        "color": "#740001"
+        "background": "menu-pictures/gryffindor-background.jpg"
     },
     "Hufflepuff": {
         "name": "Hufflepuff",
@@ -17,7 +17,7 @@
     "Slytherin": {
         "name": "Slytherin",
         "description": "Slytherin valued ambition, leadership, self-preservation, cunning and resourcefulness and was founded by Salazar Slytherin. Its emblematic animal was the serpent, it's representative gemstone was emeralds, and its colours were emerald green and silver. Professor Horace Slughorn was the Head of Slytherin during the 1997 to 1998 school year, replacing Severus Snape, who as well replaced Slughorn as Potions Professor when he retired for the first time several years prior. Slytherin had produced the most Death Eaters and Dark wizards, including Tom Riddle, Bellatrix Lestrange and Lucius Malfoy, for example. But that does not mean that other Houses hadn't produced any; Peter Pettigrew was a Gryffindor, and Quirinus Quirrell was a Ravenclaw.The Bloody Baron was the House ghost. The founder of the House was Salazar Slytherin. Slytherin corresponded roughly to the element of water. The Slytherin dormitories and common room were reached through a bare stone wall in the Dungeons. The Slytherin common room lay beneath the Black Lake. It was a long, low underground room with rough stone walls and silver lamps hanging from the ceiling. Famous Slytherins included Merlin, Tom Riddle, Draco Malfoy, and Dolores Umbridge. The significant object of Slytherin was Salazar Slytherin's locket, which was turned into a Horcrux by Tom Riddle.",
-        "color": "#1A472A "
+        "color": "#1A472A"
     }
 
 }
