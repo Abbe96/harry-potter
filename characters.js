@@ -1,5 +1,4 @@
 document.querySelector("body").style.backgroundImage = "url(Images-characters/background.png)";
-document.querySelector(".menuBar").style.backgroundImage = "url(Images-characters/lightning.png)";
 
 async function loadCharacters() {
     try {
