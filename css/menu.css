@@ -25,7 +25,14 @@
     background: none;
     border: none;
     cursor: pointer;
+    text-shadow: 2px 5px 5px rgb(0, 0, 0);
 }
+
+.allBtn:hover {
+    color: rgba(240, 248, 255, 0.339);
+}
+
+
 
 #lightningMenu {
     height: 76px;
@@ -41,14 +48,11 @@
     color: rgba(0, 0, 0, 0.273);
 }
 
-.changeHouses {
-    display: flex;
-    flex-direction: column;
-}
-
 .changeHousesHeader {
     margin-bottom: 10px;
     font-size: 3vw;
+    display: flex;
+    text-shadow: 2px 5px 5px rgb(0, 0, 0);
 }
 
 .allHouses {

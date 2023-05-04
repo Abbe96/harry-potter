@@ -60,18 +60,38 @@ async function menuPage() {
     
         gryffindorBtn.addEventListener("click", () => {
             setHouseBackground("Gryffindor");
+            document.querySelector("#houseBtn").style.color = "#cf9906";
+            document.querySelector("#characterBtn").style.color = "#cf9906";
+            document.querySelector("#movieBtn").style.color = "#cf9906";
+            document.querySelector("#infoBtn").style.color = "#cf9906";
+            document.querySelector(".changeHousesHeader").style.color = "#cf9906";
         });
     
         slytherinBtn.addEventListener("click", () => {
             setHouseBackground("Slytherin");
+            document.querySelector("#houseBtn").style.color = "#1d6a1a";
+            document.querySelector("#characterBtn").style.color = "#1d6a1a";
+            document.querySelector("#movieBtn").style.color = "#1d6a1a";
+            document.querySelector("#infoBtn").style.color = "#1d6a1a";
+            document.querySelector(".changeHousesHeader").style.color = "#1d6a1a";
         });
     
         ravenclawBtn.addEventListener("click", () => {
             setHouseBackground("Ravenclaw");
+            document.querySelector("#houseBtn").style.color = "#01779e";
+            document.querySelector("#characterBtn").style.color = "#01779e";
+            document.querySelector("#movieBtn").style.color = "#01779e";
+            document.querySelector("#infoBtn").style.color = "#01779e";
+            document.querySelector(".changeHousesHeader").style.color = "#01779e";
         });
     
         hufflepuffBtn.addEventListener("click", () => {
             setHouseBackground("Hufflepuff");
+            document.querySelector("#houseBtn").style.color = "#c99506";
+            document.querySelector("#characterBtn").style.color = "#c99506";
+            document.querySelector("#movieBtn").style.color = "#c99506";
+            document.querySelector("#infoBtn").style.color = "#c99506";
+            document.querySelector(".changeHousesHeader").style.color = "#c99506";
         });
 
     } catch (error) {

@@ -13,6 +13,7 @@ main {
 }
 
 nav {
+    height: 100px;
     display: flex;
     justify-content:space-between;
     padding: 5px;
@@ -20,6 +21,7 @@ nav {
 }
 
 footer {
+    height: 30px;
     margin: 10px;
     text-align: center;
 }

@@ -1,5 +1,5 @@
 async function housePage() {
-
+    
     nav.innerHTML = `
         <button id=lightningMenu></button>
         <button id=logout>Logout</button>
