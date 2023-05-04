@@ -41,22 +41,53 @@ async function characterPage() {
             likeBtn.classList.add("likeStyle", character);
             likeBtn.innerHTML = `<span>&#9825;</span>`;
 
-            likeBtn.addEventListener("click", function() {
+            likeBtn.addEventListener("click", async function() {
                 let isLiked = likeBtn.classList.contains("liked");
                 if (isLiked) {
+
                     likeBtn.classList.remove("liked");
                     likeBtn.innerHTML = `<span>&#9825;</span>`;
+
+                    try {
+                        let response = await fetch("api/likes.php", {
+                            method: "POST",
+                            headers: {"Content-Type": "application/json"},
+                            body: JSON.stringify({ character: character, increment:false })
+                        });
+
+                        let data = await response.json();
+                        console.log(data);
+                    } catch (error) {
+                        console.error(error);
+                    }
+
                 } else {
+
                     likeBtn.classList.add("liked");
                     likeBtn.innerHTML = `<span>&#9825;</span>`;
+
+                    try {
+                        let response = await fetch("api/likes.php", {
+                            method: "POST",
+                            body: JSON.stringify({ character: character, increment: true })
+                        });
+
+                        let data = await response.json();
+                        console.log(data);
+                    } catch (error) {
+                        console.error(error);
+                    }
+
                 }
             });
 
             tempDiv.addEventListener("mouseover", function() {
+
                 //tempDiv.style.filter = "blur(3px)";
                 info.href = data[character].info;               
                 info.innerHTML = `${data[character].name}<br>${data[character].house}`;             
                 tempDiv.appendChild(info); 
+
             });
     
             tempDiv.addEventListener("mouseleave", function() {
@@ -69,6 +100,7 @@ async function characterPage() {
             
             charactersDiv.appendChild(characterWrapper);
         });
+
     } catch (error) {
       console.error(error);
     }

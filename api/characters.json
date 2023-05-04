@@ -2,121 +2,141 @@
     "HarryPotter": {
         "name": "Harry Potter",
         "house": "Gryffindor",
-        "imageSource": "Images-characters/Harry_Potter_-_GoF_Promo.jpg",
-        "info": "https://en.wikipedia.org/wiki/Harry_Potter_(character)"
+        "imageSource": "Images-characters\/Harry_Potter_-_GoF_Promo.jpg",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Harry_Potter_(character)",
+        "likes": 0
     },
     "HermioneGranger": {
         "name": "Hermione Granger",
         "house": "Gryffindor",
-        "imageSource": "Images-characters/Hermione.webp",
-        "info": "https://en.wikipedia.org/wiki/Hermione_Granger"
+        "imageSource": "Images-characters\/Hermione.webp",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Hermione_Granger",
+        "likes": 0
     },
     "RonWeasley": {
         "name": "Ron Weasley",
         "house": "Gryffindor",
-        "imageSource": "Images-characters/Ron_Weasley_Infobox.webp",
-        "info": "https://en.wikipedia.org/wiki/Ron_Weasley"
+        "imageSource": "Images-characters\/Ron_Weasley_Infobox.webp",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Ron_Weasley",
+        "likes": 0
     },
     "DracoMalfoy": {
         "name": "Draco Malfoy",
         "house": "Slytherin",
-        "imageSource": "Images-characters/Harry-Potter-The-Deathly-Hallows-Part-II.webp",
-        "info": "https://en.wikipedia.org/wiki/Draco_Malfoy"
+        "imageSource": "Images-characters\/Harry-Potter-The-Deathly-Hallows-Part-II.webp",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Draco_Malfoy",
+        "likes": 0
     },
     "AlbusDumbledore": {
         "name": "Albus Dumbledore",
         "house": "Gryffindor",
-        "imageSource": "Images-characters/51dccd2dcb8e60f52489446de42a9531a3d065c3r1-914-1168v2_00.jpg",
-        "info": "https://en.wikipedia.org/wiki/Albus_Dumbledore"
+        "imageSource": "Images-characters\/51dccd2dcb8e60f52489446de42a9531a3d065c3r1-914-1168v2_00.jpg",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Albus_Dumbledore",
+        "likes": 0
     },
     "RubeusHagrid": {
         "name": "Rubeus Hagrid",
         "house": "Gryffindor",
-        "imageSource": "Images-characters/FfDWZ7rX0AExKwl.jpg",
-        "info": "https://en.wikipedia.org/wiki/Rubeus_Hagrid"
+        "imageSource": "Images-characters\/FfDWZ7rX0AExKwl.jpg",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Rubeus_Hagrid",
+        "likes": 0
     },
     "SiriusBlack": {
         "name": "Sirius Black",
         "house": "Gryffindor",
-        "imageSource": "Images-characters/f95b26d6-87c7-4c86-8bdb-430550b91f73.jpg",
-        "info": "https://en.wikipedia.org/wiki/Sirius_Black"
+        "imageSource": "Images-characters\/f95b26d6-87c7-4c86-8bdb-430550b91f73.jpg",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Sirius_Black",
+        "likes": 0
     },
     "LordVoldemort": {
         "name": "Lord Voldemort",
         "house": "Slytherin",
-        "imageSource": "Images-characters/2.png",
-        "info": "https://en.wikipedia.org/wiki/Lord_Voldemort"
+        "imageSource": "Images-characters\/2.png",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Lord_Voldemort",
+        "likes": 0
     },
     "SeverusSnape": {
         "name": "Severus Snape",
         "house": "Slytherin",
-        "imageSource": "Images-characters/severus-snape-order-of-the-phoenix-portrait.jpg",
-        "info": "https://en.wikipedia.org/wiki/Severus_Snape"
+        "imageSource": "Images-characters\/severus-snape-order-of-the-phoenix-portrait.jpg",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Severus_Snape",
+        "likes": 0
     },
     "RemusLupin": {
         "name": "Remus Lupin",
         "house": "Gryffindor",
-        "imageSource": "Images-characters/Remus_lupin.webp",
-        "info": "https://en.wikipedia.org/wiki/Remus_Lupin"
+        "imageSource": "Images-characters\/Remus_lupin.webp",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Remus_Lupin",
+        "likes": 0
     },
     "MinervaMcGonagall": {
         "name": "Minerva McGonagall",
         "house": "Gryffindor",
-        "imageSource": "Images-characters/1534780170299.jpg",
-        "info": "https://en.wikipedia.org/wiki/Minerva_McGonagall"
+        "imageSource": "Images-characters\/1534780170299.jpg",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Minerva_McGonagall",
+        "likes": 0
     },
     "NevilleLongbottom": {
         "name": "Neville Longbottom",
         "house": "Gryffindor",
-        "imageSource": "Images-characters/NevilleHBP.webp",
-        "info": "https://en.wikipedia.org/wiki/Neville_Longbottom"
+        "imageSource": "Images-characters\/NevilleHBP.webp",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Neville_Longbottom",
+        "likes": 0
     },
     "CedricDiggory": {
         "name": "Cedric Diggory",
         "house": "Hufflepuff",
-        "imageSource": "Images-characters/CedricDiggoryProfile.webp",
-        "info": "https://en.wikipedia.org/wiki/Cedric_Diggory"
+        "imageSource": "Images-characters\/CedricDiggoryProfile.webp",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Cedric_Diggory",
+        "likes": 0
     },
     "GilderoyLockhart": {
         "name": "Gilderoy Lockhart",
         "house": "Ravenclaw",
-        "imageSource": "Images-characters/COS-promo1.webp",
-        "info": "https://en.wikipedia.org/wiki/Hogwarts_staff#Gilderoy_Lockhart"
+        "imageSource": "Images-characters\/COS-promo1.webp",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Hogwarts_staff#Gilderoy_Lockhart",
+        "likes": 0
     },
     "LuciusMalfoy": {
         "name": "Lucius Malfoy",
         "house": "Slytherin",
-        "imageSource": "Images-characters/Lucius_Malfoy.webp",
-        "info": "https://en.wikipedia.org/wiki/Death_Eater"
+        "imageSource": "Images-characters\/Lucius_Malfoy.webp",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Death_Eater",
+        "likes": 0
     },
     "AlastorMoody": {
         "name": "Alastor Moody",
         "house": "",
-        "imageSource": "Images-characters/mad-eye-moody-order-of-the-phoenix-portrait-2.jpg",
-        "info": "https://en.wikipedia.org/wiki/Order_of_the_Phoenix_(fictional_organisation)"
+        "imageSource": "Images-characters\/mad-eye-moody-order-of-the-phoenix-portrait-2.jpg",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Order_of_the_Phoenix_(fictional_organisation)",
+        "likes": 0
     },
     "ArgusFilch": {
         "name": "Argus Filch",
         "house": "",
-        "imageSource": "Images-characters/Mainfulcd.webp",
-        "info": "https://en.wikipedia.org/wiki/Hogwarts_staff"
+        "imageSource": "Images-characters\/Mainfulcd.webp",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Hogwarts_staff",
+        "likes": 0
     },
     "Dobby": {
         "name": "Dobby",
         "house": "",
-        "imageSource": "Images-characters/47ae5f2eb491c2095a5c29300eb9eb23.jpg",
-        "info": "https://en.wikipedia.org/wiki/Magical_creatures_in_Harry_Potter"
+        "imageSource": "Images-characters\/47ae5f2eb491c2095a5c29300eb9eb23.jpg",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Magical_creatures_in_Harry_Potter",
+        "likes": 0
     },
     "BellatrixLestrange": {
         "name": "Bellatrix Lestrange",
         "house": "Slytherin",
-        "imageSource": "Images-characters/c308b1_305cfba9319249d0b3a8d022b06676e8.jpg",
-        "info": "https://en.wikipedia.org/wiki/Bellatrix_Lestrange"
+        "imageSource": "Images-characters\/c308b1_305cfba9319249d0b3a8d022b06676e8.jpg",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Bellatrix_Lestrange",
+        "likes": 0
     },
     "Hedwig": {
         "name": "Hedwig",
         "house": "",
-        "imageSource": "Images-characters/1_hedwig.jpg",
-        "info": "https://en.wikipedia.org/wiki/Magical_creatures_in_Harry_Potter"
+        "imageSource": "Images-characters\/1_hedwig.jpg",
+        "info": "https:\/\/en.wikipedia.org\/wiki\/Magical_creatures_in_Harry_Potter",
+        "likes": 0
     }
 }

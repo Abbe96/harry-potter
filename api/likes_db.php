@@ -22,6 +22,4 @@ function sendJSON($message, $response_code = 200) {
     file_put_contents("movies_test.json", json_encode($all_movies, JSON_PRETTY_PRINT) );
     $message = ["message" => "Like added!"];
     sendJSON($message);
-
-
 ?>
