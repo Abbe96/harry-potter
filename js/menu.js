@@ -19,11 +19,6 @@ async function menuPage() {
             <div class="listMenu"><button id=movieBtn class=allBtn>Movies</button></div>  
             <div class="listMenu"><button id=infoBtn class=allBtn>Info</button></div>
 
-            <div class="listMenu"><button class=btnStyle id=houseBtn>HOUSE</button></div>
-            <div class="listMenu"><button class=btnStyle id=characterBtn>CHARACTERS</button></div>
-            <div class="listMenu"><button class=btnStyle id=movieBtn>MOVIES</button></div>  
-            <div class="listMenu"><button class=btnStyle id=infoBtn>INFO</button></div>
-
             <div class="changeHouses">
                 <p class="changeHousesHeader">Change Houses</p>
                 <div class="allHouses">
@@ -45,7 +40,7 @@ async function menuPage() {
     let characterBtn = main.querySelector("#characterBtn");
     characterBtn.addEventListener("click", characterPage);
 
-    let selectedHouse = null;
+    //let selectedHouse = null;
 
      // GET HOUSES DATA
      try {
@@ -58,25 +53,25 @@ async function menuPage() {
         let ravenclawBtn = main.querySelector("#ravenclaw");
         let hufflepuffBtn = main.querySelector("#hufflepuff");
 
-        function setHouseColor(houseName) {
-            let houseColor = data.find(house => house.name === houseName)["color"];
-            document.querySelector("#menu").style.backgroundColor = houseColor;
+        function setHouseBackground(houseName) {
+            let houseBackground = data.find(house => house.name === houseName)["background"];
+            document.querySelector("#menu").style.backgroundImage = `url(${houseBackground})`;
         }
     
         gryffindorBtn.addEventListener("click", () => {
-            setHouseColor("Gryffindor");
+            setHouseBackground("Gryffindor");
         });
     
         slytherinBtn.addEventListener("click", () => {
-            setHouseColor("Slytherin");
+            setHouseBackground("Slytherin");
         });
     
         ravenclawBtn.addEventListener("click", () => {
-            setHouseColor("Ravenclaw");
+            setHouseBackground("Ravenclaw");
         });
     
         hufflepuffBtn.addEventListener("click", () => {
-            setHouseColor("Hufflepuff");
+            setHouseBackground("Hufflepuff");
         });
 
     } catch (error) {
