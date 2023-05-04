@@ -9,7 +9,7 @@ async function housePage() {
     logoutBtn.addEventListener("click", logout);
 
     let menuBtn = nav.querySelector("#lightningMenu");
-    menuBtn.addEventListener("click", menuPage);
+    menuBtn.addEventListener("click", toggleMenuPage);
 
     main.innerHTML = `
         <header>

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Harry P";
+    src: url(./HARRYP__.TTF);
+}
+
 body {
     margin: 0;
     min-width: 1280px;
@@ -13,6 +18,16 @@ nav {
     justify-content:space-between;
     padding: 5px;
     align-items: center;
+}
+
+.btnStyle {
+    border: none;
+    background-color: transparent;
+    font-size: 5vw;
+}
+
+.btnStyle:hover {
+    color: grey;
 }
 
 #logout {

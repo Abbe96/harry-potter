@@ -10,7 +10,7 @@ async function menuPage() {
     logoutBtn.addEventListener("click", logout);
 
     let menuBtn = nav.querySelector("#lightningMenu");
-    menuBtn.addEventListener("click", homePage);
+    menuBtn.addEventListener("click", toggleMenuPage);
 
     main.innerHTML = `
         <div id="menu">
@@ -18,6 +18,11 @@ async function menuPage() {
             <div class="listMenu"><button id=characterBtn class=allBtn>Characters</button></div>
             <div class="listMenu"><button id=movieBtn class=allBtn>Movies</button></div>  
             <div class="listMenu"><button id=infoBtn class=allBtn>Info</button></div>
+
+            <div class="listMenu"><button class=btnStyle id=houseBtn>HOUSE</button></div>
+            <div class="listMenu"><button class=btnStyle id=characterBtn>CHARACTERS</button></div>
+            <div class="listMenu"><button class=btnStyle id=movieBtn>MOVIES</button></div>  
+            <div class="listMenu"><button class=btnStyle id=infoBtn>INFO</button></div>
 
             <div class="changeHouses">
                 <p class="changeHousesHeader">Change Houses</p>
@@ -38,7 +43,9 @@ async function menuPage() {
     movieBtn.addEventListener("click", moviePage);
 
     let characterBtn = main.querySelector("#characterBtn");
-    characterBtn.addEventListener("click", loadCharacters);
+    characterBtn.addEventListener("click", characterPage);
+
+    let selectedHouse = null;
 
      // GET HOUSES DATA
      try {
@@ -51,21 +58,25 @@ async function menuPage() {
         let ravenclawBtn = main.querySelector("#ravenclaw");
         let hufflepuffBtn = main.querySelector("#hufflepuff");
 
+        function setHouseColor(houseName) {
+            let houseColor = data.find(house => house.name === houseName)["color"];
+            document.querySelector("#menu").style.backgroundColor = houseColor;
+        }
+    
         gryffindorBtn.addEventListener("click", () => {
-            //document.querySelector("#menu").style.backgroundColor = data.find(house => house.name === "Gryffindor")["color"];
-            document.querySelector('#menu').style.backgroundImage = 'url(' + data.Gryffindor.background + ')';
+            setHouseColor("Gryffindor");
         });
-
+    
         slytherinBtn.addEventListener("click", () => {
-            document.querySelector("#menu").style.backgroundColor = data.find(house => house.name === "Slytherin")["color"];
+            setHouseColor("Slytherin");
         });
-
+    
         ravenclawBtn.addEventListener("click", () => {
-            document.querySelector("#menu").style.backgroundColor = data.find(house => house.name === "Ravenclaw")["color"];
+            setHouseColor("Ravenclaw");
         });
-
+    
         hufflepuffBtn.addEventListener("click", () => {
-            document.querySelector("#menu").style.backgroundColor = data.find(house => house.name === "Hufflepuff")["color"];
+            setHouseColor("Hufflepuff");
         });
 
     } catch (error) {
