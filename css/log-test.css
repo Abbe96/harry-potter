@@ -2,25 +2,24 @@
     font-family: "Harry P";
     src: url(./harry_p/HARRYP__.TTF);
 }
-#bg {
-  background-image: url('./Bild/background\ hp.jpg');
+
+.bg {
   position: fixed;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
   filter: blur(5px);
+  background-image: url("Bild/login-page-background.jpg");
+  background-size: cover;
 }
 
 .logRegContainer {
   font-family: 'Lato', sans-serif;
-  color: #4A4A4A;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.55);
   overflow: hidden;
   margin: 0;
   padding: 0;

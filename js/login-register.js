@@ -14,10 +14,12 @@ if (!window.localStorage.getItem("home-user")) {
 }
 
 function loginPage() {
+
     nav.innerHTML = "";
     main.innerHTML = `
+    
     <div class=logRegContainer>
-        <div id="bg"></div>
+        <div class="bg"></div>
         <h2 class=h2Size>Login</h2>
         <p id=message><p>
 
