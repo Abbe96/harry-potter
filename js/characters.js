@@ -21,34 +21,53 @@ async function characterPage() {
     `;
 
     try {
-        const response = await fetch("api/characters.json");
-        const data = await response.json();
+        let response = await fetch("api/characters.json");
+        let data = await response.json();
   
         const charactersDiv = document.getElementById("characters");
         //create info tag and add it to the characterDiv
         const info = document.createElement("a")
   
         Object.keys(data).forEach(character => {
-            //create newcharacterDiv element
-            const characterDiv = document.createElement("div");
-            characterDiv.classList.add("name", character);
-            characterDiv.style.backgroundImage = `url(${data[character].imageSource})`;
-    
-            //add eventlisteners to characterDiv element
-            characterDiv.addEventListener('mouseover', function() {
+            //create div element
+            const characterWrapper = document.createElement("div");
+            characterWrapper.classList.add("characterWrapper");
 
-                //characterDiv.style.filter = "blur(3px)";
+            const tempDiv = document.createElement("div");
+            tempDiv.classList.add("name", character);
+            tempDiv.style.backgroundImage = `url(${data[character].imageSource})`;
+
+            const likeBtn = document.createElement("button");
+            likeBtn.classList.add("likeStyle", character);
+            likeBtn.innerHTML = `<span>&#9825;</span>`;
+
+            likeBtn.addEventListener("click", function() {
+                let isLiked = likeBtn.classList.contains("liked");
+                if (isLiked) {
+                    likeBtn.classList.remove("liked");
+                    likeBtn.innerHTML = `<span>&#9825;</span>`;
+                } else {
+                    likeBtn.classList.add("liked");
+                    likeBtn.innerHTML = `<span>&#9825;</span>`;
+                }
+            });
+
+            tempDiv.addEventListener("mouseover", function() {
+                //tempDiv.style.filter = "blur(3px)";
                 info.href = data[character].info;               
                 info.innerHTML = `${data[character].name}<br>${data[character].house}`;             
-                characterDiv.appendChild(info); 
+                tempDiv.appendChild(info); 
             });
     
-            characterDiv.addEventListener('mouseleave', function() {
-                characterDiv.innerHTML = "";
-                //characterDiv.style.filter = "none";
+            tempDiv.addEventListener("mouseleave", function() {
+                tempDiv.innerHTML = "";
             });
-            //append characterDiv element to charactersDiv container
-            charactersDiv.appendChild(characterDiv);
+
+            //append tempDiv element to charactersDiv container
+            characterWrapper.appendChild(tempDiv);
+            characterWrapper.appendChild(likeBtn);
+            
+            charactersDiv.appendChild(characterWrapper);
         });
     } catch (error) {
       console.error(error);
