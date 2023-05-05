@@ -13,7 +13,7 @@ if (!window.localStorage.getItem("home-user")) {
     attemptLogin();
 }
 
-document.querySelector("#bg").style.backgroundImage = "url(Bild/background-login.jpg)"
+//document.querySelector("#bg").style.backgroundImage = "url(Bild/background-login.jpg)"
 
 function loginPage() {
 
