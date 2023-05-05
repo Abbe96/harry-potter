@@ -36,6 +36,8 @@ async function moviePage() {
             plotText.classList.add("plot");
             //plotText.classList.add("plot");
 
+            
+
             movieElement.innerHTML = `
                 <h4>${movie.title}</h4>
                 <hp>${movie.year}</p>
