@@ -63,6 +63,8 @@ async function moviePage() {
     } catch (error) {
         console.error("Failed to fetch", error);
     }
+
+
 }
 
 // async function like_button(event) { // AC

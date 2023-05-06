@@ -1,9 +1,15 @@
 function homePage() {
 
+    const user = JSON.parse(localStorage.getItem("user"));
+    
     nav.innerHTML = `
         <button id=lightningMenu></button>
         <h1>HARRY POTTER</h1>
+        
+        <div id=me>
+        <p>${user.username}</p>
         <button id=logout>Logout</button>
+        </div>
     `;
 
     let logoutBtn = nav.querySelector("#logout");
@@ -38,4 +44,5 @@ function homePage() {
 
     let characterBtn = main.querySelector("#characterBtn");
     characterBtn.addEventListener("click", characterPage);
+
 }

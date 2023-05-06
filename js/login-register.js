@@ -4,11 +4,11 @@ let main = document.querySelector("main");
 let nav = document.querySelector("nav");
 
 // SHOW LOGIN PAGE OR HOME PAGE IF LOGGED IN OR NOT
-if (!window.localStorage.getItem("home-user")) {
+if (!window.localStorage.getItem("user")) {
     loginPage();
 } else {
     // GRAB USER FROM LOCALSTORAGE AND STORE IN 'USER' TO USE LATER
-    user = JSON.parse(window.localStorage.getItem("home-user"));
+    user = JSON.parse(window.localStorage.getItem("user"));
     // TRY TO LOGIN
     attemptLogin();
 }
@@ -58,7 +58,7 @@ function loginPage() {
                 message.innerHTML = `THE SERVER GONE MAD! we got this from the server <span>${data.message}</span>.`;
             } else {
                 // RECEIVE THE USER
-                window.localStorage.setItem("home-user", JSON.stringify(data));
+                window.localStorage.setItem("user", JSON.stringify(data));
                 user = data;
        
                 homePage();
@@ -87,7 +87,7 @@ async function attemptLogin() {
         if (!response.ok) {
             loginPage();
         } else {
-            window.localStorage.setItem("home-user", JSON.stringify(data));
+            window.localStorage.setItem("user", JSON.stringify(data));
             user = data;
 
             homePage();

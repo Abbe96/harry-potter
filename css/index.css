@@ -39,3 +39,14 @@ footer {
 #logout {
     width: 60px;
 }
+
+#me  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#me p {
+    font-size: 30px;
+}

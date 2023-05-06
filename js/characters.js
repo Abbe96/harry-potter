@@ -1,5 +1,7 @@
 async function characterPage() {
 
+    const user = JSON.parse(localStorage.getItem("user"));
+
     nav.innerHTML = `
         <button id=lightningMenu></button>
         <div class="headerCharacters">

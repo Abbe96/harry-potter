@@ -7,17 +7,27 @@
 
     // GET THE CHARACTER NAME AND INCREMENT VALUE FROM RQST DATA
     $characterName = $data->character;
-    $increment = $data->increment;
+    $username = $data->username;
 
     $json = file_get_contents("characters.json");
     $characters = json_decode($json, true);
 
     if (isset($characters[$characterName])) {
-        if ($increment) {
-            $characters[$characterName]["likes"]++;
+        $likes = $characters[$characterName]["likes"];
+
+        // CHECK IF THE USER ALREADY EXISTS IN THE LIKES ARRAY
+        $index = array_search($username, $likes);
+        if ($index === false) {
+            // ADD USER TO LIKES ARRAY
+            array_push($likes, $username);
         } else {
-            $characters[$characterName]["likes"]--;
-        } 
+            // REMOVE USER FROM LIKES ARRAY
+            array_splice($likes, $index, 1);
+        }
+
+        // UPDATE LIKES CONT IN THE CHARACTERS DATA
+        $characters[$characterName]["likes"] = count($likes);
+        $characters[$characterName]["likesBy"] = $likes;
     }
 
     // ENCODE THE UPDATED CHARACTERS DATA AS JSON
@@ -27,4 +37,5 @@
 
     header("Content-Type: application/json");
     echo json_encode(["name" => $characters[$characterName]["name"], "likes" => $characters[$characterName]["likes"]]);
+
 ?>
