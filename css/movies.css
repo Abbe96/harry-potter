@@ -53,10 +53,5 @@ h1 {
     transition: opacity 0.3s ease-in-out;
 }
 
-.cover:hover + .plot {
-    opacity: 1;
-}
-.hp {
-    display: none;
-}
+
 

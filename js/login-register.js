@@ -13,6 +13,8 @@ if (!window.localStorage.getItem("user")) {
     attemptLogin();
 }
 
+//document.querySelector("#bg").style.backgroundImage = "url(Bild/background-login.jpg)"
+
 function loginPage() {
 
     nav.innerHTML = "";
