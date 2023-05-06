@@ -1,9 +1,15 @@
 async function moviePage() {
 
+    const user = JSON.parse(localStorage.getItem("user"));
+
     nav.innerHTML = `
     <button id=lightningMenu></button>
     <h1>MOVIES</h1>
-    <button id=logout>Logout</button>
+
+    <div id=me>
+        <p>${user.username}</p>
+        <button id=logout>Logout</button>
+        </div>
     `;
 
     let logoutBtn = nav.querySelector("#logout");
