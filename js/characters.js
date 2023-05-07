@@ -47,6 +47,9 @@ async function characterPage() {
             likeBtn.classList.add("likeStyle", character);
             likeBtn.innerHTML = `<span>&#9825;</span>`;
     
+            const likeCountSpan = document.createElement("span");
+            likeCountSpan.classList.add("likeCountStyle", character);
+    
             tempDiv.addEventListener("mouseover", function() {
     
                 //tempDiv.style.filter = "blur(3px)";
@@ -63,6 +66,7 @@ async function characterPage() {
             //append tempDiv element to charactersDiv container
             characterWrapper.appendChild(tempDiv);
             characterWrapper.appendChild(likeBtn);
+            characterWrapper.appendChild(likeCountSpan);
     
             //add event listener to likeBtn
             likeBtn.addEventListener("click", async function() {
@@ -85,16 +89,34 @@ async function characterPage() {
     
                     const data = await response.json();
                     console.log(data);
-                    } catch (error) {
+    
+                    //update the like count on the page
+                    updateLikeCount(data.likes, character);
+    
+                } catch (error) {
                     console.error(error);
-                    }
+                }
+
+                updateLikeCount(data.likes, character);
             });
+    
+            //get the initial like count for the character and update it on the page
+            try {
+                const response = await fetch(`api/likes.php?character=${character}`);
+                const data = await response.json();
+                updateLikeCount(data.likes, character);
+            } catch (error) {
+                console.error(error);
+            }
     
             charactersDiv.appendChild(characterWrapper);
         });
-
     } catch (error) {
-        console.error(error);
+        console.error(error)
     }
-    
+}
+
+function updateLikeCount(count, character) {
+    const likeCountSpan = document.querySelector(`.likeCountStyle.${character}`);
+    likeCountSpan.textContent = `${count} likes`;
 }
