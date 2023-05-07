@@ -45,10 +45,15 @@ async function characterPage() {
     
             const likeBtn = document.createElement("button");
             likeBtn.classList.add("likeStyle", character);
-            likeBtn.innerHTML = `<span>&#9825;</span>`;
-    
-            const likeCountSpan = document.createElement("span");
-            likeCountSpan.classList.add("likeCountStyle", character);
+
+            const likes = data[character].likes;
+            const likeIndex = likes.indexOf(user.username);
+            const likeCount = likes.length;
+
+            likeBtn.innerHTML = `
+                <p>${likeIndex !== -1 ? likeIndex + 1 : likeCount}</p>
+                <span>&#9825;</span>
+            `;
     
             tempDiv.addEventListener("mouseover", function() {
     
@@ -66,7 +71,6 @@ async function characterPage() {
             //append tempDiv element to charactersDiv container
             characterWrapper.appendChild(tempDiv);
             characterWrapper.appendChild(likeBtn);
-            characterWrapper.appendChild(likeCountSpan);
     
             //add event listener to likeBtn
             likeBtn.addEventListener("click", async function() {
@@ -90,33 +94,14 @@ async function characterPage() {
                     const data = await response.json();
                     console.log(data);
     
-                    //update the like count on the page
-                    updateLikeCount(data.likes, character);
-    
                 } catch (error) {
                     console.error(error);
                 }
-
-                updateLikeCount(data.likes, character);
             });
-    
-            //get the initial like count for the character and update it on the page
-            try {
-                const response = await fetch(`api/likes.php?character=${character}`);
-                const data = await response.json();
-                updateLikeCount(data.likes, character);
-            } catch (error) {
-                console.error(error);
-            }
     
             charactersDiv.appendChild(characterWrapper);
         });
     } catch (error) {
         console.error(error)
     }
-}
-
-function updateLikeCount(count, character) {
-    const likeCountSpan = document.querySelector(`.likeCountStyle.${character}`);
-    likeCountSpan.textContent = `${count} likes`;
 }
