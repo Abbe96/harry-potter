@@ -3,30 +3,27 @@
     src: url(./harry_p/HARRYP__.TTF);
 }
 
-
-#bg {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  /*filter: blur(2px);*/
-}
-
 .logRegContainer {
-  font-family: 'Lato', sans-serif;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.179);
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
   flex-direction: column;
 }
+
+#bg {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.64);
+  margin: 0;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+}
+
 .h2Size {
   font-family: "Harry P";
   font-size: 8vh;
+  margin-top: 40px;
 }
 form {
   display: flex;

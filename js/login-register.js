@@ -13,24 +13,25 @@ if (!window.localStorage.getItem("user")) {
     attemptLogin();
 }
 
-//document.querySelector("#bg").style.backgroundImage = "url(Bild/background-login.jpg)"
-
 function loginPage() {
+    document.body.style.backgroundImage = "url('../Bild/background-login.jpg')";
+    document.body.style.backgroundSize = "cover";
 
     nav.innerHTML = "";
     main.innerHTML = `
     
     <div class=logRegContainer>
-        <div id="bg"></div>
-        <h2 class=h2Size>Login</h2>
-        <p id=message><p>
+        <div id="bg">
+            <h2 class=h2Size>Login</h2>
+            <p id=message><p>
 
-        <form>
-            <input type=text id=username placeholder=Username>
-            <input type=password id=password placeholder=Password>
-            <button type=submit>Login</button>
-            <button id=register>New to this? Become a wizard member!</button>
-        </form>
+            <form>
+                <input type=text id=username placeholder=Username>
+                <input type=password id=password placeholder=Password>
+                <button type=submit>Login</button>
+                <button id=register>New to this? Become a wizard member!</button>
+            </form>
+        </div>
     </div>
     `;
 
