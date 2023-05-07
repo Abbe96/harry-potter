@@ -30,11 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-.liked {
-    background-color: rgb(219, 57, 57);
-    color: white;
+    height: 50px;
 }
 
 .headerCharacters {

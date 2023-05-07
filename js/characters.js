@@ -45,13 +45,10 @@ async function characterPage() {
     
             const likeBtn = document.createElement("button");
             likeBtn.classList.add("likeStyle", character);
-
-            const likes = data[character].likes;
-            const likeIndex = likes.indexOf(user.username);
-            const likeCount = likes.length;
-
+            
+            const likesIndex = data[character].likes.indexOf(user.username);
             likeBtn.innerHTML = `
-                <p>${likeIndex !== -1 ? likeIndex + 1 : likeCount}</p>
+                <p>${likesIndex === -1 ? 0 : likesIndex + 1}</p>
                 <span>&#9825;</span>
             `;
     
@@ -93,15 +90,30 @@ async function characterPage() {
     
                     const data = await response.json();
                     console.log(data);
+
+                    const updatedResponse = await fetch("api/characters.json");
+                    const updatedData = await updatedResponse.json();
+                    const likesIndex = updatedData[characterName].likes.indexOf(user.username);
+                    if (likesIndex === -1) {
+                        likeBtn.style.backgroundColor = "white";
+                        likeBtn.style.color = "black";
+                    } else {
+                        likeBtn.style.backgroundColor = "red";
+                        likeBtn.style.color = "white";
+                    }
+
+                    likeBtn.querySelector("p").textContent = likesIndex === -1 ? 0 : likesIndex + 1;
     
                 } catch (error) {
                     console.error(error);
                 }
+            
             });
     
             charactersDiv.appendChild(characterWrapper);
         });
     } catch (error) {
         console.error(error)
+   
     }
 }

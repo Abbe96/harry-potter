@@ -4,23 +4,25 @@
         "house": "Gryffindor",
         "imageSource": "Images-characters\/Harry_Potter_-_GoF_Promo.jpg",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Harry_Potter_(character)",
-        "likes": []
+        "likes": [
+            "miso"
+        ]
     },
     "HermioneGranger": {
         "name": "Hermione Granger",
         "house": "Gryffindor",
         "imageSource": "Images-characters\/Hermione.webp",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Hermione_Granger",
-        "likes": [
-            "miso"
-        ]
+        "likes": []
     },
     "RonWeasley": {
         "name": "Ron Weasley",
         "house": "Gryffindor",
         "imageSource": "Images-characters\/Ron_Weasley_Infobox.webp",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Ron_Weasley",
-        "likes": []
+        "likes": [
+            "miso"
+        ]
     },
     "DracoMalfoy": {
         "name": "Draco Malfoy",
@@ -34,18 +36,14 @@
         "house": "Gryffindor",
         "imageSource": "Images-characters\/51dccd2dcb8e60f52489446de42a9531a3d065c3r1-914-1168v2_00.jpg",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Albus_Dumbledore",
-        "likes": [
-            "miso"
-        ]
+        "likes": []
     },
     "RubeusHagrid": {
         "name": "Rubeus Hagrid",
         "house": "Gryffindor",
         "imageSource": "Images-characters\/FfDWZ7rX0AExKwl.jpg",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Rubeus_Hagrid",
-        "likes": [
-            "miso"
-        ]
+        "likes": []
     },
     "SiriusBlack": {
         "name": "Sirius Black",
