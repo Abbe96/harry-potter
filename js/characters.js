@@ -52,6 +52,14 @@ async function characterPage() {
                 <p>${likesIndex === -1 ? 0 : likesIndex + 1}</p>
                 <span>&#9825;</span>
             `;
+
+            if (likesIndex === -1) {
+                likeBtn.style.backgroundColor = "white";
+                likeBtn.style.color = "black";
+            } else {
+                likeBtn.style.backgroundColor = "red";
+                likeBtn.style.color = "white";
+            }
     
             tempDiv.addEventListener("mouseover", function() {
                 //tempDiv.style.filter = "blur(3px)";
