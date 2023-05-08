@@ -4,25 +4,23 @@
         "house": "Gryffindor",
         "imageSource": "Images-characters\/Harry_Potter_-_GoF_Promo.jpg",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Harry_Potter_(character)",
-        "likes": [
-            "miso"
-        ]
+        "likes": []
     },
     "HermioneGranger": {
         "name": "Hermione Granger",
         "house": "Gryffindor",
         "imageSource": "Images-characters\/Hermione.webp",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Hermione_Granger",
-        "likes": []
+        "likes": [
+            "miso"
+        ]
     },
     "RonWeasley": {
         "name": "Ron Weasley",
         "house": "Gryffindor",
         "imageSource": "Images-characters\/Ron_Weasley_Infobox.webp",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Ron_Weasley",
-        "likes": [
-            "miso"
-        ]
+        "likes": []
     },
     "DracoMalfoy": {
         "name": "Draco Malfoy",

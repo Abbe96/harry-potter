@@ -34,7 +34,7 @@ async function characterPage() {
         //create info tag and add it to the characterDiv
         const info = document.createElement("a");
     
-        Object.keys(data).forEach(async character => {
+        Object.keys(data).forEach(async (character) => {
 
             //create div element
             const characterWrapper = document.createElement("div");
@@ -77,7 +77,7 @@ async function characterPage() {
                 const action = likeBtn.classList.contains("liked") ? "like" : "unlike";
                 
                 try {
-                    const response = await fetch("api/likes.php", {
+                    const likeResponse = await fetch("api/likes.php", {
                         method: "POST",
                         headers: {"Content-Type": "application/json"},
                         body: JSON.stringify({
@@ -87,14 +87,12 @@ async function characterPage() {
                         })
                     });
     
-                    const data = await response.json();
+                    const data = await likeResponse.json();
                     console.log(data);
 
                     const updatedResponse = await fetch("api/characters.json");
                     const updatedData = await updatedResponse.json();
-                    console.log(updatedData);
                     const likesIndex = updatedData[characterName].likes.indexOf(user.username);
-                    console.log(likesIndex);
                     if (likesIndex === -1) {
                         likeBtn.style.backgroundColor = "white";
                         likeBtn.style.color = "black";
