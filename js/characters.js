@@ -53,12 +53,10 @@ async function characterPage() {
             `;
     
             tempDiv.addEventListener("mouseover", function() {
-    
                 //tempDiv.style.filter = "blur(3px)";
                 info.href = data[character].info;               
                 info.innerHTML = `${data[character].name}<br>${data[character].house}`;             
                 tempDiv.appendChild(info); 
-    
             });
     
             tempDiv.addEventListener("mouseleave", function() {

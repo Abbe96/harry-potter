@@ -25,7 +25,7 @@ async function moviePage() {
     </section>
     `;
 
-    let movies = main.querySelector("#movies");
+    const movies = document.getElementById("movies");
 
     try {
         // GET MOVIES AND INFO
@@ -33,16 +33,18 @@ async function moviePage() {
         let data = await response.json();
         movies.innerHTML = "";
 
+        let movieWrapper; 
+
         data.forEach(movie => {
+
+            movieWrapper = document.createElement("div");
             let movieElement = document.createElement("div");
             let plotText = document.createElement("div");
-            //let plotText = document.createElement("div");
+
+            movieWrapper.classList.add("movieWrapper");
             movieElement.style.backgroundImage = `url(${movie.cover})`;
             movieElement.classList.add("cover");
             plotText.classList.add("plot");
-            //plotText.classList.add("plot");
-
-            
 
             movieElement.innerHTML = `
                 <h4>${movie.title}</h4>
@@ -52,14 +54,10 @@ async function moviePage() {
             plotText.innerHTML = `
                 <p class=overlayText>${movie.plot}</p>
             `;
-            movies.appendChild(movieElement);
-            movies.appendChild(plotText);
-            //plotText.innerHTML = `
-            //    <p class=overlayText>${movie.plot}</p>
-            //`;
 
-            movies.appendChild(movieElement);
-            //movies.appendChild(plotText);
+            movieWrapper.appendChild(movieElement);
+            movieWrapper.appendChild(plotText);
+            
 
             movieElement.addEventListener('mouseover', function() {
                 movieElement.innerHTML = `${data[movie].title}<br>${data[movie].year}`;
@@ -67,21 +65,12 @@ async function moviePage() {
             movieElement.addEventListener('mouseleave', function() {
                 movieElement.innerHTML = "";
             });
+
+            movies.appendChild(movieWrapper); 
         });
+
     } catch (error) {
         console.error("Failed to fetch", error);
     }
 
-
 }
-
-// async function like_button(event) { // AC
-
-//     try {
-//         const response = await fetch("api/likes_db.php", { method: "POST", header: { "content-type": "application/json" }, body: JSON.stringify({ movie: event.target.querySelector("h4").textContent, like_count: 1 }) });
-//         const resource = await response.json();
-//         alert(resource.message)
-//     } catch (err) {
-//         console.log(err)
-//     }
-// }
