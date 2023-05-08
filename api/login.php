@@ -42,7 +42,7 @@ ini_set("display_errors", 1);
         }
 
         http_response_code(200);
-        echo json_encode(["username" => $data["username"], "password" => "secret"]);
+        echo json_encode(["username" => $data["username"], "password" => $data["password"]]);
         exit;
     }
     

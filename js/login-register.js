@@ -102,17 +102,19 @@ async function attemptLogin() {
 
 function registerPage() {
     main.innerHTML = `
-    <div class=logRegContainer>
-        <div id="bg"></div> 
-        <h2 class=h2Size>Register</h2>
-        <p id=message></p>
 
-        <form>
-            <input type=text id=username placeholder=Username>
-            <input type=password id=password placeholder=Password>
-            <button type=submit>Register</button>
-            <button id=login>Already a wizard member? Login here</button>
-        </form>
+    <div class=logRegContainer>
+        <div id="bg">
+            <h2 class=h2Size>Register</h2>
+            <p id=message></p>
+
+            <form>
+                <input type=text id=username placeholder=Username>
+                <input type=password id=password placeholder=Password>
+                <button type=submit>Register</button>
+                <button id=login>Already a wizard member? Login here</button>
+            </form>
+        </div>       
     </div>
     `;
 

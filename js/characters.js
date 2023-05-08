@@ -35,6 +35,7 @@ async function characterPage() {
         const info = document.createElement("a");
     
         Object.keys(data).forEach(async character => {
+
             //create div element
             const characterWrapper = document.createElement("div");
             characterWrapper.classList.add("characterWrapper");
@@ -91,7 +92,9 @@ async function characterPage() {
 
                     const updatedResponse = await fetch("api/characters.json");
                     const updatedData = await updatedResponse.json();
+                    console.log(updatedData);
                     const likesIndex = updatedData[characterName].likes.indexOf(user.username);
+                    console.log(likesIndex);
                     if (likesIndex === -1) {
                         likeBtn.style.backgroundColor = "white";
                         likeBtn.style.color = "black";
