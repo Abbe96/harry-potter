@@ -40,6 +40,9 @@ async function menuPage() {
     let characterBtn = main.querySelector("#characterBtn");
     characterBtn.addEventListener("click", characterPage);
 
+    let infoBtn = main.querySelector("#infoBtn");
+    infoBtn.addEventListener("click", infoPage);
+
     //let selectedHouse = null;
 
      // GET HOUSES DATA

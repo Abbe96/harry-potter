@@ -13,9 +13,7 @@
         "house": "Gryffindor",
         "imageSource": "Images-characters\/Hermione.webp",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Hermione_Granger",
-        "likes": [
-            "miso"
-        ]
+        "likes": []
     },
     "RonWeasley": {
         "name": "Ron Weasley",

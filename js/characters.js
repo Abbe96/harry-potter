@@ -1,5 +1,4 @@
-async function characterPage() {
-    
+async function characterPage() { 
     const user = JSON.parse(localStorage.getItem("user"));
     
     nav.innerHTML = `
