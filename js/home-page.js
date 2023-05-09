@@ -45,4 +45,7 @@ function homePage() {
     let characterBtn = main.querySelector("#characterBtn");
     characterBtn.addEventListener("click", characterPage);
 
+    let infoBtn = main.querySelector("#infoBtn");
+    infoBtn.addEventListener("click", infoPage);
+
 }

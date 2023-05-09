@@ -20,9 +20,7 @@
         "house": "Gryffindor",
         "imageSource": "Images-characters\/Ron_Weasley_Infobox.webp",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Ron_Weasley",
-        "likes": [
-            "miso"
-        ]
+        "likes": []
     },
     "DracoMalfoy": {
         "name": "Draco Malfoy",

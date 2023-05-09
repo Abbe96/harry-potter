@@ -38,22 +38,62 @@ async function moviePage() {
         data.forEach(movie => {
 
             movieWrapper = document.createElement("div");
-            let movieElement = document.createElement("div");
-            let plotText = document.createElement("div");
-
             movieWrapper.classList.add("movieWrapper");
+
+            let movieElement = document.createElement("div");
             movieElement.style.backgroundImage = `url(${movie.cover})`;
             movieElement.classList.add("cover");
-            plotText.classList.add("plot");
-
             movieElement.innerHTML = `
                 <h4>${movie.title}</h4>
                 <hp>${movie.year}</p>
             `;
 
+            let plotText = document.createElement("div");
+            plotText.classList.add("plot");
             plotText.innerHTML = `
                 <p class=overlayText>${movie.plot}</p>
             `;
+
+            let likeBtn = document.createElement("button");
+            likeBtn.classList.add("likeBtn");
+            likeBtn.innerText = "Like";
+            likeBtn.addEventListener("click", async () => {
+                //toggle "liked" class on likeBtn
+                likeBtn.classList.toggle("liked");
+            
+                const movieTitle = movie.title;
+                const action = likeBtn.classList.contains("liked") ? "like" : "unlike";
+                            
+                try {
+                    const likeResponse = await fetch("api/likes.php", {
+                        method: "POST",
+                        headers: {"Content-Type": "application/json"},
+                        body: JSON.stringify({
+                            user: user.username,
+                            movie: movieTitle,
+                            action: action
+                        })
+                    });
+            
+                    const data = await likeResponse.json();
+                    console.log(data);
+            
+                    // Update the like button appearance based on the response
+                    if (data.liked) {
+                        likeBtn.style.backgroundColor = "red";
+                        likeBtn.style.color = "white";
+                    } else {
+                        likeBtn.style.backgroundColor = "white";
+                        likeBtn.style.color = "black";
+                    }
+            
+                    likeBtn.querySelector("p").textContent = data.likes;
+            
+                } catch (error) {
+                    console.error(error);
+                }
+            });
+            
 
             movieWrapper.appendChild(movieElement);
             movieWrapper.appendChild(plotText);
