@@ -134,7 +134,7 @@
         "house": "Slytherin",
         "imageSource": "Images-characters\/c308b1_305cfba9319249d0b3a8d022b06676e8.jpg",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Bellatrix_Lestrange",
-        "likes": 0
+        "likes": []
     },
     "Hedwig": {
         "name": "Hedwig",
