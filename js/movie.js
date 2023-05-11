@@ -56,10 +56,20 @@ async function moviePage() {
 
             let likeBtn = document.createElement("button");
             likeBtn.classList.add("likeStyle");
+            likesIndex = movie.likes.indexOf(user.username);
             likeBtn.innerHTML = `
-            <p>${movie.likes}</p>
+            <p>${likesIndex === -1 ? 0 : likesIndex + 1}</p>
             <span>&#9825;</span>
             `;
+
+            if (likesIndex === -1) {
+                likeBtn.style.backgroundColor = "white";
+                likeBtn.style.color = "black";
+            } else {
+                likeBtn.style.backgroundColor = "red";
+                likeBtn.style.color = "white";
+            }
+
             likeBtn.addEventListener("click", async () => {
                 //toggle "liked" class on likeBtn
                 likeBtn.classList.toggle("liked");
@@ -90,10 +100,11 @@ async function moviePage() {
                         likeBtn.style.color = "black";
                     }
 
+                    likeBtn.querySelector("p").textContent = data.likes.length;
 
                     if (action === "like") {
                         let movieResponse = await fetch("api/likes-m.php");
-                        let moviesData = await movieResponse();
+                        let moviesData = await movieResponse.json();
 
                         let movieData = moviesData.find(m => m.title === movieTitle);
 
@@ -114,7 +125,7 @@ async function moviePage() {
                         let updatedMovieData = await updateResponse.json();
                         console.log(updatedMovieData);
                     }
-            
+
                 } catch (error) {
                     console.error(error);
                 }
@@ -123,7 +134,7 @@ async function moviePage() {
             movieWrapper.appendChild(movieElement);
             movieWrapper.appendChild(plotText);
             movieWrapper.appendChild(likeBtn);
-            
+
             movieElement.addEventListener('mouseover', function() {
                 movieElement.innerHTML = `${data[movie].title}<br>${data[movie].year}`;
             });
