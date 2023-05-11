@@ -1,29 +1,39 @@
 <?php
     
-    $rqstBody = file_get_contents("php://input");
-    $data = json_decode($rqstBody);
+    $inputJson = file_get_contents("php://input");
+    $data = json_decode($inputJson, true);
 
-    $username = $data->user;
-    $title = $data->title;
+    $user = $data["user"];
+    $movie = $data["movie"];
+    $action = $data["action"];
 
-    $json = file_get_contents("movies.json");
-    $movies = json_decode($json, true);
+    $moviesJson = file_get_contents("movies.json");
+    $movies = json_decode($moviesJson, true);
 
-    $index = array_search($username, $movies[$title]["likes"]);
-    if ($data->action === "like") {
-        if ($index === false) {
-            array_push($movies[$title]["likes"], $username);
-        } 
-    } elseif ($data->action === "unlike") {
-        if ($index !== false) {
-            array_splice($movies[$title]["likes"], $index, 1);
+    foreach ($movies as &$m) { 
+        if ($m["title"] === $movie) {
+            $likes = $m["likes"];
+            $likedByUser = in_array($user, $likes);
+
+            if ($action === "like" && !$likedByUser) {
+                $likes[] = $user;
+            } elseif ($action === "unlike" && $likedByUser) {
+                $likes = array_diff($likes, [$user]);
+            }
+
+            $m["likes"] = $likes;
         }
     }
 
-    // SAVE UPDATED CHARACTERS TO FILE
-    file_put_contents("movies.json", json_encode($movies, JSON_PRETTY_PRINT));
+    $updateLikes = json_encode($movies, JSON_PRETTY_PRINT);
+    file_put_contents("movies.json", $updateLikes);
+    
+    $liked = ($action === "like");
+    $likes = count($likes);
 
-    http_response_code(200);
-    echo json_encode(["message" => $movies[$title]["title"] . " is liked/unlike"]);
+    $response = ["liked" => $liked, "likes" => $likes];
+
+    header("Content-Type: application/json");
+    echo json_encode($response);
 
 ?>

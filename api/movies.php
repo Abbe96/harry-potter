@@ -17,7 +17,7 @@
     }
 
     foreach ($movies as $movie) {
-        if (!isset($movie["title"]) or !isset($movie["year"]) or !isset($movie["cover"]) or !isset($movie["plot"])) {
+        if (!isset($movie["title"]) or !isset($movie["year"]) or !isset($movie["cover"]) or !isset($movie["plot"]) or !isset($movie["likes"])){
             // Display an error message if required keys are missing
             echo "Missing keys in JSON";
             exit;
@@ -28,6 +28,7 @@
             "year" => $movie["year"],
             "cover" => $movie["cover"],
             "plot" => $movie["plot"],
+            "likes" => $movie["likes"]
         ];
     }
 

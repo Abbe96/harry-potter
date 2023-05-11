@@ -55,8 +55,11 @@ async function moviePage() {
             `;
 
             let likeBtn = document.createElement("button");
-            likeBtn.classList.add("likeBtn");
-            likeBtn.innerText = "Like";
+            likeBtn.classList.add("likeStyle");
+            likeBtn.innerHTML = `
+            <p>${movie.likes}</p>
+            <span>&#9825;</span>
+            `;
             likeBtn.addEventListener("click", async () => {
                 //toggle "liked" class on likeBtn
                 likeBtn.classList.toggle("liked");
@@ -65,7 +68,7 @@ async function moviePage() {
                 const action = likeBtn.classList.contains("liked") ? "like" : "unlike";
                             
                 try {
-                    const likeResponse = await fetch("api/likes.php", {
+                    const likeResponse = await fetch("api/likes-m.php", {
                         method: "POST",
                         headers: {"Content-Type": "application/json"},
                         body: JSON.stringify({
@@ -86,19 +89,41 @@ async function moviePage() {
                         likeBtn.style.backgroundColor = "white";
                         likeBtn.style.color = "black";
                     }
-            
-                    likeBtn.querySelector("p").textContent = data.likes;
+
+
+                    if (action === "like") {
+                        let movieResponse = await fetch("api/likes-m.php");
+                        let moviesData = await movieResponse();
+
+                        let movieData = moviesData.find(m => m.title === movieTitle);
+
+                        // ADD THE USER TO THE LIKES ARRAY FOR THE MOVIE
+                        if (movieData.likes) {
+                            movieData.likes.push(user.username);
+                        } else {
+                            movieData.likes = [user.username];
+                        }
+
+                        // Update the movie data on the server
+                        let updateResponse = await fetch(`api/likes-m.php?id=${movieData.id}`, {
+                            method: "PUT",
+                            headers: {"Content-Type": "application/json"},
+                            body: JSON.stringify(movieData)
+                        });
+
+                        let updatedMovieData = await updateResponse.json();
+                        console.log(updatedMovieData);
+                    }
             
                 } catch (error) {
                     console.error(error);
                 }
             });
             
-
             movieWrapper.appendChild(movieElement);
             movieWrapper.appendChild(plotText);
+            movieWrapper.appendChild(likeBtn);
             
-
             movieElement.addEventListener('mouseover', function() {
                 movieElement.innerHTML = `${data[movie].title}<br>${data[movie].year}`;
             });

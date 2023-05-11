@@ -14,8 +14,6 @@ if (!window.localStorage.getItem("user")) {
 }
 
 function loginPage() {
-    document.body.style.backgroundImage = "url('../Bild/background-login.jpg')";
-    document.body.style.backgroundSize = "cover";
 
     nav.innerHTML = "";
     main.innerHTML = `
