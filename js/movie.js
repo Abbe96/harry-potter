@@ -71,7 +71,7 @@ async function moviePage() {
             }
 
             likeBtn.addEventListener("click", async () => {
-                //toggle "liked" class on likeBtn
+                
                 likeBtn.classList.toggle("liked");
             
                 const movieTitle = movie.title;
@@ -99,33 +99,40 @@ async function moviePage() {
                         likeBtn.style.backgroundColor = "white";
                         likeBtn.style.color = "black";
                     }
-
-                    likeBtn.querySelector("p").textContent = data.likes.length;
-
+                    
                     if (action === "like") {
-                        let movieResponse = await fetch("api/likes-m.php");
-                        let moviesData = await movieResponse.json();
-
-                        let movieData = moviesData.find(m => m.title === movieTitle);
-
-                        // ADD THE USER TO THE LIKES ARRAY FOR THE MOVIE
-                        if (movieData.likes) {
-                            movieData.likes.push(user.username);
-                        } else {
-                            movieData.likes = [user.username];
-                        }
-
+                        // update the likes array of the movie data
+                        movie.likes.push(user.username);
+            
                         // Update the movie data on the server
-                        let updateResponse = await fetch(`api/likes-m.php?id=${movieData.id}`, {
+                        const updateResponse = await fetch(`api/likes-m.php?id=${movie.id}`, {
                             method: "PUT",
-                            headers: {"Content-Type": "application/json"},
-                            body: JSON.stringify(movieData)
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify(movie),
                         });
-
+            
                         let updatedMovieData = await updateResponse.json();
                         console.log(updatedMovieData);
-                    }
+                    } else if (action === "unlike") {
+                        // remove the user from the likes array of the movie data
+                        movie.likes = movie.likes.filter((like) => like !== user.username);
+            
+                        // Update the movie data on the server
+                        const updateResponse = await fetch(`api/likes-m.php?id=${movie.id}`, {
+                            method: "PUT",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify(movie),
+                        });
+            
+                        updatedMovieData = await updateResponse.json();
+                        console.log(updatedMovieData);
 
+                        const likesCount = updatedMovieData.likes.length;
+                        likeBtn.querySelector("p").innerHTML = likesCount;
+                    }
+            
+                    
+        
                 } catch (error) {
                     console.error(error);
                 }
