@@ -1,5 +1,7 @@
 async function menuPage() {
 
+    const user = JSON.parse(localStorage.getItem("user"));
+
     nav.innerHTML = `
         <button id="lightningMenu"></button>
         <h2 class="titleMenu">Menu</h2>
@@ -42,8 +44,6 @@ async function menuPage() {
 
     let infoBtn = main.querySelector("#infoBtn");
     infoBtn.addEventListener("click", infoPage);
-
-    //let selectedHouse = null;
 
      // GET HOUSES DATA
      try {

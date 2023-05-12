@@ -105,7 +105,7 @@ async function moviePage() {
                         movie.likes.push(user.username);
             
                         // Update the movie data on the server
-                        const updateResponse = await fetch(`api/likes-m.php?id=${movie.id}`, {
+                        let updateResponse = await fetch(`api/likes-m.php?id=${movie.id}`, {
                             method: "PUT",
                             headers: { "Content-Type": "application/json" },
                             body: JSON.stringify(movie),
@@ -118,7 +118,7 @@ async function moviePage() {
                         movie.likes = movie.likes.filter((like) => like !== user.username);
             
                         // Update the movie data on the server
-                        const updateResponse = await fetch(`api/likes-m.php?id=${movie.id}`, {
+                        let updateResponse = await fetch(`api/likes-m.php?id=${movie.id}`, {
                             method: "PUT",
                             headers: { "Content-Type": "application/json" },
                             body: JSON.stringify(movie),
@@ -129,9 +129,8 @@ async function moviePage() {
 
                         const likesCount = updatedMovieData.likes.length;
                         likeBtn.querySelector("p").innerHTML = likesCount;
-                    }
-            
-                    
+                        console.log(likeBtn);
+                    }  
         
                 } catch (error) {
                     console.error(error);
@@ -143,7 +142,7 @@ async function moviePage() {
             movieWrapper.appendChild(likeBtn);
 
             movieElement.addEventListener('mouseover', function() {
-                movieElement.innerHTML = `${data[movie].title}<br>${data[movie].year}`;
+                movieElement.innerHTML = `${movie.title}<br>${movie.year}`;
             });
             movieElement.addEventListener('mouseleave', function() {
                 movieElement.innerHTML = "";

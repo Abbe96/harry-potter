@@ -24,7 +24,8 @@
         "cover": "..\/Bild\/movies\/prisoner-of-azkaban.jpg",
         "plot": "Harry Potter, Ron and Hermione return to Hogwarts School of Witchcraft and Wizardry for their third year of study, where they delve into the mystery surrounding an escaped prisoner who poses a dangerous threat to the young wizard.",
         "likes": [
-            "miso"
+            "miso",
+            "miso1"
         ]
     },
     {
@@ -33,7 +34,8 @@
         "cover": "..\/Bild\/movies\/goblet-of-fire.jpg",
         "plot": "Harry Potter finds himself competing in a hazardous tournament between rival schools of magic, but he is distracted by recurring nightmares.",
         "likes": [
-            "miso"
+            "miso",
+            "miso1"
         ]
     },
     {
