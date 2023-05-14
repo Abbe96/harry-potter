@@ -2,21 +2,21 @@
     "miso": {
         "username": "miso",
         "password": "1234",
-        "house": "none"
+        "house": ""
     },
     "abbe": {
         "username": "abbe",
         "password": "abbe",
-        "house": "none"
+        "house": ""
     },
     "elvis": {
         "username": "elvis",
         "password": "apa",
-        "house": "none"
+        "house": ""
     },
     "miso1": {
         "username": "miso1",
         "password": "1234",
-        "house": "none"
+        "house": "Hufflepuff"
     }
 }

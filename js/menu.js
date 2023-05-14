@@ -60,9 +60,27 @@ async function menuPage() {
             let houseBackground = data.find(house => house.name === houseName)["background"];
             document.querySelector("#menu").style.backgroundImage = `url(${houseBackground})`;
         }
+
+        async function sendHouseToServer(houseName) {
+            try {
+                let response = await fetch("api/updateUserHouse.php", {
+                    method: "POST",
+                    body: JSON.stringify({house: houseName, user: user.username}),
+                    headers: {"Content-Type": "application/json"}
+                });
+
+                console.log(response);
+
+                let data = await response.json();
+                console.log(data);
+            } catch (error) {
+                console.error("Failed to update user house", error);
+            }
+        }
     
         gryffindorBtn.addEventListener("click", () => {
             setHouseBackground("Gryffindor");
+            sendHouseToServer("Gryffindor");
             document.querySelector("#houseBtn").style.color = "#cf9906";
             document.querySelector("#characterBtn").style.color = "#cf9906";
             document.querySelector("#movieBtn").style.color = "#cf9906";
@@ -72,6 +90,7 @@ async function menuPage() {
     
         slytherinBtn.addEventListener("click", () => {
             setHouseBackground("Slytherin");
+            sendHouseToServer("Slytherin");
             document.querySelector("#houseBtn").style.color = "#1d6a1a";
             document.querySelector("#characterBtn").style.color = "#1d6a1a";
             document.querySelector("#movieBtn").style.color = "#1d6a1a";
@@ -81,6 +100,7 @@ async function menuPage() {
     
         ravenclawBtn.addEventListener("click", () => {
             setHouseBackground("Ravenclaw");
+            sendHouseToServer("Ravenclaw");
             document.querySelector("#houseBtn").style.color = "#01779e";
             document.querySelector("#characterBtn").style.color = "#01779e";
             document.querySelector("#movieBtn").style.color = "#01779e";
@@ -90,6 +110,7 @@ async function menuPage() {
     
         hufflepuffBtn.addEventListener("click", () => {
             setHouseBackground("Hufflepuff");
+            sendHouseToServer("Hufflepuff");
             document.querySelector("#houseBtn").style.color = "#c99506";
             document.querySelector("#characterBtn").style.color = "#c99506";
             document.querySelector("#movieBtn").style.color = "#c99506";

@@ -33,7 +33,7 @@ ini_set("display_errors", 1);
             exit;
         }
 
-        $users[$data["username"]] = array("username" => $data["username"], "password" => $data["password"], "house" => "none");
+        $users[$data["username"]] = array("username" => $data["username"], "password" => $data["password"], "house" => "");
 
         if (!file_put_contents($filename, json_encode($users, JSON_PRETTY_PRINT))) {
             http_response_code(500);
@@ -43,6 +43,6 @@ ini_set("display_errors", 1);
         }
 
         http_response_code(200);
-        echo json_encode(["username" => $data["username"], "house" => "none"]);
+        echo json_encode(["username" => $data["username"], "house" => ""]);
     }
 ?>
