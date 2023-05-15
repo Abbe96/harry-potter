@@ -5,6 +5,8 @@ async function housePage() {
     nav.innerHTML = `
         <button id=lightningMenu></button>
 
+        <h1>HOGWARTS HOUSES</h1>
+
         <div id=me>
         <p>${user.username}</p>
         <button id=logout>Logout</button>
@@ -18,10 +20,6 @@ async function housePage() {
     menuBtn.addEventListener("click", toggleMenuPage);
 
     main.innerHTML = `
-        <header>
-            <h1>HOGWARTS HOUSES</h1>
-        </header>
-
         <button id=membersBtn>Registered members</button>
 
         <section id=theFourHouses>
@@ -53,13 +51,8 @@ async function housePage() {
 }
 
 async function showHouseMembers() {
-    const user = JSON.parse(localStorage.getItem("user"));
 
     main.innerHTML = `
-        <header>
-            <h1>HOGWARTS HOUSES</h1>
-        </header>
-
         <button id=back>Back to Houses</button>
 
         <section id=houseMembers>
