@@ -142,11 +142,11 @@ async function moviePage() {
             movieWrapper.appendChild(likeBtn);
 
             movieElement.addEventListener('mouseover', function() {
-<<<<<<< Updated upstream
+
                 movieElement.innerHTML = `${movie.title}<br>${movie.year}`;
-=======
+
                 movieElement.innerHTML = `${data[movie].plot}`;
->>>>>>> Stashed changes
+
             });
             movieElement.addEventListener('mouseleave', function() {
                 movieElement.innerHTML = "";
