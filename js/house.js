@@ -53,6 +53,8 @@ async function housePage() {
 }
 
 async function showHouseMembers() {
+    const user = JSON.parse(localStorage.getItem("user"));
+
     main.innerHTML = `
         <header>
             <h1>HOGWARTS HOUSES</h1>
@@ -71,22 +73,34 @@ async function showHouseMembers() {
     let houseMembers = main.querySelector("#houseMembers");
 
     try {
-        let response = await fetch("api/houses.php");
+        let response = await fetch("api/getMembers.php");
         let data = await response.json();
+        console.log(data);
 
-        // EDIT HERE
-        let members = data.map((user) => {
-            return `
-            <div class=house>
-                <div>${user.house}</div>
-            </div>
+        let houses = {};
+
+        data.members.forEach((member) => {
+            const { house, username } = member;
+            if (houses.hasOwnProperty(house)) {
+                houses[house].push(username);
+            } else {
+                houses[house] = [username];
+            }
+        });
+
+        let houseMarkup = "";
+        for (let house in houses)  {
+            const members = houses[house].join("<br>");
+            houseMarkup += `
+                <div class="house">
+                    <h2>${house}</h2>
+                    <p>${members}</p>
+                </div>
             `;
-        }).join("");
+        }
 
-        houseMembers.innerHTML = `
-            <h2>${data.house}</h2>
-            ${members}
-        `;
+        houseMembers.innerHTML = houseMarkup;
+
     } catch (error) {
         console.warn(error);
     }

@@ -1,23 +1,4 @@
-async function checkUserHouse() {
-    const user = JSON.parse(localStorage.getItem("user"));
-
-    try {
-        let response = await fetch(`api/getUserHouse.php?user=${user.username}`);
-        let data = await response.json();
-        console.log(data);
-
-        if (data.house) {
-            setHouseBackground(data.house);
-            setTextColor(data.house);
-        }
-    } catch (error) {
-        console.error("Failed to get user's house", error);
-    }
-}
-
 async function menuPage() {
-
-    checkUserHouse();
     const user = JSON.parse(localStorage.getItem("user"));
 
     nav.innerHTML = `
@@ -77,6 +58,23 @@ async function menuPage() {
         let slytherinBtn = main.querySelector("#slytherin");
         let ravenclawBtn = main.querySelector("#ravenclaw");
         let hufflepuffBtn = main.querySelector("#hufflepuff");
+
+        async function checkUserHouse() {        
+            try {
+                let response = await fetch(`api/getUserHouse.php?user=${user.username}`);
+                let userHouseData = await response.json();
+                console.log(userHouseData);
+        
+                if (userHouseData.house) {
+                    setHouseBackground(userHouseData.house, userHouseData);
+                    setTextColor(userHouseData.house, userHouseData);
+                }
+            } catch (error) {
+                console.error("Failed to get user's house", error);
+            }
+        }
+    
+        checkUserHouse();
 
         function setHouseBackground(houseName) {
             let houseBackground = data.find(house => house.name === houseName)["background"];
