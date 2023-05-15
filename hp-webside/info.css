@@ -8,16 +8,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-::selection{
-  color: #000;
-  background: #fff;
-}
+
 nav{
-  position: fixed;
-  background: #1b1b1b;
-  width: 100%;
-  padding: 10px 0;
-  z-index: 12;
+  padding: 20px;
+background-color: rgba(165, 128, 80, 0.29);
+border-radius: 10px 10px 0 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 nav .menu{
   max-width: 1250px;
@@ -60,16 +58,7 @@ nav .menu{
   background: #fff;
   color: black;
 }
-.img{
-  background: url('../harry-potter-profile.jpg')no-repeat;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  filter: blur(5px);
 
-}
 .img::before{
   content: '';
   position: absolute;
@@ -78,67 +67,34 @@ nav .menu{
   background: rgba(0, 0, 0, 0.4);
 }
 .center{ 
-  position: absolute;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
-  padding: 0 20px;
+  padding:30px;
   text-align: center;
+  background: url('../Bild/gcztte8rnc68ag2o\ copy.jpg')no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: antiquewhite;
 }
 .center .title{
-  color: #fff;
   font-size: 55px;
   font-weight: 600;
   font-family: "Harry P";
 
 }
 .center .sub_title{
-  color: #fff;
   font-size: 52px;
   font-weight: 600;
   font-family: "Harry P";
 
 }
-.center .btns{
-  margin-top: 20px;
-  
-}
-.center .btns button{
-  height: 55px;
-  width: 170px;
-  border-radius: 5px;
-  border: none;
-  margin: 0 10px;
-  border: 2px solid white;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 0 10px;
-  cursor: pointer;
-  outline: none;
-  transition: all 0.3s ease;
-  font-family: "Harry P";
 
+h3{
+  font-size: 40px;
 }
-.center .btns button:first-child{
-  color: #fff;
-  background: none;
-}
-.btns button:first-child:hover{
-  background: white;
-  color: black;
-}
-.center .btns button:last-child{
-  background: white;
-  color: black;
-}
-
 #primary-content {
   background-color: #f8fafa;
-  padding: 60px 0;
   text-align: center;
-  display: grid;
-  gap: 5px;
+  
 }
 #primary-content h3 {
   display: block;
@@ -151,21 +107,34 @@ nav .menu{
   margin: 20px 0;
 }
 .infobox {
-  border: 1px solid #a2a9b1;
-  border-spacing: 3px;
-  background-color: #f8f9fa;
-  color: black;
-  margin: 0.5em 0 0.5em 1em;
-  padding: 0.2em;
-  float: right;
-  clear: right;
-  font-size: 88%;
-  line-height: 1.5em;
-  width: 22em;
-  grid-column: 2;
-  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2%;
+  background: url('../Bild/gcztte8rnc68ag2o\ copy.jpg')no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: antiquewhite;
+
+}
+.film-text{
+  display: flex;
+  gap: 5%;
+  padding: 5%;
+  background: url('../Bild/gcztte8rnc68ag2o\ copy.jpg')no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: antiquewhite;
 }
 article{
   font-family: "Harry P";
   font-size: 20px;
+  background: url('../Bild/gcztte8rnc68ag2o\ copy.jpg')no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 2%;
+  color: antiquewhite;
+  font-size: 25px;
 }
