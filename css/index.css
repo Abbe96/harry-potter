@@ -20,13 +20,9 @@ main {
 }
 */
 nav {
-    /*
+    padding: 20px;
     background-color: rgba(165, 128, 80, 0.29);
     border-radius: 10px 10px 0 0;
-    padding: 20px;
-    */
-    padding: 20px;
-    height: 100px;
     display: flex;
     justify-content:space-between;
     align-items: center;

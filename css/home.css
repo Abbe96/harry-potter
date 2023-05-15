@@ -3,22 +3,13 @@ p {
     margin-bottom: 20px;
 }
 h1 {
-    font-size: 8vw;
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 7vw;
+    
 }
 
 h3 {
-    font-size: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
+    font-size: 5vw;
     margin-bottom: 20px;
-}
-
-.nav {
-    display: flex;
-    gap: 15px;
 }
 
 a {

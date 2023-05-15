@@ -40,16 +40,16 @@ async function moviePage() {
             movieWrapper = document.createElement("div");
             movieWrapper.classList.add("movieWrapper");
 
-            let movieElement = document.createElement("div");
-            movieElement.style.backgroundImage = `url(${movie.cover})`;
-            movieElement.classList.add("cover");
-            movieElement.innerHTML = `
+            let plotText = document.createElement("div");
+            plotText.style.backgroundImage = `url(${movie.cover})`;
+            plotText.classList.add("plot");
+            plotText.innerHTML = `
                 <p class=overlayText>${movie.plot}</p>
             `;
 
-            let plotText = document.createElement("div");
-            plotText.classList.add("plot");
-            plotText.innerHTML = `
+            let movieElement = document.createElement("div");
+            movieElement.classList.add("cover");
+            movieElement.innerHTML = `
                 <h4>${movie.title}</h4>
                 <hp>${movie.year}</p>
             `;
@@ -137,19 +137,21 @@ async function moviePage() {
                 }
             });
             
-            movieWrapper.appendChild(movieElement);
             movieWrapper.appendChild(plotText);
+            movieWrapper.appendChild(movieElement);
             movieWrapper.appendChild(likeBtn);
+            
 
-            movieElement.addEventListener('mouseover', function() {
+            plotText.addEventListener('mouseover', function() {
 
-                movieElement.innerHTML = `${movie.title}<br>${movie.year}`;
-
-                movieElement.innerHTML = `${data[movie].plot}`;
+                //movieElement.innerHTML = `${movie.title}<br>${movie.year}`;
+                document.querySelector(".overlayText").style.display = "block";
+                //plotText.style.display = "block";//`${data[movie].plot}`;
 
             });
-            movieElement.addEventListener('mouseleave', function() {
-                movieElement.innerHTML = "";
+            plotText.addEventListener('mouseleave', function() {
+                //plotText.style.display = "none";
+                document.querySelector(".overlayText").style.display = "block";
             });
 
             movies.appendChild(movieWrapper); 

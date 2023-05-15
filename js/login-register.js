@@ -150,6 +150,7 @@ function registerPage() {
 }
 
 function logout() {
+    document.querySelector("nav").style.display = "none";
     window.localStorage.clear();
     user = null;
     loginPage();

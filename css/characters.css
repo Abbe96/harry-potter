@@ -13,7 +13,8 @@
     align-items: center;
     flex-direction: column;
     background-image: url(../Images-characters/background.png);
-    height: 90%;
+    height: 100%;
+    border-radius: 10px;
 }
 
 .characterWrapper {

@@ -16,7 +16,7 @@
   margin: 0;
   flex-direction: column;
   width: 60vw;
-  height: 80vh;
+  height: 90vh;
   border-radius: 20px;
 }
 
@@ -69,7 +69,6 @@ form input {
   text-indent: 40px;
 }
 #register {
-  font-size: 2vw;
   outline: none;
   border: none;
   cursor: pointer;
