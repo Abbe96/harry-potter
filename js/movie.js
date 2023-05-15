@@ -44,14 +44,14 @@ async function moviePage() {
             movieElement.style.backgroundImage = `url(${movie.cover})`;
             movieElement.classList.add("cover");
             movieElement.innerHTML = `
-                <h4>${movie.title}</h4>
-                <hp>${movie.year}</p>
+                <p class=overlayText>${movie.plot}</p>
             `;
 
             let plotText = document.createElement("div");
             plotText.classList.add("plot");
             plotText.innerHTML = `
-                <p class=overlayText>${movie.plot}</p>
+                <h4>${movie.title}</h4>
+                <hp>${movie.year}</p>
             `;
 
             let likeBtn = document.createElement("button");
@@ -142,7 +142,11 @@ async function moviePage() {
             movieWrapper.appendChild(likeBtn);
 
             movieElement.addEventListener('mouseover', function() {
+<<<<<<< Updated upstream
                 movieElement.innerHTML = `${movie.title}<br>${movie.year}`;
+=======
+                movieElement.innerHTML = `${data[movie].plot}`;
+>>>>>>> Stashed changes
             });
             movieElement.addEventListener('mouseleave', function() {
                 movieElement.innerHTML = "";

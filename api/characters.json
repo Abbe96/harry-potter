@@ -27,7 +27,9 @@
         "house": "Slytherin",
         "imageSource": "Images-characters\/Harry-Potter-The-Deathly-Hallows-Part-II.webp",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Draco_Malfoy",
-        "likes": []
+        "likes": [
+            "elvis"
+        ]
     },
     "AlbusDumbledore": {
         "name": "Albus Dumbledore",
@@ -55,7 +57,9 @@
         "house": "Slytherin",
         "imageSource": "Images-characters\/2.png",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Lord_Voldemort",
-        "likes": []
+        "likes": [
+            "elvis"
+        ]
     },
     "SeverusSnape": {
         "name": "Severus Snape",

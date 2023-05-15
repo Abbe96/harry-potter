@@ -31,7 +31,6 @@ function homePage() {
             <div class="wrapper">
                 <h3 class="info-title">What is the history of Harry Potter?</h3>
                 <p class="info-text">Harry Potter first made an appearance in 1997 in the novel Harry Potter and the Philosopher's Stone. Harry is an orphan living with his guardian aunt and uncle and their son, who mistreat him. On his 11th birthday Harry discovers that his parents were a witch and a wizard. </p>
-                <a href="#" class="button-2">Get Started</a>
             </div>
         </div>
     `;

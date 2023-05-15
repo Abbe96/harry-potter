@@ -80,7 +80,7 @@ async function menuPage() {
 
         function setHouseBackground(houseName) {
             let houseBackground = data.find(house => house.name === houseName)["background"];
-            document.querySelector("#menu").style.backgroundImage = `url(${houseBackground})`;
+            document.querySelector("body").style.backgroundImage = `url(${houseBackground})`;
         }
 
         function setTextColor (houseName) {

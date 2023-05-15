@@ -6,6 +6,8 @@
 body {
     width: 100vw;
     height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
     margin: 0;
     background-repeat: no-repeat;
 }
@@ -18,6 +20,12 @@ main {
 }
 
 nav {
+    /*
+    background-color: rgba(165, 128, 80, 0.29);
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    */
+    padding: 20px;
     height: 100px;
     display: flex;
     justify-content:space-between;
@@ -32,18 +40,34 @@ footer {
     border: none;
     background-color: transparent;
     font-size: 5vw;
+    color: white;
+    text-shadow: 2px 5px 5px rgb(0, 0, 0);
 }
 
 .btnStyle:hover {
-    color: grey;
+    color: rgba(237, 220, 191, 0.71);
 }
 
 #logout {
-    width: 60px;
-    
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(118, 101, 74);
+    background: none;
+    border:rgb(181, 171, 144);
+    font-size: 3vw;
+    background-color: rgba(252, 222, 178, 0.405);
+}
+
+#logout:hover {
+    background-color: rgba(247, 232, 212, 0.732);
+}
+
+#logout:active {
+    background-color: rgba(252, 222, 178, 0.405);
 }
 
 #me  {
+    border-radius: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,5 +75,6 @@ footer {
 }
 
 #me p {
-    font-size: 30px;
+    font-size: 3vw;
+    margin: 0;
 }
