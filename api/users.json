@@ -2,7 +2,7 @@
     "miso": {
         "username": "miso",
         "password": "1234",
-        "house": ""
+        "house": "Ravenclaw"
     },
     "abbe": {
         "username": "abbe",
@@ -17,6 +17,6 @@
     "miso1": {
         "username": "miso1",
         "password": "1234",
-        "house": "Gryffindor"
+        "house": "Slytherin"
     }
 }
