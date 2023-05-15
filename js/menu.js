@@ -5,7 +5,11 @@ async function menuPage() {
     nav.innerHTML = `
         <button id="lightningMenu"></button>
         <h2 class="titleMenu">Menu</h2>
-        <button id="logout">Logout</button>
+
+        <div id=me>
+        <p>${user.username}</p>
+        <button id=logout>Logout</button>
+        </div>
     `;
 
     let logoutBtn = nav.querySelector("#logout");
@@ -61,6 +65,15 @@ async function menuPage() {
             document.querySelector("#menu").style.backgroundImage = `url(${houseBackground})`;
         }
 
+        function setTextColor (houseName) {
+            let textColor = data.find(house => house.name === houseName)["color"];
+            document.querySelector("#houseBtn").style.color = textColor;
+            document.querySelector("#characterBtn").style.color = textColor;
+            document.querySelector("#movieBtn").style.color = textColor;
+            document.querySelector("#infoBtn").style.color = textColor;
+            document.querySelector(".changeHousesHeader").style.color = textColor;
+        }
+
         async function sendHouseToServer(houseName) {
             try {
                 let response = await fetch("api/updateUserHouse.php", {
@@ -81,41 +94,25 @@ async function menuPage() {
         gryffindorBtn.addEventListener("click", () => {
             setHouseBackground("Gryffindor");
             sendHouseToServer("Gryffindor");
-            document.querySelector("#houseBtn").style.color = "#cf9906";
-            document.querySelector("#characterBtn").style.color = "#cf9906";
-            document.querySelector("#movieBtn").style.color = "#cf9906";
-            document.querySelector("#infoBtn").style.color = "#cf9906";
-            document.querySelector(".changeHousesHeader").style.color = "#cf9906";
+            setTextColor("Gryffindor");
         });
     
         slytherinBtn.addEventListener("click", () => {
             setHouseBackground("Slytherin");
             sendHouseToServer("Slytherin");
-            document.querySelector("#houseBtn").style.color = "#1d6a1a";
-            document.querySelector("#characterBtn").style.color = "#1d6a1a";
-            document.querySelector("#movieBtn").style.color = "#1d6a1a";
-            document.querySelector("#infoBtn").style.color = "#1d6a1a";
-            document.querySelector(".changeHousesHeader").style.color = "#1d6a1a";
+            setTextColor("Slytherin");
         });
     
         ravenclawBtn.addEventListener("click", () => {
             setHouseBackground("Ravenclaw");
             sendHouseToServer("Ravenclaw");
-            document.querySelector("#houseBtn").style.color = "#01779e";
-            document.querySelector("#characterBtn").style.color = "#01779e";
-            document.querySelector("#movieBtn").style.color = "#01779e";
-            document.querySelector("#infoBtn").style.color = "#01779e";
-            document.querySelector(".changeHousesHeader").style.color = "#01779e";
+            setTextColor("Ravenclaw");
         });
     
         hufflepuffBtn.addEventListener("click", () => {
             setHouseBackground("Hufflepuff");
             sendHouseToServer("Hufflepuff");
-            document.querySelector("#houseBtn").style.color = "#c99506";
-            document.querySelector("#characterBtn").style.color = "#c99506";
-            document.querySelector("#movieBtn").style.color = "#c99506";
-            document.querySelector("#infoBtn").style.color = "#c99506";
-            document.querySelector(".changeHousesHeader").style.color = "#c99506";
+            setTextColor("Hufflepuff");
         });
 
     } catch (error) {

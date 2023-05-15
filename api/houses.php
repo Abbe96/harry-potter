@@ -16,7 +16,7 @@
     }
 
     foreach ($houses as $house) {
-        if (!isset($house["name"]) || !isset($house["description"])|| !isset($house["background"])) {
+        if (!isset($house["name"]) || !isset($house["description"])|| !isset($house["background"]) || !isset($house["color"])) {
             // Display an error message if required keys are missing
             echo "Missing keys in JSON";
             exit;
@@ -25,7 +25,8 @@
         $response[] = [
             "name" => $house["name"],
             "description" => $house["description"],
-            "background" => $house["background"]
+            "background" => $house["background"],
+            "color" => $house["color"]
         ];
     }
 
