@@ -9,7 +9,6 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
