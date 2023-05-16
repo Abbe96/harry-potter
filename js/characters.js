@@ -46,13 +46,16 @@ async function characterPage() {
             const likeBtn = document.createElement("button");
             likeBtn.classList.add("likeStyle", character);
             
-            const likesIndex = data[character].likes.indexOf(user.username);
+            let likesIndexUsers = data[character].likes;
+            let likesIndex = likesIndexUsers.length;
+            console.log(likesIndex);
+            
             likeBtn.innerHTML = `
-                <p>${likesIndex === -1 ? 0 : likesIndex + 1}</p>
+                <p>${likesIndex}</p>
                 <span>&#9825;</span>
             `;
 
-            if (likesIndex === -1) {
+            if (likesIndex === 0) {
                 likeBtn.style.backgroundColor = "white";
                 likeBtn.style.color = "black";
             } else {
@@ -99,16 +102,10 @@ async function characterPage() {
 
                     const updatedResponse = await fetch("api/characters.json");
                     const updatedData = await updatedResponse.json();
-                    const likesIndex = updatedData[characterName].likes.indexOf(user.username);
-                    if (likesIndex === -1) {
-                        likeBtn.style.backgroundColor = "white";
-                        likeBtn.style.color = "black";
-                    } else {
-                        likeBtn.style.backgroundColor = "red";
-                        likeBtn.style.color = "white";
-                    }
+                    const likesIndex = updatedData[characterName].likes.length;
+                    
 
-                    likeBtn.querySelector("p").textContent = likesIndex === -1 ? 0 : likesIndex + 1;
+                    likeBtn.querySelector("p").textContent = likesIndex;
     
                 } catch (error) {
                     console.error(error);

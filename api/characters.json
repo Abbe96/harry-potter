@@ -4,9 +4,7 @@
         "house": "Gryffindor",
         "imageSource": "Images-characters\/Harry_Potter_-_GoF_Promo.jpg",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Harry_Potter_(character)",
-        "likes": [
-            "miso"
-        ]
+        "likes": []
     },
     "HermioneGranger": {
         "name": "Hermione Granger",
@@ -55,7 +53,9 @@
         "house": "Gryffindor",
         "imageSource": "Images-characters\/f95b26d6-87c7-4c86-8bdb-430550b91f73.jpg",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Sirius_Black",
-        "likes": []
+        "likes": [
+            "miso"
+        ]
     },
     "LordVoldemort": {
         "name": "Lord Voldemort",
