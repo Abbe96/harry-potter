@@ -30,7 +30,6 @@ async function characterPage() {
         let data = await response.json();
     
         const charactersDiv = document.getElementById("characters");
-        //create info tag and add it to the characterDiv
         const info = document.createElement("a");
     
         Object.keys(data).forEach(async (character) => {
@@ -48,23 +47,22 @@ async function characterPage() {
             
             let likesIndexUsers = data[character].likes;
             let likesIndex = likesIndexUsers.length;
-            console.log(likesIndex);
             
             likeBtn.innerHTML = `
                 <p>${likesIndex}</p>
                 <span>&#9825;</span>
             `;
 
-            if (likesIndex === 0) {
-                likeBtn.style.backgroundColor = "white";
-                likeBtn.style.color = "black";
-            } else {
+            let usernameExists = likesIndexUsers.includes(user.username);
+            if (usernameExists) {
                 likeBtn.style.backgroundColor = "red";
                 likeBtn.style.color = "white";
+            } else {
+                likeBtn.style.backgroundColor = "white";
+                likeBtn.style.color = "black";
             }
     
             tempDiv.addEventListener("mouseover", function() {
-                //tempDiv.style.filter = "blur(3px)";
                 info.href = data[character].info;               
                 info.innerHTML = `${data[character].name}<br>${data[character].house}`;             
                 tempDiv.appendChild(info); 
@@ -102,8 +100,18 @@ async function characterPage() {
 
                     const updatedResponse = await fetch("api/characters.json");
                     const updatedData = await updatedResponse.json();
-                    const likesIndex = updatedData[characterName].likes.length;
-                    
+
+                    let likesIndex = updatedData[characterName].likes.length;
+                    let likesIndexUsers = updatedData[character].likes;
+
+                    let usernameExists = likesIndexUsers.includes(user.username);
+                    if (usernameExists) {
+                        likeBtn.style.backgroundColor = "red";
+                        likeBtn.style.color = "white";
+                    } else {
+                        likeBtn.style.backgroundColor = "white";
+                        likeBtn.style.color = "black";
+                    }
 
                     likeBtn.querySelector("p").textContent = likesIndex;
     
