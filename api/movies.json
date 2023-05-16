@@ -14,10 +14,10 @@
         "year": 2002,
         "cover": "..\/Bild\/movies\/chamber-of-secrets.jpg",
         "plot": "An ancient prophecy seems to be coming true when a mysterious presence begins stalking the corridors of a school of magic and leaving its victims paralyzed.",
-        "likes": [
-            "miso",
-            "miso1"
-        ]
+        "likes": {
+            "1": "miso1",
+            "2": "miso"
+        }
     },
     {
         "title": "Harry Potter and the Prisoner of Azkaban",
