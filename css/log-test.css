@@ -27,6 +27,11 @@
   margin-bottom: 0;
   color: #fffcc8;
 }
+
+#message {
+  color:  #fffcc8;
+}
+
 form {
   display: flex;
   flex-direction: column;
