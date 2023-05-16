@@ -20,8 +20,9 @@ main {
 }
 */
 nav {
-    padding: 20px;
-    background-color: rgba(165, 128, 80, 0.29);
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(179, 164, 146, 0.29);
     border-radius: 10px 10px 0 0;
     display: flex;
     justify-content:space-between;
@@ -29,6 +30,7 @@ nav {
 }
 
 footer {
+    margin: 20px;
     text-align: center;
 }
 
@@ -41,7 +43,8 @@ footer {
 }
 
 .btnStyle:hover {
-    color: rgba(237, 220, 191, 0.71);
+    color: rgba(0, 0, 0, 0.887);
+    text-shadow: none;
 }
 
 #logout {
@@ -50,15 +53,15 @@ footer {
     background: none;
     border:rgb(181, 171, 144);
     font-size: 3vw;
-    background-color: rgba(252, 222, 178, 0.405);
+    background-color: rgba(179, 164, 146, 0.29);
 }
 
 #logout:hover {
-    background-color: rgba(247, 232, 212, 0.732);
+    background-color: rgba(145, 133, 119, 0.734);
 }
 
 #logout:active {
-    background-color: rgba(252, 222, 178, 0.405);
+    background-color: rgba(179, 164, 146, 0.29);
 }
 
 #me  {

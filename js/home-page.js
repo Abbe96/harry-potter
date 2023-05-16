@@ -29,8 +29,8 @@ function homePage() {
         
         <div id="cta">
             <div class="wrapper">
-                <h3 class="info-title">What is the history of Harry Potter?</h3>
-                <p class="info-text">Harry Potter first made an appearance in 1997 in the novel Harry Potter and the Philosopher's Stone. Harry is an orphan living with his guardian aunt and uncle and their son, who mistreat him. On his 11th birthday Harry discovers that his parents were a witch and a wizard. </p>
+                <h3 class="info-title">History of Harry Potter</h3>
+                <p class="info-text">Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's conflict with Lord Voldemort, a dark wizard who intends to become immortal, overthrow the wizard governing body known as the Ministry of Magic and subjugate all wizards and Muggles (non-magical people).<br>The original seven books were adapted into an eight-part namesake film series by Warner Bros. Pictures. In 2016, the total value of the Harry Potter franchise was estimated at $25 billion, making Harry Potter one of the highest-grossing media franchises of all time.</p>
             </div>
         </div>
     `;

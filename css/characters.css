@@ -27,11 +27,11 @@
     background-color: white;
     border: none;
     border-radius: 10px;
-    width: 50px;
+    width: 5vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 50px;
+    height: 5vh;
 }
 
 .headerCharacters {

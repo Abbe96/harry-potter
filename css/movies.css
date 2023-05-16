@@ -15,7 +15,7 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     box-sizing: border-box;
-    background-color: beige;
+    background-color: rgba(165, 128, 80, 0.29);
     border-radius: 10px;
 }
 
