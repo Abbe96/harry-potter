@@ -1,4 +1,7 @@
-
+@font-face {
+  font-family: "Harry P";
+  src: url(harry_p/HARRYP__.TTF);
+}
   
   *{
     margin: 0;

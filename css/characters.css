@@ -1,26 +1,18 @@
-@font-face {
-    font-family: "Harry P";
-    src: url(Font/HARRYP__.TTF);
-}
-
-.characterContainer {
-    margin: 0;
-    padding-top: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(../Images-characters/background.png);
-    height: 100%;
-    border-radius: 10px;
+#characters {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgba(179, 164, 146, 0.29);
+    border-radius: 20px;
 }
 
 .characterWrapper {
+    padding: 20px;
+    gap: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .likeStyle {
@@ -34,37 +26,12 @@
     height: 5vh;
 }
 
-.headerCharacters {
-    display: flex;
-    margin-top: 30px;
-}
-
-.hidden {
-    opacity: 0;
-}
-
-.titleCharacters {
-    margin: 10px;
-    font-family: "Harry p";
-    text-align: center;
-    font-size: 7vw;
-    color: rgb(255, 241, 133);
-}
-
-#characters {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
 .name {
-    font-family: "Harry P";
     width: 20vw;
     height: 25vw;
-    border-radius: 10px;
+    border-radius: 20px;
     background-size: cover;
     background-position: top;
-    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,8 +47,12 @@ a {
     background-color: rgba(0, 0, 0, 0.498);
     width: 20vw;
     height: 25vw;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+a:active {
+    color: rgba(255, 241, 133, 0.323);
 }

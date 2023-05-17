@@ -3,7 +3,7 @@ async function menuPage() {
 
     nav.innerHTML = `
         <button id="lightningMenu"></button>
-        <h2 class="titleMenu">Menu</h2>
+        <h1>MENU</h1>
 
         <div id=me>
         <p>${user.username}</p>

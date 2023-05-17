@@ -3,9 +3,7 @@ async function characterPage() {
     
     nav.innerHTML = `
         <button id=lightningMenu></button>
-        <div class="headerCharacters">
-            <h1 class="titleCharacters">Characters</h1>  
-        </div>
+        <h1>CHARACTERS</h1>  
         
         <div id=me>
         <p>${user.username}</p>
@@ -20,9 +18,8 @@ async function characterPage() {
     menuBtn.addEventListener("click", toggleMenuPage);
     
     main.innerHTML = `
-    <div class=characterContainer>
         <div id="characters"></div>
-    </div>
+    
     `;
     
     try {

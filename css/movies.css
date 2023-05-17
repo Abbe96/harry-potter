@@ -1,12 +1,6 @@
-body {
-    font-family: "Harry p";
-    height: 100vh;
-    width: 100vw;
-    box-sizing: border-box;
-}
-
-h1 {
-    font-family: "Harry p";
+@font-face {
+    font-family: "Harry P";
+    src: url(./HARRYP__.TTF);
 }
 
 #movies {
@@ -16,7 +10,8 @@ h1 {
     grid-template-rows: repeat(2, 1fr);
     box-sizing: border-box;
     background-color: rgba(165, 128, 80, 0.29);
-    border-radius: 10px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .movieWrapper {
@@ -29,20 +24,43 @@ h1 {
 }
 
 .plot {
-    color: rgb(255, 255, 255);
+    width: 20vw;
+    height: 35vh;
+    color: transparent;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5vw;
+    font-size: 1vw;
     text-align: center;
 }
 
+.overlayText {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 35vh;
+    border-radius: 20px;
+}
+
+.overlayText:hover {
+    background-color: rgba(0, 0, 0, 0.498);
+}
+
+
+
+.plot:hover {
+    color: white;
+}
+
 .cover {
-    font-size: 2vw;
+    font-size: 3vw;
+    text-align: center;
 }
 
 /*

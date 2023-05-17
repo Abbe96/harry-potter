@@ -141,20 +141,20 @@ async function moviePage() {
             movieWrapper.appendChild(movieElement);
             movieWrapper.appendChild(likeBtn);
             
-
-            plotText.addEventListener('mouseover', function() {
-
-                //movieElement.innerHTML = `${movie.title}<br>${movie.year}`;
-                document.querySelector(".overlayText").style.display = "block";
-                //plotText.style.display = "block";//`${data[movie].plot}`;
-
-            });
-            plotText.addEventListener('mouseleave', function() {
-                //plotText.style.display = "none";
-                document.querySelector(".overlayText").style.display = "block";
-            });
-
             movies.appendChild(movieWrapper); 
+           // movieWrapper.addEventListener('mouseover', function() {
+//
+           //     //movieElement.innerHTML = `${movie.title}<br>${movie.year}`;
+           //     this.querySelector(".overlayText").style.display = "block";
+           //     //plotText.style.display = "block";//`${data[movie].plot}`;
+//
+           // });
+           // movieWrapper.addEventListener('mouseleave', function() {
+           //     //plotText.style.display = "none";
+           //     this.querySelector(".overlayText").style.display = "none";
+           // });
+//
+          
         });
 
     } catch (error) {
