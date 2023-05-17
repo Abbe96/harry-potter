@@ -25,13 +25,12 @@ body {
     border: none;
     cursor: pointer;
     text-shadow: 2px 5px 5px rgb(0, 0, 0);
+    color: rgb(240, 233, 224);
 }
 
 .allBtn:hover {
     color: rgba(240, 248, 255, 0.339);
 }
-
-
 
 #lightningMenu {
     height: 10vw;
@@ -43,6 +42,10 @@ body {
     background-color: transparent;
 }
 
+#lightningMenu:hover {
+    cursor: pointer;
+}
+
 .listMenu:hover {
     color: rgba(0, 0, 0, 0.273);
 }
@@ -52,6 +55,7 @@ body {
     font-size: 3vw;
     display: flex;
     text-shadow: 2px 5px 5px rgb(0, 0, 0);
+    color: rgb(240, 233, 224);
 }
 
 .allHouses {
