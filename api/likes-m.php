@@ -7,8 +7,8 @@
     $movie = $data["movie"];
     $action = $data["action"];
 
-    $moviesJson = file_get_contents("movies.json");
-    $movies = json_decode($moviesJson, true);
+    $json = file_get_contents("movies.json");
+    $movies = json_decode($json, true);
 
     foreach ($movies as &$m) { 
         if ($m["title"] === $movie) {

@@ -20,6 +20,7 @@ body {
     
 }
 
+
 h1 {
     font-size: 7vw;
 }
@@ -32,6 +33,7 @@ main {
     
 }
 */
+
 nav {
     /*
     background-color: rgba(179, 164, 146, 0.29);
@@ -86,9 +88,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 #me p {
     font-size: 3vw;
     margin: 0;
+    position: absolute;
+    bottom: 97px;
 }

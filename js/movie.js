@@ -56,18 +56,21 @@ async function moviePage() {
 
             let likeBtn = document.createElement("button");
             likeBtn.classList.add("likeStyle");
-            likesIndex = movie.likes.indexOf(user.username);
+
+            let likesIndexUsers = movie.likes;
+            let likesIndex = likesIndexUsers.length;
             likeBtn.innerHTML = `
-            <p>${likesIndex === -1 ? 0 : likesIndex + 1}</p>
+            <p>${likesIndex}</p>
             <span>&#9825;</span>
             `;
 
-            if (likesIndex === -1) {
-                likeBtn.style.backgroundColor = "white";
-                likeBtn.style.color = "black";
-            } else {
+            let usernameExists = likesIndexUsers.includes(user.username);
+            if (usernameExists) {
                 likeBtn.style.backgroundColor = "red";
                 likeBtn.style.color = "white";
+            } else {
+                likeBtn.style.backgroundColor = "white";
+                likeBtn.style.color = "black";
             }
 
             likeBtn.addEventListener("click", async () => {
@@ -90,48 +93,25 @@ async function moviePage() {
             
                     const data = await likeResponse.json();
                     console.log(data);
-            
-                    // Update the like button appearance based on the response
-                    if (data.liked) {
+
+                    const updatedResponse = await fetch("api/movies.json");
+                    const updatedData = await updatedResponse.json();
+
+                    let movieObject = updatedData.find(movie => movie.title === movieTitle);
+                    let likesIndex = movieObject.likes.length;
+                    let likesIndexUsers = movieObject.likes;
+
+                    let usernameExists = likesIndexUsers.includes(user.username);
+                    if (usernameExists) {
                         likeBtn.style.backgroundColor = "red";
                         likeBtn.style.color = "white";
                     } else {
                         likeBtn.style.backgroundColor = "white";
                         likeBtn.style.color = "black";
                     }
-                    
-                    if (action === "like") {
-                        // update the likes array of the movie data
-                        movie.likes.push(user.username);
-            
-                        // Update the movie data on the server
-                        let updateResponse = await fetch(`api/likes-m.php?id=${movie.id}`, {
-                            method: "PUT",
-                            headers: { "Content-Type": "application/json" },
-                            body: JSON.stringify(movie),
-                        });
-            
-                        let updatedMovieData = await updateResponse.json();
-                        console.log(updatedMovieData);
-                    } else if (action === "unlike") {
-                        // remove the user from the likes array of the movie data
-                        movie.likes = movie.likes.filter((like) => like !== user.username);
-            
-                        // Update the movie data on the server
-                        let updateResponse = await fetch(`api/likes-m.php?id=${movie.id}`, {
-                            method: "PUT",
-                            headers: { "Content-Type": "application/json" },
-                            body: JSON.stringify(movie),
-                        });
-            
-                        updatedMovieData = await updateResponse.json();
-                        console.log(updatedMovieData);
 
-                        const likesCount = updatedMovieData.likes.length;
-                        likeBtn.querySelector("p").innerHTML = likesCount;
-                        console.log(likeBtn);
-                    }  
-        
+                    likeBtn.querySelector("p").textContent = likesIndex;
+
                 } catch (error) {
                     console.error(error);
                 }
@@ -141,6 +121,19 @@ async function moviePage() {
             movieWrapper.appendChild(movieElement);
             movieWrapper.appendChild(likeBtn);
             
+
+            plotText.addEventListener('mouseover', function() {
+                //movieElement.innerHTML = `${movie.title}<br>${movie.year}`;
+                document.querySelector(".overlayText").style.display = "block";
+                //plotText.style.display = "block";//`${data[movie].plot}`;
+
+            });
+            plotText.addEventListener('mouseleave', function() {
+                //plotText.style.display = "none";
+                document.querySelector(".overlayText").style.display = "block";
+            });
+
+
             movies.appendChild(movieWrapper); 
            // movieWrapper.addEventListener('mouseover', function() {
 //

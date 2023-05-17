@@ -33,6 +33,9 @@ function loginPage() {
     </div>
     `;
 
+    let body = document.querySelector("body");
+    body.style.backgroundImage = 'url("../Bild/background-login.jpg")';
+
     let registerBtn = main.querySelector("#register");
     registerBtn.addEventListener("click", registerPage);
 
@@ -99,6 +102,8 @@ async function attemptLogin() {
 }
 
 function registerPage() {
+
+    nav.innerHTML = "";
     main.innerHTML = `
 
     <div class=logRegContainer>
@@ -115,6 +120,9 @@ function registerPage() {
         </div>       
     </div>
     `;
+
+    let body = document.querySelector("body");
+    body.style.backgroundImage = 'url("../Bild/background-login2.jpg")';
 
     let loginBtn = main.querySelector("#login");
     loginBtn.addEventListener("click", loginPage);
@@ -150,7 +158,6 @@ function registerPage() {
 }
 
 function logout() {
-    //document.querySelector("nav").style.display = "none";
     window.localStorage.clear();
     user = null;
     loginPage();

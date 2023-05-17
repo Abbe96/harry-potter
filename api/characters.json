@@ -4,21 +4,27 @@
         "house": "Gryffindor",
         "imageSource": "Images-characters\/Harry_Potter_-_GoF_Promo.jpg",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Harry_Potter_(character)",
-        "likes": []
+        "likes": [
+            "miso"
+        ]
     },
     "HermioneGranger": {
         "name": "Hermione Granger",
         "house": "Gryffindor",
         "imageSource": "Images-characters\/Hermione.webp",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Hermione_Granger",
-        "likes": []
+        "likes": [
+            "miso"
+        ]
     },
     "RonWeasley": {
         "name": "Ron Weasley",
         "house": "Gryffindor",
         "imageSource": "Images-characters\/Ron_Weasley_Infobox.webp",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Ron_Weasley",
-        "likes": []
+        "likes": [
+            "miso"
+        ]
     },
     "DracoMalfoy": {
         "name": "Draco Malfoy",
@@ -26,7 +32,8 @@
         "imageSource": "Images-characters\/Harry-Potter-The-Deathly-Hallows-Part-II.webp",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Draco_Malfoy",
         "likes": [
-            "elvis"
+            "elvis",
+            "miso"
         ]
     },
     "AlbusDumbledore": {
@@ -34,7 +41,9 @@
         "house": "Gryffindor",
         "imageSource": "Images-characters\/51dccd2dcb8e60f52489446de42a9531a3d065c3r1-914-1168v2_00.jpg",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Albus_Dumbledore",
-        "likes": []
+        "likes": [
+            "miso1"
+        ]
     },
     "RubeusHagrid": {
         "name": "Rubeus Hagrid",
@@ -48,7 +57,9 @@
         "house": "Gryffindor",
         "imageSource": "Images-characters\/f95b26d6-87c7-4c86-8bdb-430550b91f73.jpg",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Sirius_Black",
-        "likes": []
+        "likes": [
+            "miso"
+        ]
     },
     "LordVoldemort": {
         "name": "Lord Voldemort",

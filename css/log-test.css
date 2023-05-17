@@ -13,6 +13,7 @@
   width: 60vw;
   height: 90vh;
   border-radius: 20px;
+  justify-content: center;
 }
 
 .h2Size {
@@ -20,6 +21,11 @@
   margin-bottom: 0;
   color: #fffcc8;
 }
+
+#message {
+  color:  #fffcc8;
+}
+
 form {
   display: flex;
   flex-direction: column;
