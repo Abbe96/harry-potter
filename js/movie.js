@@ -97,10 +97,9 @@ async function moviePage() {
                     const updatedResponse = await fetch("api/movies.json");
                     const updatedData = await updatedResponse.json();
 
-                    //!! MOVIETITLE UNDEFINED!
-                    let likesIndex = updatedData[movieTitle].likes.length;
-                    console.log(likesIndex);
-                    let likesIndexUsers = updatedData[movieTitle].likes;
+                    let movieObject = updatedData.find(movie => movie.title === movieTitle);
+                    let likesIndex = movieObject.likes.length;
+                    let likesIndexUsers = movieObject.likes;
 
                     let usernameExists = likesIndexUsers.includes(user.username);
                     if (usernameExists) {
@@ -124,7 +123,6 @@ async function moviePage() {
             
 
             plotText.addEventListener('mouseover', function() {
-
                 //movieElement.innerHTML = `${movie.title}<br>${movie.year}`;
                 document.querySelector(".overlayText").style.display = "block";
                 //plotText.style.display = "block";//`${data[movie].plot}`;
