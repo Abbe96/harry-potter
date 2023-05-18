@@ -36,6 +36,23 @@ async function infoPage() {
       let response = await fetch("api/info.php");
       let data = await response.json();
       
+      whatIsHarryPotter.innerHTML = `
+        <h2>What is Harry Potter?</h2>
+        <p>${data.What_is_Harry_Potter}</p>
+      `;
+
+      author.innerHTML = `
+        <h2>J.K Rowling</h2>
+        <p>${data.JK_Rowling}</p>
+      `;
+
+      books.innerHTML = `
+        <h2>Books</h2>
+        <ul class=bookList></ul>
+      `;
+      
+    } catch (error) {
+      console.error("Failed to fetch", error);
     }
 
 }
