@@ -4,7 +4,6 @@
 }
 
 #movies {
-    background-image: url(Bild/background-movies.png);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -63,21 +62,5 @@
     text-align: center;
 }
 
-/*
-.plot {
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-    width: 10vw;
-    height: 10vh;
-    background-color: rgba(0,0,0,0.8);
-    background-color: rgba(238, 202, 82, 0.8);
-    color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-    
-    transition: opacity 0.3s ease-in-out;
-}
-*/
+
 

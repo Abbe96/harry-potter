@@ -6,7 +6,8 @@
         "plot": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.",
         "likes": [
             "miso1",
-            "elvis"
+            "elvis",
+            "miso"
         ]
     },
     {
@@ -24,20 +25,18 @@
         "year": 2004,
         "cover": "..\/Bild\/movies\/prisoner-of-azkaban.jpg",
         "plot": "Harry Potter, Ron and Hermione return to Hogwarts School of Witchcraft and Wizardry for their third year of study, where they delve into the mystery surrounding an escaped prisoner who poses a dangerous threat to the young wizard.",
-        "likes": [
-            "miso",
-            "miso1"
-        ]
+        "likes": {
+            "1": "miso1"
+        }
     },
     {
         "title": "Harry Potter and the Goblet of Fire",
         "year": 2005,
         "cover": "..\/Bild\/movies\/goblet-of-fire.jpg",
         "plot": "Harry Potter finds himself competing in a hazardous tournament between rival schools of magic, but he is distracted by recurring nightmares.",
-        "likes": [
-            "miso",
-            "miso1"
-        ]
+        "likes": {
+            "1": "miso1"
+        }
     },
     {
         "title": "Harry Potter and the Order of the Phoenix",

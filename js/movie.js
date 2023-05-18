@@ -32,12 +32,12 @@ async function moviePage() {
         let response = await fetch("api/movies.php");
         let data = await response.json();
         movies.innerHTML = "";
+        console.log(data);
 
-        let movieWrapper; 
+        data.forEach(async (movie) => {
+            console.log(movie);
 
-        data.forEach(movie => {
-
-            movieWrapper = document.createElement("div");
+            let movieWrapper = document.createElement("div");
             movieWrapper.classList.add("movieWrapper");
 
             let plotText = document.createElement("div");
@@ -123,31 +123,16 @@ async function moviePage() {
             
 
             plotText.addEventListener('mouseover', function() {
-                //movieElement.innerHTML = `${movie.title}<br>${movie.year}`;
-                document.querySelector(".overlayText").style.display = "block";
-                //plotText.style.display = "block";//`${data[movie].plot}`;
-
+                this.querySelector(".overlayText").style.display = "block";
             });
+            
             plotText.addEventListener('mouseleave', function() {
-                //plotText.style.display = "none";
-                document.querySelector(".overlayText").style.display = "block";
+                this.querySelector(".overlayText").style.display = "none";
             });
 
 
             movies.appendChild(movieWrapper); 
-           // movieWrapper.addEventListener('mouseover', function() {
-//
-           //     //movieElement.innerHTML = `${movie.title}<br>${movie.year}`;
-           //     this.querySelector(".overlayText").style.display = "block";
-           //     //plotText.style.display = "block";//`${data[movie].plot}`;
-//
-           // });
-           // movieWrapper.addEventListener('mouseleave', function() {
-           //     //plotText.style.display = "none";
-           //     this.querySelector(".overlayText").style.display = "none";
-           // });
-//
-          
+
         });
 
     } catch (error) {
