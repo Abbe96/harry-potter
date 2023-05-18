@@ -5,9 +5,7 @@
         "cover": "..\/Bild\/movies\/philosophers-stone.jpg",
         "plot": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.",
         "likes": [
-            "miso1",
-            "elvis",
-            "miso"
+            "elvis"
         ]
     },
     {
@@ -15,42 +13,39 @@
         "year": 2002,
         "cover": "..\/Bild\/movies\/chamber-of-secrets.jpg",
         "plot": "An ancient prophecy seems to be coming true when a mysterious presence begins stalking the corridors of a school of magic and leaving its victims paralyzed.",
-        "likes": {
-            "1": "miso1",
-            "2": "miso"
-        }
+        "likes": []
     },
     {
         "title": "Harry Potter and the Prisoner of Azkaban",
         "year": 2004,
         "cover": "..\/Bild\/movies\/prisoner-of-azkaban.jpg",
         "plot": "Harry Potter, Ron and Hermione return to Hogwarts School of Witchcraft and Wizardry for their third year of study, where they delve into the mystery surrounding an escaped prisoner who poses a dangerous threat to the young wizard.",
-        "likes": {
-            "1": "miso1"
-        }
+        "likes": []
     },
     {
         "title": "Harry Potter and the Goblet of Fire",
         "year": 2005,
         "cover": "..\/Bild\/movies\/goblet-of-fire.jpg",
         "plot": "Harry Potter finds himself competing in a hazardous tournament between rival schools of magic, but he is distracted by recurring nightmares.",
-        "likes": {
-            "1": "miso1"
-        }
+        "likes": []
     },
     {
         "title": "Harry Potter and the Order of the Phoenix",
         "year": 2007,
         "cover": "..\/Bild\/movies\/order-of-the-phoenix.jpg",
         "plot": "With their warning about Lord Voldemort's return scoffed at, Harry and Dumbledore are targeted by the Wizard authorities as an authoritarian bureaucrat slowly seizes power at Hogwarts.",
-        "likes": []
+        "likes": [
+            "elvis"
+        ]
     },
     {
         "title": "Harry Potter and the Half-Blood Prince",
         "year": 2009,
         "cover": "..\/Bild\/movies\/half-blood-prince.jpg",
         "plot": "As Harry Potter begins his sixth year at Hogwarts, he discovers an old book marked as 'the property of the Half-Blood Prince' and begins to learn more about Lord Voldemort's dark past.",
-        "likes": []
+        "likes": [
+            "elvis"
+        ]
     },
     {
         "title": "Harry Potter and the Deathly Hallows: Part 1",
