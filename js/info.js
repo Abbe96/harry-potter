@@ -37,21 +37,21 @@ async function infoPage() {
       let data = await response.json();
       
       whatIsHarryPotter.innerHTML = `
-        <h2>What is Harry Potter?</h2>
-        <p>${data.What_is_Harry_Potter}</p>
+        <h2 class=infoH2>What is Harry Potter?</h2>
+        <p class=infoP>${data.What_is_Harry_Potter}</p>
       `;
 
       author.innerHTML = `
-        <h2>J.K Rowling</h2>
-        <p>${data.JK_Rowling}</p>
+        <h2 class=infoH>J.K Rowling</h2>
+        <p class=infoP>${data.JK_Rowling}</p>
       `;
 
       books.innerHTML = `
-        <h2>Books</h2>
-        <ul class=bookList></ul>
+        <h2 class=infoH2>Books</h2>
+        <ul class=ulBookList></ul>
       `;
 
-      let bookList = main.querySelector(".bookList");
+      let ul = main.querySelector(".ulBookList");
 
       Object.keys(data.Books).forEach(async(bookTitle) => {
         let bookUrl = data.Books[bookTitle];
@@ -60,11 +60,12 @@ async function infoPage() {
         liElement.classList.add("listedBooks");
 
         let aElement = document.createElement("a");
+        aElement.classList.add("linkForBooks");
         aElement.href = bookUrl;
         aElement.textContent = bookTitle;
 
         liElement.appendChild(aElement);
-        bookList.appendChild(liElement)
+        ul.appendChild(liElement)
       })
       
     } catch (error) {

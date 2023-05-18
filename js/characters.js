@@ -28,6 +28,7 @@ async function characterPage() {
     
         const charactersDiv = document.getElementById("characters");
         const info = document.createElement("a");
+        info.classList.add("linkForCharacter");
     
         Object.keys(data).forEach(async (character) => {
 
