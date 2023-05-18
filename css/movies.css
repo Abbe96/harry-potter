@@ -23,8 +23,8 @@
 }
 
 .plot {
-    width: 20vw;
-    height: 25vh;
+    max-width: 200px;
+    min-height: 300px;
     color: transparent;
     background-position: top;
     background-repeat: no-repeat;
@@ -42,8 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20vw;
-    height: 25vh;
+    height: 100%;
     border-radius: 20px;
 }
 
@@ -58,7 +57,7 @@
 }
 
 .cover {
-    font-size: 3vw;
+    font-size: 2vw;
     text-align: center;
 }
 
