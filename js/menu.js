@@ -18,7 +18,7 @@ async function menuPage() {
     menuBtn.addEventListener("click", toggleMenuPage);
 
     main.innerHTML = `
-        <div id="menu">
+        <div id="menu" class="menu-hidden">
             <div class="listMenu"><button id=houseBtn class=allBtn>Houses</button></div>
             <div class="listMenu"><button id=characterBtn class=allBtn>Characters</button></div>
             <div class="listMenu"><button id=movieBtn class=allBtn>Movies</button></div>  
