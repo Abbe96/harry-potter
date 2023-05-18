@@ -24,7 +24,7 @@
 
 .plot {
     width: 20vw;
-    height: 35vh;
+    height: 25vh;
     color: transparent;
     background-position: top;
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@
     align-items: center;
     justify-content: center;
     width: 20vw;
-    height: 35vh;
+    height: 25vh;
     border-radius: 20px;
 }
 
