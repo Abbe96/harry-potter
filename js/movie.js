@@ -122,13 +122,13 @@ async function moviePage() {
             movieWrapper.appendChild(likeBtn);
             
 
-            plotText.addEventListener('mouseover', function() {
-                this.querySelector(".overlayText").style.display = "block";
-            });
+            // plotText.addEventListener('mouseover', function() {
+            //     this.querySelector(".overlayText").style.display = "block";
+            // });
             
-            plotText.addEventListener('mouseleave', function() {
-                this.querySelector(".overlayText").style.display = "none";
-            });
+            // plotText.addEventListener('mouseleave', function() {
+            //     this.querySelector(".overlayText").style.display = "none";
+            // });
 
 
             movies.appendChild(movieWrapper); 
