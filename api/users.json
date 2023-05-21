@@ -1,0 +1,27 @@
+{
+    "miso": {
+        "username": "miso",
+        "password": "1234",
+        "house": "Gryffindor"
+    },
+    "abbe": {
+        "username": "abbe",
+        "password": "abbe",
+        "house": ""
+    },
+    "elvis": {
+        "username": "elvis",
+        "password": "apa",
+        "house": "Slytherin"
+    },
+    "miso1": {
+        "username": "miso1",
+        "password": "1234",
+        "house": "Hufflepuff"
+    },
+    "miso3": {
+        "username": "miso3",
+        "password": "1234",
+        "house": ""
+    }
+}
