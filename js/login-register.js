@@ -21,7 +21,7 @@ function loginPage() {
     <div class=logRegContainer>
         <div id="bg">
             <h2 class=h2Size>Login</h2>
-            <p id=message><p>
+            <p id=message></p>
 
             <form>
                 <input type=text id=username placeholder=Username>
