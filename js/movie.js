@@ -2,6 +2,8 @@ async function moviePage() {
 
     const user = JSON.parse(localStorage.getItem("user"));
 
+    footer.innerHTML = "";
+
     nav.innerHTML = `
     <button id=lightningMenu></button>
     <h1>MOVIES</h1>

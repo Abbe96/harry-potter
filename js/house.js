@@ -1,5 +1,7 @@
 async function housePage() {
     const user = JSON.parse(localStorage.getItem("user"));
+
+    footer.innerHTML = "";
     
     nav.innerHTML = `
         <button id=lightningMenu></button>
