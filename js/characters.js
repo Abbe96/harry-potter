@@ -42,6 +42,7 @@ async function characterPage() {
     
             const likeBtn = document.createElement("button");
             likeBtn.classList.add("likeStyle", character);
+            //får error på konsolen pga .add? 
             
             let likesIndexUsers = data[character].likes;
             let likesIndex = likesIndexUsers.length;

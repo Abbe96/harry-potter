@@ -50,8 +50,6 @@
     background-color: rgba(0, 0, 0, 0.498);
 }
 
-
-
 .plot:hover {
     color: white;
 }
@@ -60,6 +58,3 @@
     font-size: 2vw;
     text-align: center;
 }
-
-
-

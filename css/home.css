@@ -28,6 +28,7 @@
     align-items: center;
     border-radius: 20px;
 }
+
 .item1 {
   background-image: url(../Bild/movies-home.png);
   background-position: center;
@@ -36,6 +37,7 @@
   grid-row: 1;
   grid-column: 1;
 }
+
 .item2 {
   background-image: url(../Bild/characters-home.png);
   background-repeat: no-repeat;
@@ -43,6 +45,7 @@
   grid-row: 1;
   grid-column: 2;
 }
+
 .item3 {
   background-image: url(../Bild/houses-home.png);
   background-position: center;
@@ -51,6 +54,7 @@
   grid-row: 2;
   grid-column: 1;
 }
+
 .item4 {
   background-image: url(../Bild/info-home2.png);
   background-position: top;
@@ -66,33 +70,6 @@
     align-items: center;
 }
 
-/*
-header nav ul li {
-    display: inline-block;
-    margin-top: 50px;
-}
-header nav ul li a {
-    color: #444;
-    text-transform: uppercase;
-    font-weight: bold;
-    display: block;
-    margin-right: 20px;
-}
-*/
-
-/*
-.more-link {
-    border: 1px solid #02b8dd;
-    color: #02b8dd;
-    padding: 6px 20px;
-    border-radius: 3px;
-}
-.more-link:hover {
-    background-color: #02b8dd;
-    color: #fff;
-}
-*/
-
 #cta {
     gap: 10px;
     margin-bottom: 10px;
@@ -100,36 +77,4 @@ header nav ul li a {
     text-align: center;
     background-color: rgba(179, 164, 146, 0.29);
     border-radius: 0 0 20px 20px;
-    /*
-    background-image: url(../Bild/background\ hp.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    */
 }
-
-/*
-.info-text {
-    gap: 10px;
-}
-*/
-
-/*
-#footer-info {
-    width: 380px;
-    float: left;
-    margin-top: 10px;
-}
-#footer-links {
-    width: 520px;
-    float: right;
-}
-#footer-links ul {
-    width: 150px;
-    float: left;
-    margin-left: 20px;
-}
-#footer-links ul li {
-    margin: 10px 0;
-}
-*/
