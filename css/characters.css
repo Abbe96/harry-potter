@@ -41,7 +41,7 @@
     position: relative;
 }
 
-a {
+.linkForCharacter {
     color: rgb(255, 241, 133);
     text-decoration: none;  
     background-color: rgba(0, 0, 0, 0.498);

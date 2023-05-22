@@ -20,7 +20,9 @@
         "year": 2004,
         "cover": "..\/Bild\/movies\/prisoner-of-azkaban.jpg",
         "plot": "Harry Potter, Ron and Hermione return to Hogwarts School of Witchcraft and Wizardry for their third year of study, where they delve into the mystery surrounding an escaped prisoner who poses a dangerous threat to the young wizard.",
-        "likes": []
+        "likes": [
+            "miso"
+        ]
     },
     {
         "title": "Harry Potter and the Goblet of Fire",

@@ -36,6 +36,40 @@ async function infoPage() {
       let response = await fetch("api/info.php");
       let data = await response.json();
       
+      whatIsHarryPotter.innerHTML = `
+        <h2 class=infoH2>What is Harry Potter?</h2>
+        <p class=infoP>${data.What_is_Harry_Potter}</p>
+      `;
+
+      author.innerHTML = `
+        <h2 class=infoH>J.K Rowling</h2>
+        <p class=infoP>${data.JK_Rowling}</p>
+      `;
+
+      books.innerHTML = `
+        <h2 class=infoH2>Books</h2>
+        <ul class=ulBookList></ul>
+      `;
+
+      let ul = main.querySelector(".ulBookList");
+
+      Object.keys(data.Books).forEach(async(bookTitle) => {
+        let bookUrl = data.Books[bookTitle];
+        
+        let liElement = document.createElement("li");
+        liElement.classList.add("listedBooks");
+
+        let aElement = document.createElement("a");
+        aElement.classList.add("linkForBooks");
+        aElement.href = bookUrl;
+        aElement.textContent = bookTitle;
+
+        liElement.appendChild(aElement);
+        ul.appendChild(liElement)
+      })
+      
+    } catch (error) {
+      console.error("Failed to fetch", error);
     }
 
 }
