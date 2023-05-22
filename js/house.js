@@ -52,14 +52,14 @@ async function housePage() {
 async function showHouseMembers() {
 
     main.innerHTML = `
-        <button id=back>Back to Houses</button>
+        <button id=backToHouses>Back to Houses</button>
 
         <section id=houseMembers>
             <div id=loading>Loading, kindly wait...</div>
         </section>
     `;
 
-    let backBtn = main.querySelector("#back");
+    let backBtn = main.querySelector("#backToHouses");
     backBtn.addEventListener("click", housePage);
 
     let houseMembers = main.querySelector("#houseMembers");
@@ -85,7 +85,7 @@ async function showHouseMembers() {
             const members = houses[house].join("<br>");
             houseMarkup += `
                 <div class="house">
-                    <h2>${house}</h2>
+                    <h5>${house}</h5>
                     <p>${members}</p>
                 </div>
             `;

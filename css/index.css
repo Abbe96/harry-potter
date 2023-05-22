@@ -23,14 +23,14 @@ h1 {
     font-size: 7vw;
 }
 
-/*
+
 main {
     
     height: 100%;
     width: 100%;
     
 }
-*/
+
 
 nav {
     /*
@@ -69,15 +69,15 @@ footer {
     background: none;
     border:rgb(181, 171, 144);
     font-size: 3vw;
-    background-color: rgba(179, 164, 146, 0.29);
+    background-color: rgba(145, 141, 137, 0.679);
 }
 
 #logout:hover {
-    background-color: rgba(145, 133, 119, 0.734);
+    background-color: rgba(162, 157, 151, 0.29);
 }
 
 #logout:active {
-    background-color: rgba(179, 164, 146, 0.29);
+    background-color: rgba(145, 141, 137, 0.679);
 }
 
 #me  {
