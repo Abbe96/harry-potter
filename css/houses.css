@@ -31,6 +31,7 @@
 .house {
     background-color: rgba(179, 164, 146, 0.29);
     border-radius: 20px;
+    padding: 0px 50px;
 }
 
 .house > p {
