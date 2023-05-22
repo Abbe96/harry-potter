@@ -42,7 +42,7 @@ async function infoPage() {
       `;
 
       author.innerHTML = `
-        <h2 class=infoH>J.K Rowling</h2>
+        <h2 class=infoH2>J.K Rowling</h2>
         <p class=infoP>${data.JK_Rowling}</p>
       `;
 

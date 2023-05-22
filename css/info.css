@@ -1,7 +1,10 @@
 /* Har skrivit ut alla klasser och id så det är bara att snygga till det */
 
 #infoContainer {
-
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
 }
 
 #whatIsHarryPotter {
@@ -17,11 +20,11 @@
 }
 
 .infoH2 {
-
+    font-size: 50px;
 }
 
 .infoP {
-
+    font-size: 15px;
 }
 
 .ulBookList {
