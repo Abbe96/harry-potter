@@ -122,7 +122,7 @@ function registerPage() {
     `;
 
     let body = document.querySelector("body");
-    body.style.backgroundImage = 'url("../Bild/background-login2.jpg")';
+    body.style.backgroundImage = 'url("../Bild/background-login.jpg")';
 
     let loginBtn = main.querySelector("#login");
     loginBtn.addEventListener("click", loginPage);

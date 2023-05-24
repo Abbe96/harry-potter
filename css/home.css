@@ -1,14 +1,15 @@
 .info-title {
-    margin: 0 auto 20px auto;
-    width: 60vw;
-    border-bottom: 1px solid #000000;
-    padding: 0 0 20px 0;
+    margin: 20px 0;
+    border-top: 1px solid #ffffff;
+    padding: 20px 0;
     font-size: 4vw;
 }
 
 .info-text {
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-family:'Times New Roman', Times, serif;
+    text-align: justify;
+    margin: 0;
 }
 
 .grid-container {
@@ -30,7 +31,7 @@
 }
 
 .item1 {
-  background-image: url(../Bild/movies-home.png);
+  background-image: url(../Bild/movies-home.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,7 +40,7 @@
 }
 
 .item2 {
-  background-image: url(../Bild/characters-home.png);
+  background-image: url(../Bild/characters-home.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   grid-row: 1;
@@ -47,7 +48,7 @@
 }
 
 .item3 {
-  background-image: url(../Bild/houses-home.png);
+  background-image: url(../Bild/houses-home.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,7 +57,7 @@
 }
 
 .item4 {
-  background-image: url(../Bild/info-home2.png);
+  background-image: url(../Bild/info-home2.jpeg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,7 +75,8 @@
     gap: 10px;
     margin-bottom: 10px;
     padding: 20px;
-    text-align: center;
     background-color: rgba(179, 164, 146, 0.29);
     border-radius: 0 0 20px 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
