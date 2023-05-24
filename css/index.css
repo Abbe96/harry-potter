@@ -61,9 +61,8 @@ footer {
 
 #logout {
     border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px rgb(118, 101, 74);
     background: none;
-    border:rgb(181, 171, 144);
+    border: none;
     font-size: 3vw;
     background-color: rgba(145, 141, 137, 0.679);
 }
@@ -90,4 +89,5 @@ footer {
     margin: 0;
     position: absolute;
     bottom: 97px;
+    text-shadow: #FC0 1px 0 10px;
 }

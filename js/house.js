@@ -1,5 +1,7 @@
 async function housePage() {
     const user = JSON.parse(localStorage.getItem("user"));
+
+    footer.innerHTML = "";
     
     nav.innerHTML = `
         <button id=lightningMenu></button>
@@ -35,18 +37,36 @@ async function housePage() {
         let response = await fetch("api/houses.php");
         let data = await response.json();
         houses.innerHTML = "";
-
+      
         data.forEach(house => {
-            let houseElement = document.createElement("div");
-            houseElement.innerHTML = `
-            <h2>${house.name}</h2>
-            <p>${house.description}</p>
-            `;
-            houses.appendChild(houseElement);
+          let houseElement = document.createElement("div");
+          houseElement.innerHTML = `
+            <h2 class="house-name">${house.name}</h2>
+            <p class="description hidden">${house.description}</p>
+          `;
+          houses.appendChild(houseElement);
+      
+          const pElement = houseElement.querySelector(".description");
+          let timeoutId;
+      
+          function fadeInAndStay() {
+            pElement.classList.remove("hidden");
+            pElement.classList.add("fade-in");
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(() => {
+              pElement.classList.remove("fade-in");
+              pElement.classList.add("hidden");
+            }, 5000);
+          }
+      
+          const h2Element = houseElement.querySelector(".house-name");
+          h2Element.addEventListener("mouseover", fadeInAndStay);
         });
-    } catch (error) {
+      
+      } catch (error) {
         console.error("Failed to fetch", error);
-    }
+      }
+      
 }
 
 async function showHouseMembers() {

@@ -2,6 +2,7 @@
 let user = null;
 let main = document.querySelector("main");
 let nav = document.querySelector("nav");
+let footer = document.querySelector("footer");
 
 // SHOW LOGIN PAGE OR HOME PAGE IF LOGGED IN OR NOT
 if (!window.localStorage.getItem("user")) {

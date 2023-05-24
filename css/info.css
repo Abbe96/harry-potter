@@ -3,20 +3,8 @@
 #infoContainer {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    padding: 10px;
+    padding: 50px 100px;
     color: white;
-}
-
-#whatIsHarryPotter {
-
-}
-
-#author {
-
-}
-
-#books {
-
 }
 
 .infoH2 {
@@ -24,17 +12,16 @@
 }
 
 .infoP {
-    font-size: 15px;
-}
-
-.ulBookList {
-
-}
-
-.listedBooks {
-
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .linkForBooks {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
 
+br {
+    display: block;
+    margin: 10px 0;
 }
