@@ -81,13 +81,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 #me p {
     font-size: 3vw;
-    margin: 0;
-    position: absolute;
-    bottom: 97px;
     text-shadow: #FC0 1px 0 10px;
 }

@@ -6,11 +6,12 @@
         "color":  "#cf9906"
         
     },
-    "Hufflepuff": {
-        "name": "Hufflepuff",
-        "description": "Hufflepuff valued hard work, dedication, patience, loyalty, and fair play. Its emblematic animal was the badger, it's representative gemstone was yellow diamonds, and yellow and black were its colours.Pomona Sprout was the Head of Hufflepuff during 1991 to 1998, Sprout left the post of Head of Hufflepuff and Herbology Professor sometime before 2017 and her successor for the position of Head of Hufflepuff was currently unknown. The Fat Friar was its ghost. The founder of the House was Helga Hufflepuff. Hufflepuff corresponded to the element of earth. The Hufflepuff dormitories and common room were located somewhere in the basement, near the castle's kitchens. It could be accessed by tapping the barrel two from the bottom, middle of the second row in the rhythm of 'Helga Hufflepuff' and was described as being a cosy and welcoming place with yellow hangings, fat armchairs, and underground tunnels that led to the dormitories, which had perfectly round doors, similar to barrel tops. Famous Hufflepuffs included Hengist of Woodcroft (founder of Hogsmeade), Newt Scamander (author of Fantastic Beasts and Where to Find Them), and Artemisia Lufkin (first female Minister for Magic). The significant object of Hufflepuff was Helga Hufflepuff's Cup, which was [turned into a Horcrux by Tom Riddle.",
-        "background": "../menu-pictures/hufflepuff-background.jpeg",
-        "color": "#c99506"
+    "Slytherin": {
+        "name": "Slytherin",
+        "description": "Slytherin valued ambition, leadership, self-preservation, cunning and resourcefulness and was founded by Salazar Slytherin. Its emblematic animal was the serpent, it's representative gemstone was emeralds, and its colours were emerald green and silver. Professor Horace Slughorn was the Head of Slytherin during the 1997 to 1998 school year, replacing Severus Snape, who as well replaced Slughorn as Potions Professor when he retired for the first time several years prior. Slytherin had produced the most Death Eaters and Dark wizards, including Tom Riddle, Bellatrix Lestrange and Lucius Malfoy, for example. But that does not mean that other Houses hadn't produced any; Peter Pettigrew was a Gryffindor, and Quirinus Quirrell was a Ravenclaw.The Bloody Baron was the House ghost. The founder of the House was Salazar Slytherin. Slytherin corresponded roughly to the element of water. The Slytherin dormitories and common room were reached through a bare stone wall in the Dungeons. The Slytherin common room lay beneath the Black Lake. It was a long, low underground room with rough stone walls and silver lamps hanging from the ceiling. Famous Slytherins included Merlin, Tom Riddle, Draco Malfoy, and Dolores Umbridge. The significant object of Slytherin was Salazar Slytherin's locket, which was turned into a Horcrux by Tom Riddle.",
+        "background": "../menu-pictures/slytherin-background.jpg",
+        "color": "#1d6a1a"
+
     },
     "Ravenclaw": {
         "name": "Ravenclaw",
@@ -18,12 +19,10 @@
         "background": "../menu-pictures/ravenclaw-background.jpg",
         "color": "#01779e"
     },
-    "Slytherin": {
-        "name": "Slytherin",
-        "description": "Slytherin valued ambition, leadership, self-preservation, cunning and resourcefulness and was founded by Salazar Slytherin. Its emblematic animal was the serpent, it's representative gemstone was emeralds, and its colours were emerald green and silver. Professor Horace Slughorn was the Head of Slytherin during the 1997 to 1998 school year, replacing Severus Snape, who as well replaced Slughorn as Potions Professor when he retired for the first time several years prior. Slytherin had produced the most Death Eaters and Dark wizards, including Tom Riddle, Bellatrix Lestrange and Lucius Malfoy, for example. But that does not mean that other Houses hadn't produced any; Peter Pettigrew was a Gryffindor, and Quirinus Quirrell was a Ravenclaw.The Bloody Baron was the House ghost. The founder of the House was Salazar Slytherin. Slytherin corresponded roughly to the element of water. The Slytherin dormitories and common room were reached through a bare stone wall in the Dungeons. The Slytherin common room lay beneath the Black Lake. It was a long, low underground room with rough stone walls and silver lamps hanging from the ceiling. Famous Slytherins included Merlin, Tom Riddle, Draco Malfoy, and Dolores Umbridge. The significant object of Slytherin was Salazar Slytherin's locket, which was turned into a Horcrux by Tom Riddle.",
-        "background": "../menu-pictures/slytherin-background.jpg",
-        "color": "#1d6a1a"
-
+    "Hufflepuff": {
+        "name": "Hufflepuff",
+        "description": "Hufflepuff valued hard work, dedication, patience, loyalty, and fair play. Its emblematic animal was the badger, it's representative gemstone was yellow diamonds, and yellow and black were its colours.Pomona Sprout was the Head of Hufflepuff during 1991 to 1998, Sprout left the post of Head of Hufflepuff and Herbology Professor sometime before 2017 and her successor for the position of Head of Hufflepuff was currently unknown. The Fat Friar was its ghost. The founder of the House was Helga Hufflepuff. Hufflepuff corresponded to the element of earth. The Hufflepuff dormitories and common room were located somewhere in the basement, near the castle's kitchens. It could be accessed by tapping the barrel two from the bottom, middle of the second row in the rhythm of 'Helga Hufflepuff' and was described as being a cosy and welcoming place with yellow hangings, fat armchairs, and underground tunnels that led to the dormitories, which had perfectly round doors, similar to barrel tops. Famous Hufflepuffs included Hengist of Woodcroft (founder of Hogsmeade), Newt Scamander (author of Fantastic Beasts and Where to Find Them), and Artemisia Lufkin (first female Minister for Magic). The significant object of Hufflepuff was Helga Hufflepuff's Cup, which was [turned into a Horcrux by Tom Riddle.",
+        "background": "../menu-pictures/hufflepuff-background.jpeg",
+        "color": "#c99506"
     }
-
 }

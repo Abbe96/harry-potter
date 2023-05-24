@@ -41,7 +41,6 @@
 
 .house {
     background-color: rgba(0, 0, 0, 0.5);
-    text-shadow: #FC0 1px 0 10px;
     border-radius: 20px;
     padding: 0px 50px;
 }
@@ -62,6 +61,7 @@ h5 {
     color: white;
     padding: 50px 100px;
     border-radius: 20px;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 #theFourHouses > div > h2 {
@@ -95,7 +95,7 @@ h5 {
 }
 
 #theFourHouses > div:nth-of-type(2) > h2 {
-    color: #c99506;
+    color: #1d6a1a;
 }
 
 #theFourHouses > div:nth-of-type(3) > h2 {
@@ -103,11 +103,23 @@ h5 {
 }
 
 #theFourHouses > div:nth-of-type(4) > h2 {
-    color: #1d6a1a;
+    color: #c99506;
 }
 
 #houseMembers > div:nth-of-type(1) > h5 {
-    text-shadow: #751807 1px 0 10px;
+    text-shadow: #ff2600 1px 0 10px;
+}
+
+#houseMembers > div:nth-of-type(2) > h5 {
+    text-shadow: #06be00 1px 0 10px;
+}
+
+#houseMembers > div:nth-of-type(3) > h5 {
+    text-shadow: #00bfff 1px 0 10px;
+}
+
+#houseMembers > div:nth-of-type(4) > h5 {
+    text-shadow: #FC0 1px 0 10px;
 }
 
 @keyframes fadeIn {

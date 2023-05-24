@@ -138,7 +138,9 @@
         "house": "",
         "imageSource": "Images-characters\/47ae5f2eb491c2095a5c29300eb9eb23.jpeg",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Magical_creatures_in_Harry_Potter",
-        "likes": []
+        "likes": [
+            "elvis"
+        ]
     },
     "BellatrixLestrange": {
         "name": "Bellatrix Lestrange",
