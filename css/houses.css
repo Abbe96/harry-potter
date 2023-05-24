@@ -63,6 +63,28 @@ h5 {
     font-size: 50px;
 }
 
+#theFourHouses > div > p {
+    opacity: 0;
+    font-size: 25px;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+#theFourHouses > div > p.hidden {
+    display: none;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+#theFourHouses > div > h2:hover + p.description {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+#theFourHouses > div > p.fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
 #theFourHouses > div:nth-of-type(1) > h2 {
     color: #751807;
 }
@@ -79,6 +101,22 @@ h5 {
     color: #1d6a1a;
 }
 
-#theFourHouses > div > p {
-    font-size: 25px;
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
 }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+
+
