@@ -18,9 +18,9 @@
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
     color: #f5f5f5;
-    background-color: rgba(179, 164, 146, 0.29);
+    background-color: rgba(0, 0, 0, 0.5);
 }
   
 .grid-container > div {
@@ -75,8 +75,8 @@
     gap: 10px;
     margin-bottom: 10px;
     padding: 20px;
-    background-color: rgba(179, 164, 146, 0.29);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 0 0 20px 20px;
     color: white;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 5px 5px 5px black;
 }
