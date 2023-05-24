@@ -23,8 +23,8 @@
 }
 
 .plot {
-    max-width: 200px;
-    min-height: 300px;
+    height: 35vh;
+    width: 20vw;
     color: transparent;
     background-position: top;
     background-repeat: no-repeat;
