@@ -35,6 +35,7 @@ async function setTheme() {
 
         checkUserHouse();
 
+        // LETAR FRAM BAKGRUND SOM MATCHAR USER'S HUS
         function setHouseBackground(houseName) {
             let houseBackground = data.find(house => house.name === houseName)["background"];
             document.querySelector("body").style.backgroundImage = `url(${houseBackground})`;

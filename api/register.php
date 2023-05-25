@@ -19,9 +19,11 @@ ini_set("display_errors", 1);
             exit;
         }
 
+        //HÄMTAR USERS FRÅN JSON FILE
         $filename = "users.json";
         $users = json_decode(file_get_contents($filename), true);
 
+        // OM USER INTE EXISTERAR I JSON SÅ LÄGGER DEN TILL
         if(!$users) {
             $users = [];
         }

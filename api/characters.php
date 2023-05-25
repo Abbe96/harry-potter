@@ -4,6 +4,7 @@
 
     $json = file_get_contents("characters.json");
 
+    //KONTROLLERAR OM DET ÄR EN JSON FIL
     if ($json === false) {
         echo "Error, failed to read json-file";
         exit;
@@ -17,8 +18,8 @@
     }
 
     foreach ($characters as $character) {
-        if (!isset($character["name"]) || !isset($character["link"])) {
-            echo "Error, missin keys";
+        if (!isset($character["name"]) or !isset($character["link"])) {
+            echo "Error, missing keys";
             exit;
         }
 

@@ -39,12 +39,11 @@ async function characterPage() {
             characterWrapper.classList.add("characterWrapper");
     
             const tempDiv = document.createElement("div");
-            tempDiv.classList.add("name", character);
+            tempDiv.classList.add("name");
             tempDiv.style.backgroundImage = `url(${data[character].imageSource})`;
     
             const likeBtn = document.createElement("button");
             likeBtn.classList.add("likeStyle", character);
-            //får error på konsolen pga .add? 
             
             let likesIndexUsers = data[character].likes;
             let likesIndex = likesIndexUsers.length;
@@ -62,7 +61,8 @@ async function characterPage() {
                 likeBtn.style.backgroundColor = "white";
                 likeBtn.style.color = "black";
             }
-    
+            
+            //HOVER BILD FÖR VARJE KARAKTÄR: NAMN + "LÄNK"
             tempDiv.addEventListener("mouseover", function() {
                 info.href = data[character].info;               
                 info.innerHTML = `${data[character].name}<br>${data[character].house}`;             
@@ -99,6 +99,7 @@ async function characterPage() {
                     const data = await likeResponse.json();
                     console.log(data);
 
+                    //HÄR UPPDATERAS EFTER MAN LIKE/UNLIKE TILL JSON-FIL
                     const updatedResponse = await fetch("api/characters.json");
                     const updatedData = await updatedResponse.json();
 

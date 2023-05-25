@@ -16,6 +16,7 @@ if (!window.localStorage.getItem("user")) {
 
 function loginPage() {
 
+    //TA BORT NAV FRÅN LOGIN
     nav.innerHTML = "";
     main.innerHTML = `
     

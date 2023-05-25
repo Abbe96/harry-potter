@@ -1,5 +1,4 @@
 <?php
-
 // Read the JSON file
 $jsonData = file_get_contents('info.json');
 

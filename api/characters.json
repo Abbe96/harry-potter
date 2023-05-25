@@ -5,7 +5,7 @@
         "imageSource": "Images-characters\/Harry_Potter_-_GoF_Promo.jpeg",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Harry_Potter_(character)",
         "likes": [
-            "miso"
+            "miso4"
         ]
     },
     "HermioneGranger": {
@@ -13,9 +13,7 @@
         "house": "Gryffindor",
         "imageSource": "Images-characters\/Hermione.jpeg",
         "info": "https:\/\/en.wikipedia.org\/wiki\/Hermione_Granger",
-        "likes": [
-            "miso"
-        ]
+        "likes": []
     },
     "RonWeasley": {
         "name": "Ron Weasley",

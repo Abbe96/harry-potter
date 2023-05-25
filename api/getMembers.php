@@ -2,6 +2,7 @@
     $data = file_get_contents("users.json");
     $users = json_decode($data, true);
 
+    // VISAR VILKET HUS USER TILLHÖR
     $members = [];
     foreach ($users as $username => $userData) {
         if (isset($userData["house"]) and !empty($userData["house"])) {

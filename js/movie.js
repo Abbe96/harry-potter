@@ -96,6 +96,7 @@ async function moviePage() {
                     const data = await likeResponse.json();
                     console.log(data);
 
+                    //UPPDATERAR SIDAN
                     const updatedResponse = await fetch("api/movies.json");
                     const updatedData = await updatedResponse.json();
 

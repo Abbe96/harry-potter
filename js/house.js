@@ -91,6 +91,7 @@ async function showHouseMembers() {
 
         let houses = {};
 
+                //!! LÄGG TILL ALLA HUS
         data.members.forEach((member) => {
             const { house, username } = member;
             if (houses.hasOwnProperty(house)) {
