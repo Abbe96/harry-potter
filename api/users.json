@@ -12,16 +12,23 @@
     "elvis": {
         "username": "elvis",
         "password": "apa",
-        "house": "Gryffindor"
+        "house": "Hufflepuff"
     },
     "miso3": {
         "username": "miso3",
         "password": "1234",
         "house": ""
     },
+
     "miso4": {
         "username": "miso4",
         "password": "1234",
         "house": "Hufflepuff"
+    },
+
+    "happy": {
+        "username": "happy",
+        "password": "happy",
+        "house": ""
     }
 }
