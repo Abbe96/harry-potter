@@ -36,7 +36,7 @@ function loginPage() {
     `;
 
     let body = document.querySelector("body");
-    body.style.backgroundImage = 'url("../Bild/background-login1.jpg")';
+    body.style.backgroundImage = 'url("../Bild/background-login.jpg")';
 
     let registerBtn = main.querySelector("#register");
     registerBtn.addEventListener("click", registerPage);

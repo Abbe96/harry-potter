@@ -42,7 +42,7 @@
 .house {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    padding: 0px 50px;
+    text-align: center;
 }
 
 .house > p {
@@ -107,7 +107,7 @@ h5 {
 }
 
 #houseMembers > div:nth-of-type(1) > h5 {
-    text-shadow: #ff2600 1px 0 10px;
+    text-shadow: #00bfff 1px 0 10px;
 }
 
 #houseMembers > div:nth-of-type(2) > h5 {
@@ -115,11 +115,11 @@ h5 {
 }
 
 #houseMembers > div:nth-of-type(3) > h5 {
-    text-shadow: #00bfff 1px 0 10px;
+    text-shadow: #FC0 1px 0 10px;
 }
 
 #houseMembers > div:nth-of-type(4) > h5 {
-    text-shadow: #FC0 1px 0 10px;
+    text-shadow: #ff2600 1px 0 10px;
 }
 
 @keyframes fadeIn {

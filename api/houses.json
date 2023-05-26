@@ -4,7 +4,6 @@
         "description": "Gryffindor valued bravery, daring, nerve, and chivalry. Its emblematic animal was the lion, it's representative gemstone was rubies, and its colours were scarlet and gold. Minerva McGonagall was the most recent Head of Gryffindor. Sir Nicholas de Mimsy-Porpington, also known as 'Nearly Headless Nick', was the House Ghost. The founder of the House was Godric Gryffindor. Gryffindor corresponded to the element of fire. The common room was located in one of the highest towers at Hogwarts, the entrance was situated on the seventh floor in the east wing of the castle and was guarded by a portrait of The Fat Lady. She permitted entrance if given the correct password, which was changed numerous times throughout the school year. Famous Gryffindors included Albus Dumbledore, Harry Potter, and Minerva McGonagall. The significant object of Gryffindor was the Sword of Gryffindor. Their motto was 'Forti Animo Estote'.",
         "background": "../menu-pictures/gryffindor-background.jpg",
         "color":  "#cf9906"
-        
     },
     "Slytherin": {
         "name": "Slytherin",
