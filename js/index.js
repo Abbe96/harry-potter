@@ -26,7 +26,7 @@ async function setTheme() {
                 if (userHouseData.house) {
                     setHouseBackground(userHouseData.house, userHouseData);
                 } else {
-                    document.querySelector("body").style.backgroundImage = 'url("../Bild/background-login.jpg")';
+                    document.querySelector("body").style.backgroundImage = 'url("/harry-potter/Bild/background-login.jpg")';
                 }
             } catch (error) {
                 console.error("Failed to get user's house", error);
