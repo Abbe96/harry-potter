@@ -2,7 +2,7 @@
     {
         "title": "Harry Potter and The Sorcerer's Stone",
         "year": 2001,
-        "cover": "/harry-potter/Bild\/movies\/philosophers-stone-small.jpeg",
+        "cover": "/ht22/top_sand/harry-potter/Bild/movies/philosophers-stone-small.jpeg",
         "plot": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.",
         "likes": [
             "elvis"
@@ -11,14 +11,14 @@
     {
         "title": "Harry Potter and the Chamber of Secrets",
         "year": 2002,
-        "cover": "/harry-potter/Bild\/movies\/chamber-of-secrets-small.jpeg",
+        "cover": "/ht22/top_sand/harry-potter/Bild/movies/chamber-of-secrets-small.jpeg",
         "plot": "An ancient prophecy seems to be coming true when a mysterious presence begins stalking the corridors of a school of magic and leaving its victims paralyzed.",
         "likes": []
     },
     {
         "title": "Harry Potter and the Prisoner of Azkaban",
         "year": 2004,
-        "cover": "/harry-potter/Bild\/movies\/prisoner-of-azkaban-small.jpeg",
+        "cover": "/ht22/top_sand/harry-potter/Bild/movies/prisoner-of-azkaban-small.jpeg",
         "plot": "Harry Potter, Ron and Hermione return to Hogwarts School of Witchcraft and Wizardry for their third year of study, where they delve into the mystery surrounding an escaped prisoner who poses a dangerous threat to the young wizard.",
         "likes": [
             "miso",
@@ -28,14 +28,14 @@
     {
         "title": "Harry Potter and the Goblet of Fire",
         "year": 2005,
-        "cover": "/harry-potter/Bild\/movies\/goblet-of-fire-small.jpeg",
+        "cover": "/ht22/top_sand/harry-potter/Bild/movies/goblet-of-fire-small.jpeg",
         "plot": "Harry Potter finds himself competing in a hazardous tournament between rival schools of magic, but he is distracted by recurring nightmares.",
         "likes": []
     },
     {
         "title": "Harry Potter and the Order of the Phoenix",
         "year": 2007,
-        "cover": "/harry-potter/Bild\/movies\/order-of-the-phoenix-small.jpeg",
+        "cover": "/ht22/top_sand/harry-potter/Bild/movies/order-of-the-phoenix-small.jpeg",
         "plot": "With their warning about Lord Voldemort's return scoffed at, Harry and Dumbledore are targeted by the Wizard authorities as an authoritarian bureaucrat slowly seizes power at Hogwarts.",
         "likes": [
             "elvis"
@@ -44,7 +44,7 @@
     {
         "title": "Harry Potter and the Half-Blood Prince",
         "year": 2009,
-        "cover": "/harry-potter/Bild\/movies\/half-blood-prince-small.jpeg",
+        "cover": "/ht22/top_sand/harry-potter/Bild/movies/half-blood-prince-small.jpeg",
         "plot": "As Harry Potter begins his sixth year at Hogwarts, he discovers an old book marked as 'the property of the Half-Blood Prince' and begins to learn more about Lord Voldemort's dark past.",
         "likes": [
             "elvis"
@@ -53,14 +53,14 @@
     {
         "title": "Harry Potter and the Deathly Hallows: Part 1",
         "year": 2010,
-        "cover": "/harry-potter/Bild\/movies\/deathly-hallows-part-1-small.jpeg",
+        "cover": "/ht22/top_sand/harry-potter/Bild/movies/deathly-hallows-part-1-small.jpeg",
         "plot": "As Harry, Ron and Hermione race against time and evil to destroy the Horcruxes, they uncover the existence of the three most powerful objects in the wizarding world: the Deathly Hallows.",
         "likes": []
     },
     {
         "title": "Harry Potter and the Deathly Hallows: Part 2",
         "year": 2011,
-        "cover": "\/Bild\/movies\/deathly-hallows-part-2-small.jpeg",
+        "cover": "/ht22/top_sand/harry-potter/Bild/movies/deathly-hallows-part-2-small.jpeg",
         "plot": "Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.",
         "likes": []
     }
