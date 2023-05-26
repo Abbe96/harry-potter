@@ -43,9 +43,8 @@
 }
 
 #gryffindor {
-    background-image: url(../menu-pictures/gryffindor.png);
-    width: 80px;
-    height: 100px;
+    background-image: url(../menu-pictures/gryffendorBtn.jpg);
+    width: 100px;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -54,8 +53,8 @@
 }
 
 #slytherin {
-    background-image: url(../menu-pictures/slytherin.png);
-    width: 80px;
+    background-image: url(../menu-pictures/slytherinBtn.jpg);
+    width: 100px;
     height: 100px;
     background-size: cover;
     background-position: center;
@@ -64,8 +63,8 @@
     border: none;
 }
 #ravenclaw {
-    background-image: url(../menu-pictures/ravenclaw.png);
-    width: 80px;
+    background-image: url(../menu-pictures/ravenclawBtn.jpg);
+    width: 100px;
     height: 100px;
     background-size: cover;
     background-position: center;
@@ -74,8 +73,8 @@
     border: none;
 }
 #hufflepuff {
-    background-image: url(../menu-pictures/hufflepuff.png);
-    width: 80px;
+    background-image: url(../menu-pictures/hufflepuffBtn.jpg);
+    width: 100px;
     height: 100px;
     background-size: cover;
     background-position: center;
